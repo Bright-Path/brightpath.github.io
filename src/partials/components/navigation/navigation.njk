@@ -1,0 +1,48 @@
+{% macro nav(home, pages, posts, external, current_page) %}
+    <nav class="bpbc-navigation">
+        <ul class="bpbc-navigation-list">
+            {% if home -%}
+                {% set pageName = 'home' %}
+                <li class="bpbc-navigation-list-item">
+                    <a href="/" class="bpbc-navigation-link {%if current_page === pageName %}bpbc-navigation-link-active{% endif %}">
+                        Home
+                    </a>
+                </li>
+            {%- endif %}
+
+            {% if pages.length > 0 -%}
+                {% for page in pages -%}
+                    {% set section = page.section %}
+
+                    <li class="bpbc-navigation-list-item">
+                        <a href="/{{ section }}" class="bpbc-navigation-link {%if current_page === section %}bpbc-navigation-link-active{% endif %}">
+                            {{ page.link_text }}
+                        </a>
+                    </li>
+                {%- endfor %}
+            {%- endif %}
+
+            {% if posts.length > 0 -%}
+                {% for post in posts -%}
+                    {% set post_link = post.post_link %}
+
+                    <li class="bpbc-navigation-list-item">
+                        <a href="/{{ post_link }}" class="bpbc-navigation-link {%if current_page === post_link %}bpbc-navigation-link-active{% endif %}">
+                            {{ post.link_text }}
+                        </a>
+                    </li>
+                {%- endfor %}
+            {%- endif %}
+
+            {% if external.length > 0 -%}
+                {% for link in external -%}
+                    <li class="bpbc-navigation-list-item">
+                        <a href="{{ link.url }}" class="bpbc-navigation-link" target="_blank">
+                            {{ link.name }}
+                        </a>
+                    </li>
+                {%- endfor %}
+            {%- endif %}
+        </ul>
+    </nav>
+{% endmacro %}

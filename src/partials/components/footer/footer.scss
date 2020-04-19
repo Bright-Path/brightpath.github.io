@@ -1,0 +1,22 @@
+.bpbc-footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text);
+    min-height: 5rem;
+    text-align: center;
+    width: 100%;
+
+    .bpbc-container {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    a {
+        color: var(--footer-link);
+
+        &:hover,
+        &focus {
+            color: var(--footer-link-hover);
+            text-decoration: underline;
+        }
+    }
+}

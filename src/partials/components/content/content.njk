@@ -1,0 +1,18 @@
+{% from "components/related-links/related-links.njk" import relatedLinks as relatedLinks %}
+
+{% macro content(body, resources, icons) %}
+    <div class="bpbc-content {% if resources.length > 0 %}bpbc-has-sidebar{% endif %}">
+        {% if body.length > 0 -%}
+            <section class="bpbc-article bpbc-markdown">
+                {{ body | markdown | safe }}
+            </section>
+        {%- endif %}
+
+        {% if resources.length > 0 -%}
+            {{ relatedLinks(
+                resources,
+                icons
+            ) }}
+        {%- endif %}
+    </div>
+{% endmacro %}

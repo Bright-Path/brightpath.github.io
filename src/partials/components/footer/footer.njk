@@ -1,0 +1,9 @@
+{% macro footer(content) %}
+
+<footer class="bpbc-footer">
+    <div class="bpbc-container">
+        {{ content | markdown | safe }}
+    </div>
+</footer>
+
+{% endmacro %}

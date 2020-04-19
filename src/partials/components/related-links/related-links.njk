@@ -1,0 +1,25 @@
+{% macro relatedLinks(resources, icons) %}
+    <aside class="bpbc-sidebar">
+        <h2 class="bpbc-sidebar-header">Top Resources</h2>
+        <ul class="bpbc-sidebar-list">
+            {% for resource in resources -%}
+                <li class="bpbc-sidebar-list-item">
+                    {% if resource.resource_link -%}
+                        <a class="bpbc-sidebar-link" href="{{  resource.resource_link  }}">
+                    {%- endif %}
+                    {% if resource.resource_icon -%}
+                        <img class="bpbc-sidebar-icon" src="{{  resource.resource_icon  }}" alt="" />
+                    {% else %}
+                        <img class="bpbc-sidebar-icon" inline src="{{ icons.document}}" alt="">
+                    {%- endif %}
+
+                    <span class="bpbc-sidebar-text">{{ resource.resource_name }}</span>
+
+                    {% if resource.resource_link -%}
+                        </a>
+                    {%- endif %}
+                </li>
+            {%- endfor %}
+        </ul>
+    </aside>
+{% endmacro %}
