@@ -9,25 +9,14 @@ collections:
   - name: "home"
     label: "Home"
     folder: "src/content/home"
-    slug: "{{slug}}"
-    identifier_field: name
-    create: true
     fields:
       - name: "name"
         widget: "string"
         required: true
-      - label: "Meta Title"
-        name: "meta_title"
-        hint: "The SEO page title for this content"
-        widget: "string"
-      - label: "Meta Description"
-        name: "meta_description"
-        hint: "The SEO description for this content"
-        widget: "string"
-      - label: "Meta Image"
-        name: "meta_image"
-        hint: "The social preview for this content"
+      - label: "Featured Image"
+        name: "hero"
         widget: "image"
+        required: false
       - label: "Featured Title"
         name: "title"
         widget: "string"
@@ -40,9 +29,6 @@ collections:
         name: "action"
         widget: "string"
         required: false
-      - label: "Featured Image"
-        name: "hero"
-        widget: "image"
       - label: "Featured Links"
         name: "links"
         widget: "list"
@@ -56,11 +42,11 @@ collections:
             name: "link_content"
             widget: "markdown"
             required: false
-      - label: "Tags"
-        name: "tags"
-        widget: "hidden"
-        default: "home"
       - label: "Body"
         name: "content"
         widget: "markdown"
         required: false
+      - label: "Tags"
+        name: "tags"
+        widget: "hidden"
+        default: "home"

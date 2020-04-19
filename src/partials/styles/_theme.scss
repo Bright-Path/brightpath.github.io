@@ -2,9 +2,9 @@
 
     // Default link colors
 
-    --body-link: #24252E;
+    --body-link: #{$bpbc-gold};
 
-    --body-link-hover: rgb(0, 163, 184);
+    --body-link-hover: #{$bpbc-light};
 
     // @group-end
 
@@ -97,11 +97,11 @@
 
     // Background color for the body tag.
 
-    --body-bg: #{$white};
+    --body-bg: #{$bpbc-dark};
 
     // Font color for the body tag.
 
-    --body-color: #{$black};
+    --body-color: #{$bpbc-light};
 
     // Box shadow.
 

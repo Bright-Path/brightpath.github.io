@@ -4,6 +4,8 @@ const customFilters = require('./filters.js');
 module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy('src/assets');
 
+    eleventyConfig.addPassthroughCopy('src/upload');
+
     eleventyConfig.addPassthroughCopy('src/content');
 
     eleventyConfig.addNunjucksFilter('markdown', (content) => {
