@@ -16,8 +16,6 @@ permalink: "/"
         <h1 class="bpbc-accessible-text">{{ home.data.title }}</h1>
     {%- endif %}
 
-    <img src="/assets/images/bright-path-logo.jpg" alt="Bright Path Brewing Company logo" class="bpbc-logo" />
-
     {% if home.data.content -%}
         {{ home.data.content | markdown | safe }}
     {%- endif %}
