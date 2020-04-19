@@ -1,14 +1,17 @@
 // Typography
-$primary-font: 'Work Sans';
-$default-font-weight: 200;
+$default-font-weight: 400;
 $light-font-weight: 200;
 $regular-font-weight: 400;
 $bold-font-weight: 700;
-$font-stack: $primary-font, helvetica-neue, helvetica, arial, sans-serif;
+$font-stack: helvetica-neue, helvetica, arial, sans-serif;
 
 // Primary Colors
 $white: #FFF;
 $black: #000;
+
+$bpbc-dark: #101E1F;
+$bpbc-gold: #D2B164;
+$bpbc-light: #FFF;
 
 $grey-300: #E8E8E8;
 $grey-400: #606060;
