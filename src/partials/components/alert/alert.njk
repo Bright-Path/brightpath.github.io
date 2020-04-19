@@ -1,0 +1,21 @@
+{% macro alert(content, icons) %}
+    <div class="bpbc-alert">
+        <div class="bpbc-alert-icon-container">
+            {% if content.icon -%}
+                <img src="{{ content.icon }}" alt="" class="bpbc-alert-icon bpbc-alert-custom-icon" />
+            {% else %}
+                <img src="{{ icons.alert }}" alt="" class="bpbc-alert-icon bpbc-alert-standard-icon" />
+            {%- endif %}
+        </div>
+
+        <div class="bpbc-alert-message">
+            {% if content.title -%}
+                <h2 class="bpbc-alert-title">{{ content.title }}</h2>
+            {%- endif %}
+
+            <div class="bpbc-alert-description">
+                {{ content.description | markdown | safe }}
+            </div>
+        </div>
+    </div>
+{% endmacro %}

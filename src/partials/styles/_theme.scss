@@ -1,0 +1,279 @@
+:root {
+
+    // Default link colors
+
+    --body-link: #24252E;
+
+    --body-link-hover: rgb(0, 163, 184);
+
+    // @group-end
+
+    // --------------------------------------------------
+    // @group Typography
+    // --------------------------------------------------
+
+    // Primary font used throughout all components.
+
+    --primary-font: #{$font-stack};
+
+    // Primary font weight.
+
+    --default-weight: #{$default-font-weight};
+
+    // Base font size.
+
+    --font-size-base: 1rem;
+
+    // Small font Size.
+
+    --font-size-sm: 0.875rem;
+
+    // Regular font weight.
+
+    --weight-regular: #{$light-font-weight};
+
+    // Bold font weight.
+
+    --weight-bold: #{$bold-font-weight};
+
+    // Medium font weight.
+
+    --weight-medium: #{$regular-font-weight};
+
+    // Headings
+
+    --heading-font-stack: #{$font-stack};
+
+    --heading-font-weight: #{$regular-font-weight};
+
+    // Heading 1 font size.
+
+    --h1-font-size: 3rem;
+
+    // Heading 2 font size.
+
+    --h2-font-size: 2.5rem;
+
+    // Heading 3 font size.
+
+    --h3-font-size: 2rem;
+
+    // Heading 4 font size.
+
+    --h4-font-size: 1.5rem;
+
+    // Heading 5 font size.
+
+    --h5-font-size: 1.25rem;
+
+    // Heading 6 font size.
+
+    --h6-font-size: 1rem;
+
+    // @group-end
+
+    // --------------------------------------------------
+    // @group Animations
+    // --------------------------------------------------
+
+    // Default transition.
+
+    --ease-in-out: 300ms ease-in-out;
+
+    // Fast transtition.
+
+    --ease-in-out-fast: 150ms ease-in-out;
+
+    // Exponential transition.
+
+    --ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
+
+    // @group-end
+
+
+    // --------------------------------------------------
+    // @group Body
+    // --------------------------------------------------
+
+    // Background color for the body tag.
+
+    --body-bg: #{$white};
+
+    // Font color for the body tag.
+
+    --body-color: #{$black};
+
+    // Box shadow.
+
+    --box-shadow: #{$box-shadow};
+
+    // Box shadow secondary.
+
+    --box-shadow-secondary: #{$box-shadow-secondary};
+
+    // @group-end
+
+
+    // Button
+
+    // Button font size.
+
+    --btn-font-size: var(--font-size-base);
+
+    // Buton font weight.
+
+    --btn-font-weight: var(--weight-medium);
+
+    // Button background color.
+
+    --btn-bg-color: #{$red-400};
+
+    // Button font color.
+
+    --btn-color: #{$white};
+
+    // Button background color when hovered.
+
+    --btn-hover-bg-color: #{$red-500};
+
+    // Button font color when hovered.
+
+    --btn-hover-color: #{$white};
+
+    // Button border radius
+
+    --btn-round: 0;
+
+
+    // Footer
+
+    // Footer background color.
+
+    --footer-bg-color: #{$black};
+
+    // Footer text color.
+
+    --footer-text: #{white};
+
+    // Footer link color.
+
+    --footer-link: #{white};
+
+    // Footer link hover color.
+
+    --footer-link-hover: #{white};
+
+
+    // Header
+
+    // Header background color.
+
+    --header-bg-color: #{$teal-400};
+
+    // Header text color.
+
+    --header-text-color: #{$white};
+
+
+    // Hero
+
+    // Hero contact bg color.
+
+    --hero-contact-color: #{$white};
+
+    // Hero contact text color.
+
+    --hero-contact-link-color: #{$grey-400};
+
+    // Hero contact link color.
+
+    --hero-contact-color: #{$black};
+
+    // Hero contact link hover.
+
+    --hero-contact-link-color: #{$black};
+
+
+    // Navigation
+
+    // Navigation link background color.
+
+    --navigation-link-bg-color: #{$teal-500};
+
+    // Navigation link hover background color.
+
+    --navigation-link-hover-bg-color: #{$teal-300};
+
+    // Navigation link active background color.
+
+    --navigation-link-active-bg-color: #{$white};
+
+    // Navigation link color.
+
+    --navigation-link-color: #{$white};
+
+    // Navigation link hover color.
+
+    --navigation-link-hover-color: #{$black};
+
+    // Navigation link active color.
+
+    --navigation-link-active-color: #{$black};
+
+
+    // Post List Item
+
+    // Post list item border color.
+
+    --post-list-item-border-color: #{$grey-300};
+
+    // Post list item hover border color.
+
+    --post-list-item-hover-border-color: #{$white};
+
+    // Post list item color.
+
+    --post-list-item-color: #{$black};
+
+    // Post list item color.
+
+    --post-list-item-hover: #{$teal-400};
+
+
+    // Related links
+
+    // Related links bg color.
+
+    --related-links-bg-color: #{$teal-200};
+
+    // Related links icon bg color.
+
+    --related-links-icon-bg-color: #{$white};
+
+    // Related links link color.
+
+    --related-links-link-color: #{$black};
+
+
+    // Alert
+
+    // Alert bg color.
+
+    --alert-bg: #{rgba($yellow-400, 0.4)};
+
+    // Alert icon bg color
+
+    --alert-icon-bg: #{$yellow-400};
+
+    // Alert text color
+
+    --alert-text: #{$black};
+
+    // Alert link color
+
+    --alert-link: #{$black};
+
+    // Alert link hover
+
+    --alert-link-color: #{$black};
+}

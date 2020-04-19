@@ -1,0 +1,37 @@
+{% macro hero(title, subtitle, image, link_text, link_href, links, icons) %}
+    <div class="bpbc-hero {% if not image %}bpbc-section-hero{% endif %}" {% if image %}style="background-image: url('{{ image }}')"{% endif %}>
+        <div class="bpbc-hero-content">
+            {% if title -%}
+                <h2 class="bpbc-hero-title">{{ title }}</h2>
+             {%- endif %}
+
+             {% if subtitle -%}
+                <div class="bpbc-subtitle">
+                    {{ subtitle | markdown | safe }}
+                </div>
+            {%- endif %}
+
+
+            {% if link_text -%}
+                <a href="{{ link_href }}" class="bpbc-button">
+                    {{ link_text }}
+                    <img src="{{ icons.button_arrow }}" alt="" class="bpbc-button-icon" />
+                </a>
+            {%- endif %}
+        </div>
+
+        {% if links -%}
+            <div class="bpbc-hero-contact">
+                {% for link in links -%}
+                    <div class="bpbc-hero-contact-content">
+                        <img src="{{ link.image }}" alt="" class="bpbc-hero-contact-icon" />
+                        <div class="bpbc-hero-contact-info">
+                            {{ link.link_content | markdown | safe }}
+                        </div>
+                    </div>
+                {%- endfor %}
+            </div>
+        {%- endif %}
+
+    </div>
+{% endmacro %}

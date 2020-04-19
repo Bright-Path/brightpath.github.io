@@ -1,0 +1,37 @@
+// Typography
+$primary-font: 'Work Sans';
+$default-font-weight: 200;
+$light-font-weight: 200;
+$regular-font-weight: 400;
+$bold-font-weight: 700;
+$font-stack: $primary-font, helvetica-neue, helvetica, arial, sans-serif;
+
+// Primary Colors
+$white: #FFF;
+$black: #000;
+
+$grey-300: #E8E8E8;
+$grey-400: #606060;
+$grey-500: #2E2E38;
+
+$teal-200: #E9F7F8;
+$teal-300: #80C5CE;
+$teal-400: #00A3B8;
+$teal-500: #008191;
+
+$red-400: #ED1C24;
+$red-500: #A80006;
+
+$yellow-400: #FA0;
+
+// Box shadows
+$box-shadow: rgba($black, 0.1);
+$box-shadow-secondary: rgba($black, 0.24);
+
+// Layout
+$rhythm: 0.5rem !default; // The vertical rhythm and vertical spacing to align items consistently.
+$content-width: 64rem;
+
+// Media Queries
+$medium-bp: 'screen and (min-width: 40rem)';
+$large-bp: 'screen and (min-width: 64rem)';

@@ -1,0 +1,66 @@
+backend:
+  name: github
+  branch: develop # Branch where CMS changes will be committed
+  repo: Bright-Path/brightpath.github.io # Path to your GitLab repository
+media_folder: "src/upload" # Media files will be stored in the repo under images/uploads
+public_folder: "/upload"
+
+collections:
+  - name: "home"
+    label: "Home"
+    folder: "src/content/home"
+    slug: "{{slug}}"
+    identifier_field: name
+    create: true
+    fields:
+      - name: "name"
+        widget: "string"
+        required: true
+      - label: "Meta Title"
+        name: "meta_title"
+        hint: "The SEO page title for this content"
+        widget: "string"
+      - label: "Meta Description"
+        name: "meta_description"
+        hint: "The SEO description for this content"
+        widget: "string"
+      - label: "Meta Image"
+        name: "meta_image"
+        hint: "The social preview for this content"
+        widget: "image"
+      - label: "Featured Title"
+        name: "title"
+        widget: "string"
+        required: false
+      - label: "Feature Description"
+        name: "markdown"
+        widget: "string"
+        required: false
+      - label: "Featured Action"
+        name: "action"
+        widget: "string"
+        required: false
+      - label: "Featured Image"
+        name: "hero"
+        widget: "image"
+      - label: "Featured Links"
+        name: "links"
+        widget: "list"
+        required: false
+        fields:
+          - label: "Link Image"
+            name: "image"
+            widget: "image"
+            required: false
+          - label: "Link Content"
+            name: "link_content"
+            widget: "markdown"
+            required: false
+      - label: "Tags"
+        name: "tags"
+        widget: "hidden"
+        default: "home"
+      - label: "Body"
+        name: "content"
+        widget: "markdown"
+        required: false
