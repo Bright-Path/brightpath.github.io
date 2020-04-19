@@ -12,8 +12,10 @@ body {
     color: var(--body-color);
     font-family: var(--primary-font);
     font-weight: var(--default-weight);
+    line-height: 1.2;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 h1,
@@ -26,9 +28,15 @@ h6 {
     font-weight: var(--heading-font-weight);
 }
 
+p {
+    line-height: 1.5;
+}
+
 img {
     display: block;
     max-width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
     width: 100%;
 }
 
@@ -47,7 +55,7 @@ img {
     box-sizing: border-box;
     display: block;
     margin: 0 auto;
-    max-width: 64rem;
+    max-width: 48rem;
     padding: 2rem 2rem 5rem;
     width: 100%;
 }
