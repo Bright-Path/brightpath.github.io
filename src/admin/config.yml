@@ -71,7 +71,7 @@ collections:
         default: "home"
   - name: "beers"
     label: "Beers"
-    folder: "src/content/beers"
+    folder: "src/content/beer"
     fields:
       - name: "name"
         widget: "string"
