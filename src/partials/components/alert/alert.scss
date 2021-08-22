@@ -1,15 +1,15 @@
-.bpbc-global-alert {
+.bp-global-alert {
     padding-bottom: 0;
 }
 
-.bpbc-alert {
+.bp-alert {
     background-color: var(--alert-bg);
     border-radius: 4px;
     display: flex;
     overflow: hidden;
 }
 
-.bpbc-alert-icon-container {
+.bp-alert-icon-container {
     background-color: var(--alert-icon-bg);
     display: flex;
     align-items: center;
@@ -18,12 +18,12 @@
     width: 3rem;
 }
 
-.bpbc-alert-icon {
+.bp-alert-icon {
     margin: auto;
     max-width: 100%;
 }
 
-.bpbc-alert-message {
+.bp-alert-message {
     color: var(--alert-text);
     padding: $rhythm * 2;
 
@@ -37,13 +37,13 @@
     }
 }
 
-.bpbc-alert-title {
+.bp-alert-title {
     font-size: var(--font-size-base);
     font-weight: var(--heading-font-weight);
     margin: 0 0 0.5rem;
 }
 
-.bpbc-alert-description {
+.bp-alert-description {
     font-size: var(--font-size-sm);
     font-weight: var(--weight-medium);
     margin: 0;

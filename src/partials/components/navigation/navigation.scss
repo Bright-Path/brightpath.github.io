@@ -1,10 +1,10 @@
-.bpbc-navigation-list {
+.bp-navigation-list {
     margin: 0;
     padding: 0;
     font-size: 0;
 }
 
-.bpbc-navigation-list-item {
+.bp-navigation-list-item {
     display: inline-flex;
     width: 25%;
 
@@ -38,7 +38,7 @@
             transition: opacity 500ms cubic-bezier(0.19, 1, 0.22, 1);
         }
 
-        &.bpbc-navigation-link-active {
+        &.bp-navigation-link-active {
             background-color: var(--navigation-link-active-bg-color);
             color: var(--navigation-link-active-color);
 
