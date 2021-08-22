@@ -8,7 +8,7 @@ public_folder: "/upload"
 collections:
   - name: "coming"
     label: "Coming Soon"
-    folder: "src/content/home"
+    folder: "src/content/coming"
     fields:
       - name: "name"
         widget: "string"
