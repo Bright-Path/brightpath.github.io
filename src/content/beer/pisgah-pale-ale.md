@@ -1,5 +1,5 @@
 ---
-name: Helles Lager
+name: Pisgah Pale Ale
 tap: false
 canned: false
 tags: beer
