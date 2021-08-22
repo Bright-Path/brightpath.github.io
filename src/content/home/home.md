@@ -1,8 +1,10 @@
 ---
-name: Coming Soon
+name: Home
 title: Bright Path Brewing
 content: >-
-  ![A drawing of a hop](/upload/brightpath-logo-large.jpg "Bright Path Brewing, Jim Thorpe, PA")
+  ![A drawing of a hop](/upload/bright_path_logo.jpg "Bright Path Brewing, Jim
+  Thorpe, PA")
+
 
   ## Coming Soon
 
@@ -10,3 +12,4 @@ content: >-
   Pennsylvania.
 tags: home
 ---
+
