@@ -72,6 +72,7 @@ collections:
   - name: "beers"
     label: "Beers"
     folder: "src/content/beer"
+    create: true
     fields:
       - name: "name"
         widget: "string"
@@ -120,6 +121,7 @@ collections:
   - name: "locations"
     label: "Locations"
     folder: "src/content/locations"
+    create: true
     fields:
       - name: "name"
         widget: "string"
@@ -152,3 +154,48 @@ collections:
         name: "tags"
         widget: "hidden"
         default: "locations"
+  - name: "info"
+    label: "Brewery Information"
+    folder: "src/content/info"
+    fields:
+      - name: "name"
+        widget: "string"
+        required: true
+      - label: "Logo"
+        name: "logo"
+        widget: "image"
+        required: false
+      - label: "Street Address"
+        name: "address"
+        widget: "string"
+        description: "123 Fake St"
+        required: true
+      - label: "City, State, Zip"
+        name: "address2"
+        widget: "string"
+        description: "Jim Thorpe, PA 18229"
+        required: true
+      - label: "Phone Number"
+        name: "phone"
+        widget: "string"
+        required: false
+      - label: "Email"
+        name: "email"
+        widget: "string"
+        required: false
+      - label: "Instagram"
+        name: "instagram"
+        widget: "string"
+        required: false
+      - label: "Facebook"
+        name: "facebook"
+        widget: "string"
+        required: false
+      - label: "Twitter"
+        name: "twitter"
+        widget: "string"
+        required: false
+      - label: "Tags"
+        name: "tags"
+        widget: "hidden"
+        default: "info"
