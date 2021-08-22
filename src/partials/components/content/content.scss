@@ -1,12 +1,12 @@
-.bpbc-content {
+.bp-content {
     display: flex;
 
-    &.bpbc-has-sidebar {
+    &.bp-has-sidebar {
         flex-direction: column;
     }
 }
 
-.bpbc-markdown {
+.bp-markdown {
     h1 {
         font-size: var(--h1-font-size);
         line-height: 1.2;
@@ -91,15 +91,15 @@
 }
 
 @media #{$large-bp} {
-    .bpbc-content.bpbc-has-sidebar {
+    .bp-content.bp-has-sidebar {
         justify-content: space-between;
         flex-direction: row;
 
-        .bpbc-article {
+        .bp-article {
             width: 56.25%;
         }
 
-        .bpbc-sidebar {
+        .bp-sidebar {
             width: 31.25%;
         }
     }

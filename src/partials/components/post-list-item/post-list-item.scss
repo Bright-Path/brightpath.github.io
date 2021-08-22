@@ -1,4 +1,4 @@
-.bpbc-post-grid {
+.bp-post-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-.bpbc-post-item {
+.bp-post-item {
     position: relative;
     width: 100%;
     min-height: 175px;
@@ -14,7 +14,7 @@
     list-style: none;
 }
 
-.bpbc-post-link {
+.bp-post-link {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -34,7 +34,7 @@
         top: 2rem;
     }
 
-    .bpbc-post-link-icon-path {
+    .bp-post-link-icon-path {
         transition: 200ms all ease;
     }
 
@@ -43,13 +43,13 @@
         border: 1px solid var(--post-list-item-hover-border-color);
         box-shadow: 0 12px 24px 0 var(--box-shadow-secondary);
 
-        .bpbc-post-link-icon-path {
+        .bp-post-link-icon-path {
             fill: var(--post-list-item-hover);
         }
     }
 }
 
-.bpbc-post-link-title {
+.bp-post-link-title {
     font-size: 1.2rem;
     line-height: 1.25;
     color: var(--post-list-item-color);
@@ -58,7 +58,7 @@
 }
 
 @media #{$medium-bp} {
-    .bpbc-post-item {
+    .bp-post-item {
         width: 48%;
         margin-right: 4%;
 
@@ -69,7 +69,7 @@
 }
 
 @media #{$large-bp} {
-    .bpbc-post-item {
+    .bp-post-item {
         width: 31.25%;
         margin-right: 3.125%;
 

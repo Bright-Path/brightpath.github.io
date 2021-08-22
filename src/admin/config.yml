@@ -6,6 +6,25 @@ media_folder: "src/upload" # Media files will be stored in the repo under images
 public_folder: "/upload"
 
 collections:
+  - name: "coming"
+    label: "Coming Soon"
+    folder: "src/content/coming"
+    fields:
+      - name: "name"
+        widget: "string"
+        required: true
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        required: false
+      - label: "Body"
+        name: "content"
+        widget: "markdown"
+        required: false
+      - label: "Tags"
+        name: "tags"
+        widget: "hidden"
+        default: "coming"
   - name: "home"
     label: "Home"
     folder: "src/content/home"
@@ -22,8 +41,8 @@ collections:
         widget: "string"
         required: false
       - label: "Feature Description"
-        name: "markdown"
-        widget: "string"
+        name: "description"
+        widget: "markdown"
         required: false
       - label: "Featured Action"
         name: "action"
@@ -50,3 +69,141 @@ collections:
         name: "tags"
         widget: "hidden"
         default: "home"
+  - name: "beers"
+    label: "Beers"
+    folder: "src/content/beer"
+    identifier_field: name
+    create: true
+    fields:
+      - name: "name"
+        widget: "string"
+        required: true
+      - label: "ABV"
+        name: "abv"
+        widget: "string"
+        required: false
+      - label: "Short Description"
+        name: "description"
+        widget: "text"
+        required: false
+      - label: "Available on Tap"
+        name: "tap"
+        widget: "boolean"
+        default: false
+      - label: "Available in Cans"
+        name: "canned"
+        widget: "boolean"
+        default: false
+      - label: "Long Description"
+        name: "description"
+        widget: "markdown"
+        required: false
+      - label: "Logo"
+        name: "logo"
+        widget: "image"
+        required: false
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        required: false
+        fields:
+        - name: "image"
+          label: "Image"
+          widget: "image"
+          required: true
+        - name: "description"
+          label: "Description"
+          widget: "markdown"
+          required: false
+      - label: "Tags"
+        name: "tags"
+        widget: "hidden"
+        default: "beer"
+  - name: "locations"
+    label: "Locations"
+    folder: "src/content/locations"
+    create: true
+    identifier_field: name
+    fields:
+      - name: "name"
+        widget: "string"
+        required: true
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        required: false
+      - label: "Street Address"
+        name: "address"
+        widget: "string"
+        description: "123 Fake St"
+        required: true
+      - label: "City, State, Zip"
+        name: "address2"
+        widget: "string"
+        description: "Jim Thorpe, PA 18229"
+        required: true
+      - label: "Phone Number"
+        name: "phone"
+        widget: "string"
+        description: "specific to this location"
+        required: false
+      - label: "Email"
+        name: "email"
+        widget: "string"
+        description: "specific to this location"
+        required: false
+      - label: "Tags"
+        name: "tags"
+        widget: "hidden"
+        default: "locations"
+  - name: "info"
+    label: "Brewery Information"
+    folder: "src/content/info"
+    identifier_field: name
+    fields:
+      - name: "name"
+        widget: "string"
+        required: true
+      - label: "Logo"
+        name: "logo"
+        widget: "image"
+        required: false
+      - label: "Street Address"
+        name: "address"
+        widget: "string"
+        description: "123 Fake St"
+        required: true
+      - label: "City, State, Zip"
+        name: "address2"
+        widget: "string"
+        description: "Jim Thorpe, PA 18229"
+        required: true
+      - label: "Phone Number"
+        name: "phone"
+        widget: "string"
+        required: false
+      - label: "Email"
+        name: "email"
+        widget: "string"
+        required: false
+      - label: "Social Media"
+        name: "social"
+        widget: "list"
+        required: false
+        fields:
+          - label: "Platform"
+            name: "platform"
+            widget: "string"
+            required: true
+          - label: "Handle"
+            name: "handle"
+            widget: "string"
+            required: true
+          - label: "URL"
+            name: "url"
+            widget: "string"
+            required: true
+      - label: "Tags"
+        name: "tags"
+        widget: "hidden"
+        default: "info"

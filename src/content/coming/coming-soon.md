@@ -1,5 +1,5 @@
 ---
-name: Home
+name: Coming Soon
 title: Bright Path Brewing
 content: >-
   ![A drawing of a hop](/upload/bright_path_logo.jpg "Bright Path Brewing, Jim
@@ -10,6 +10,5 @@ content: >-
 
   Craft Brewery focusing on lager and session beer based in Jim Thorpe,
   Pennsylvania.
-tags: home
+tags: coming
 ---
-

@@ -1,10 +1,10 @@
 {% macro nav(home, pages, posts, external, current_page) %}
-    <nav class="bpbc-navigation">
-        <ul class="bpbc-navigation-list">
+    <nav class="bp-navigation">
+        <ul class="bp-navigation-list">
             {% if home -%}
                 {% set pageName = 'home' %}
-                <li class="bpbc-navigation-list-item">
-                    <a href="/" class="bpbc-navigation-link {%if current_page === pageName %}bpbc-navigation-link-active{% endif %}">
+                <li class="bp-navigation-list-item">
+                    <a href="/" class="bp-navigation-link {%if current_page === pageName %}bp-navigation-link-active{% endif %}">
                         Home
                     </a>
                 </li>
@@ -14,8 +14,8 @@
                 {% for page in pages -%}
                     {% set section = page.section %}
 
-                    <li class="bpbc-navigation-list-item">
-                        <a href="/{{ section }}" class="bpbc-navigation-link {%if current_page === section %}bpbc-navigation-link-active{% endif %}">
+                    <li class="bp-navigation-list-item">
+                        <a href="/{{ section }}" class="bp-navigation-link {%if current_page === section %}bp-navigation-link-active{% endif %}">
                             {{ page.link_text }}
                         </a>
                     </li>
@@ -26,8 +26,8 @@
                 {% for post in posts -%}
                     {% set post_link = post.post_link %}
 
-                    <li class="bpbc-navigation-list-item">
-                        <a href="/{{ post_link }}" class="bpbc-navigation-link {%if current_page === post_link %}bpbc-navigation-link-active{% endif %}">
+                    <li class="bp-navigation-list-item">
+                        <a href="/{{ post_link }}" class="bp-navigation-link {%if current_page === post_link %}bp-navigation-link-active{% endif %}">
                             {{ post.link_text }}
                         </a>
                     </li>
@@ -36,8 +36,8 @@
 
             {% if external.length > 0 -%}
                 {% for link in external -%}
-                    <li class="bpbc-navigation-list-item">
-                        <a href="{{ link.url }}" class="bpbc-navigation-link" target="_blank">
+                    <li class="bp-navigation-list-item">
+                        <a href="{{ link.url }}" class="bp-navigation-link" target="_blank">
                             {{ link.name }}
                         </a>
                     </li>

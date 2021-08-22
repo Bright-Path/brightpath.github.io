@@ -1,0 +1,23 @@
+---
+renderData:
+  section: "coming"
+pagination:
+    data: collections.coming
+    alias: coming
+    size: 1
+permalink: "/"
+---
+
+{% extends "layouts/main.njk" %}
+
+{% block content %}
+
+    {% if coming.data.title -%}
+        <h1 class="bp-accessible-text">{{ coming.data.title }}</h1>
+    {%- endif %}
+
+    {% if coming.data.content -%}
+        {{ coming.data.content | markdown | safe }}
+    {%- endif %}
+
+{% endblock %}

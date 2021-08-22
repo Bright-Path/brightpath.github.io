@@ -47,11 +47,11 @@ img {
 
    Header component height + footer component height = 271px. */
 
-.bpbc-main {
+.bp-main {
     min-height: calc(100vh - 16.938rem);
 }
 
-.bpbc-container {
+.bp-container {
     box-sizing: border-box;
     display: block;
     margin: 0 auto;
@@ -76,7 +76,7 @@ input {
     box-sizing: border-box;
 }
 
-.bpbc-accessible-text {
+.bp-accessible-text {
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
     height: 1px;
