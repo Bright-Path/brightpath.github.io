@@ -72,6 +72,7 @@ collections:
   - name: "beers"
     label: "Beers"
     folder: "src/content/beer"
+    identifier_field: name
     create: true
     fields:
       - name: "name"
@@ -122,6 +123,7 @@ collections:
     label: "Locations"
     folder: "src/content/locations"
     create: true
+    identifier_field: name
     fields:
       - name: "name"
         widget: "string"
@@ -157,6 +159,7 @@ collections:
   - name: "info"
     label: "Brewery Information"
     folder: "src/content/info"
+    identifier_field: name
     fields:
       - name: "name"
         widget: "string"
@@ -183,18 +186,23 @@ collections:
         name: "email"
         widget: "string"
         required: false
-      - label: "Instagram"
-        name: "instagram"
-        widget: "string"
+      - label: "Social Media"
+        name: "social"
+        widget: "list"
         required: false
-      - label: "Facebook"
-        name: "facebook"
-        widget: "string"
-        required: false
-      - label: "Twitter"
-        name: "twitter"
-        widget: "string"
-        required: false
+        fields:
+          - label: "Platform"
+            name: "platform"
+            widget: "string"
+            required: true
+          - label: "Handle"
+            name: "handle"
+            widget: "string"
+            required: true
+          - label: "URL"
+            name: "url"
+            widget: "string"
+            required: true
       - label: "Tags"
         name: "tags"
         widget: "hidden"
