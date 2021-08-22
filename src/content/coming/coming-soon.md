@@ -10,5 +10,5 @@ content: >-
 
   Craft Brewery focusing on lager and session beer based in Jim Thorpe,
   Pennsylvania.
-tags: home
+tags: coming
 ---
