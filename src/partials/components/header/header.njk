@@ -1,5 +1,5 @@
 {% from "components/logo/logo.njk" import logo as logo %}
-{% from "components/navigation/navigation.njk" import nav as nav %}
+{# {% from "components/navigation/navigation.njk" import nav as nav %} #}
 
 {% macro header(image, client, title, nav_home, nav_pages, current_section) %}
     <header class="bp-header">
@@ -14,11 +14,11 @@
                     client
                 ) }}
 
-                {{ nav(
+                {# {{ nav(
                     nav_home,
                     nav_pages,
                     current_section
-                ) }}
+                ) }} #}
             </div>
         </div>
     </header>
