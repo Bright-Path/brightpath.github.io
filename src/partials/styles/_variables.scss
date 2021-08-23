@@ -36,5 +36,6 @@ $rhythm: 0.5rem !default; // The vertical rhythm and vertical spacing to align i
 $content-width: 64rem;
 
 // Media Queries
+$small-bp: 'screen and (min-width: 30rem)';
 $medium-bp: 'screen and (min-width: 40rem)';
 $large-bp: 'screen and (min-width: 64rem)';

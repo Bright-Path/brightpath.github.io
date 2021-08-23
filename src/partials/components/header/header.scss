@@ -1,24 +1,15 @@
 .bp-header {
     background-color: var(--header-bg-color);
+    min-height: 4rem;
 
     .bp-container {
-        padding-bottom: 0;
+        padding: 0 0.75rem;
     }
 
     .bp-header-title-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: $rhythm;
-        margin-bottom: $rhythm * 4;
-    }
-
-    .bp-title {
-        margin-top: $rhythm * 3;
-        margin-bottom: 0;
-        color: var(--header-text-color);
-        font-weight: var(--heading-font-weight);
-        font-size: var(--h3-font-size);
     }
 }
 
@@ -26,11 +17,6 @@
     .bp-header {
         .bp-header-title-content {
             flex-direction: row;
-        }
-
-        .bp-title {
-            margin-top: 0;
-            margin-left: $rhythm * 4;
         }
     }
 }

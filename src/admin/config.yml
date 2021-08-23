@@ -157,16 +157,44 @@ collections:
         widget: "hidden"
         default: "locations"
   - name: "info"
-    label: "Brewery Information"
+    label: "Brewery Information and Website COnfiguration"
     folder: "src/content/info"
     identifier_field: name
     fields:
       - name: "name"
+        label: "Brewery Name"
         widget: "string"
         required: true
-      - label: "Logo"
+      - label: "Site Header and Navigation"
+        name: "header"
+        widget: "object"
+        summary: "Configuration of the Header and Navigation Bar"
+        fields:
+        - label: "Nav Logo"
+          name: "logo"
+          widget: "image"
+          required: true
+        - label: "Show 'Home' in Navigation?"
+          name: "showHome"
+          widget: "boolean"
+          default: true
+        - label: "Site Navigation"
+          name: "nav"
+          widget: "list"
+          required: false
+          fields:
+            - label: "Page Name"
+              name: "link_text"
+              widget: "string"
+              required: true
+            - label: "URL"
+              name: "url"
+              widget: "string"
+              required: true
+      - label: "Main Logo"
         name: "logo"
         widget: "image"
+        description: "The main logo of the brewery - not used in the header"
         required: false
       - label: "Street Address"
         name: "address"
