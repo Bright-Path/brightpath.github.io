@@ -6,10 +6,11 @@
 .bp-logo-link {
     display: block;
     height: 3.125rem;
-    max-width: 10rem;
+    width: auto;
 }
 
 .bp-logo-image {
-    max-width: 100%;
-    max-height: 100%;
+    display: block;
+    height: 100%;
+    width: auto;
 }
