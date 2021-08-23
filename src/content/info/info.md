@@ -1,5 +1,5 @@
 ---
-name: Brewery Information
+name: Bright Path Brewing
 header:
   logo: /upload/brightpath-logo-square.png
   nav:
