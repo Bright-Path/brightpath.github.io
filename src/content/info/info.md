@@ -1,5 +1,15 @@
 ---
 name: Brewery Information
+header:
+  logo: /upload/brightpath-logo-square.png
+  nav:
+    - link_text: Our Beers
+      url: beer
+    - link_text: Visit Us
+      url: contact
+    - link_text: About Us
+      url: about
+  showHome: true
 logo: /upload/bright_path_logo.jpg
 address: 1215 North St
 address2: 'Jim Thorpe, PA 18229'
