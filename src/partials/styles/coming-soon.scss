@@ -109,22 +109,6 @@ svg {
     }
 }
 
-fieldset {
-    border: none;
-    margin: 0;
-    padding: 0;
-}
-
-legend {
-    display: block;
-    margin: 0 0 0.75rem;
-    padding: 0;
-}
-
-input {
-    box-sizing: border-box;
-}
-
 .bp-accessible-text {
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
@@ -135,13 +119,3 @@ input {
     padding: 0;
     position: absolute;
 }
-
-@import '../components/header/header';
-@import '../components/navigation/navigation';
-@import '../components/logo/logo';
-@import '../components/hero/hero';
-@import '../components/related-links/related-links';
-@import '../components/content/content';
-@import '../components/post-list-item/post-list-item';
-@import '../components/alert/alert';
-@import '../components/footer/footer';
