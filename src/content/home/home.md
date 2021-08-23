@@ -1,15 +1,15 @@
 ---
 name: Home
-title: Bright Path Brewing
-content: >-
-  ![A drawing of a hop](/upload/bright_path_logo.jpg "Bright Path Brewing, Jim
-  Thorpe, PA")
-
-
-  ## Coming Soon
-
-  Craft Brewery focusing on lager and session beer based in Jim Thorpe,
-  Pennsylvania.
+hero: /upload/brewery-interior.jpg
+title: We're Getting There
+description: >-
+  We have been making progress on the building and are planning to open in late
+  fall of this year. Our tanks are in and we are on to fitting the pipes. Follow
+  the progress on our [Instagram
+  (@brightpathbrewing)](https://www.instagram.com/brightpathbrewing) and
+  [Facebook (Bright Path
+  Brewing)](https://www.facebook.com/Bright-Path-Brewing-104399674368859) pages.
+content: ''
 tags: home
 ---
 

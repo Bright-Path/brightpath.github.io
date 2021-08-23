@@ -92,16 +92,29 @@
 
 
     // --------------------------------------------------
+    // @group Coming Soon
+    // --------------------------------------------------
+
+    // Background color for the body tag.
+
+    --soon-bg: #{$bp-dark};
+
+    // Font color for the vody tag.
+
+    --soon-color: #{$bp-light};
+
+
+    // --------------------------------------------------
     // @group Body
     // --------------------------------------------------
 
     // Background color for the body tag.
 
-    --body-bg: #{$bp-dark};
+    --body-bg: #{$white};
 
     // Font color for the body tag.
 
-    --body-color: #{$bp-light};
+    --body-color: #{$bp-dark};
 
     // Box shadow.
 
@@ -149,7 +162,7 @@
 
     // Footer background color.
 
-    --footer-bg-color: #{$black};
+    --footer-bg-color: #{$bp-dark};
 
     // Footer text color.
 
@@ -161,18 +174,18 @@
 
     // Footer link hover color.
 
-    --footer-link-hover: #{white};
+    --footer-link-hover: #{$bp-gold};
 
 
     // Header
 
     // Header background color.
 
-    --header-bg-color: #{$teal-400};
+    --header-bg-color: #{$bp-gold};
 
     // Header text color.
 
-    --header-text-color: #{$white};
+    --header-text-color: #{$bp-dark};
 
 
     // Hero
@@ -198,23 +211,23 @@
 
     // Navigation link background color.
 
-    --navigation-link-bg-color: #{$teal-500};
+    --navigation-link-bg-color: #{$bp-gold};
 
     // Navigation link hover background color.
 
-    --navigation-link-hover-bg-color: #{$teal-300};
+    --navigation-link-hover-bg-color: #{$bp-dark};
 
     // Navigation link active background color.
 
-    --navigation-link-active-bg-color: #{$white};
+    --navigation-link-active-bg-color: #{$bp-gold};
 
     // Navigation link color.
 
-    --navigation-link-color: #{$white};
+    --navigation-link-color: #{$bp-dark};
 
     // Navigation link hover color.
 
-    --navigation-link-hover-color: #{$black};
+    --navigation-link-hover-color: #{$white};
 
     // Navigation link active color.
 

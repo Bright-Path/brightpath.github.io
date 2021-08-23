@@ -5,19 +5,26 @@ pagination:
     data: collections.home
     alias: home
     size: 1
-permalink: "/home.html"
+permalink: "/home/"
 ---
 
-{% extends "layouts/main.njk" %}
+{% extends "layouts/home.njk" %}
+{% from "components/hero/hero.njk" import hero as hero %}
 
 {% block content %}
+    {% if home.data.hero -%}
+        <section class="bp-home-content">
+            <h2>{{ home.data.title }}</h2>
 
-    {% if home.data.title -%}
-        <h1 class="bp-accessible-text">{{ home.data.title }}</h1>
+            {% if home.data.description -%}
+                {{ home.data.description | markdown | safe }}
+            {%- endif %}
+        </section>
+
+        <div class="bp-home-detail" style="background-image: url({{ home.data.hero }})"></div>
     {%- endif %}
 
     {% if home.data.content -%}
         {{ home.data.content | markdown | safe }}
     {%- endif %}
-
 {% endblock %}

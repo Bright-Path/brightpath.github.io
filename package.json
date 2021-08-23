@@ -39,12 +39,13 @@
     "terser": "4.6.6"
   },
   "scripts": {
-    "build": "npm run clean && npm run build:eleventy && npm run build:sass && npm run build:rollup && rimraf dist/content",
+    "build": "npm run clean && npm run build:eleventy && npm run build:sass && npm run build:sass:temp && npm run build:rollup && rimraf dist/content",
     "build:eleventy": "npx @11ty/eleventy",
     "build:rollup": "npm run build:rollup:admin && npm run build:rollup:frontend",
     "build:rollup:admin": "rollup -c rollupAdmin.config.js --silent",
     "build:rollup:frontend": "rollup -c rollup.config.js && rimraf dist/assets/js/bp-temp.js",
     "build:sass": "node-sass src/partials/styles/global.scss dist/assets/styles/bp-uncompressed.css && ./node_modules/.bin/postcss dist/assets/styles/bp-uncompressed.css > dist/assets/styles/bp.css && rimraf dist/assets/styles/bp-uncompressed.css",
+    "build:sass:temp": "node-sass src/partials/styles/coming-soon.scss dist/assets/styles/bp-coming-uncompressed.css && ./node_modules/.bin/postcss dist/assets/styles/bp-coming-uncompressed.css > dist/assets/styles/bp-coming.css && rimraf dist/assets/styles/bp-coming-uncompressed.css",
     "clean": "rimraf dist",
     "lint": "npm run lint:js && npm run lint:scss",
     "lint:js": "eslint src",
@@ -54,7 +55,7 @@
     "watch": "concurrently \"npm run watch:js\" \"npm run watch:markup\" \"npm run watch:sass\"",
     "watch:js": "onchange 'src/**/*.js' -- concurrently \"npm run lint:js\" \"npm run build:rollup:frontend\"",
     "watch:markup": "onchange 'src/**/*.njk' -- npm run build:eleventy",
-    "watch:sass": "onchange 'src/**/*.scss' -- concurrently \"npm run lint:scss\" \"npm run build:sass\""
+    "watch:sass": "onchange 'src/**/*.scss' -- concurrently \"npm run lint:scss\" \"npm run build:sass\" \"npm run build:sass:temp\""
   },
   "repository": {
     "type": "git",

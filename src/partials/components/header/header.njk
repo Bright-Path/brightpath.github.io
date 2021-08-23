@@ -1,8 +1,12 @@
 {% from "components/logo/logo.njk" import logo as logo %}
-{% from "components/navigation/navigation.njk" import nav as nav %}
+{# {% from "components/navigation/navigation.njk" import nav as nav %} #}
 
-{% macro header(image, client, title, nav_home, nav_pages, nav_posts, nav_external, section) %}
+{% macro header(image, client, title, nav_home, nav_pages, current_section) %}
     <header class="bp-header">
+        <h1 class="bp-accessible-text">
+            {{ title }}
+        </h1>
+
         <div class="bp-container">
             <div class="bp-header-title-content">
                 {{ logo(
@@ -10,18 +14,12 @@
                     client
                 ) }}
 
-                <h1 class="bp-title">
-                    {{ title }}
-                </h1>
+                {# {{ nav(
+                    nav_home,
+                    nav_pages,
+                    current_section
+                ) }} #}
             </div>
-
-            {{ nav(
-                nav_home,
-                nav_pages,
-                nav_posts,
-                nav_external,
-                section
-            ) }}
         </div>
     </header>
 {% endmacro %}

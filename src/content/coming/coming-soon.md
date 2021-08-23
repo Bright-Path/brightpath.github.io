@@ -8,7 +8,6 @@ content: >-
 
   ## Coming Soon
 
-  Craft Brewery focusing on lager and session beer based in Jim Thorpe,
-  Pennsylvania.
+  Craft brewery focusing on lager and session beer.
 tags: coming
 ---

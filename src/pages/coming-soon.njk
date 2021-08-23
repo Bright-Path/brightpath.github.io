@@ -8,16 +8,53 @@ pagination:
 permalink: "/"
 ---
 
-{% extends "layouts/main.njk" %}
+{% extends "layouts/coming-soon.njk" %}
 
 {% block content %}
-
-    {% if coming.data.title -%}
-        <h1 class="bp-accessible-text">{{ coming.data.title }}</h1>
+    {% set pageData = coming.data %}
+    {% if collections.info -%}
+        {% set info = collections.info[0].data %}
+    {% else %}
+        {% set info = null %}
+    {%- endif %}
+    {% if pageData.title -%}
+        <header>
+            <h1 class="bp-accessible-text">{{ pageData.title }}</h1>
+        </header>
     {%- endif %}
 
-    {% if coming.data.content -%}
-        {{ coming.data.content | markdown | safe }}
+    {% if pageData.content -%}
+        <section>
+            {{ pageData.content | markdown | safe }}
+
+            {% if info.address -%}
+                {% if info.address2 -%}
+                    <p>{{ info.address }}<br />
+                    {{ info.address2 }}</p>
+                {% else %}
+                    <p>{{ info.address }}</p>
+                {%- endif %}
+            {%- endif %}
+        </section>
+    {%- endif %}
+
+    {% if info.social -%}
+        <footer>
+            <ul class="bp-social-list">
+                {% for item in info.social -%}
+                    {% set iconPath = "/assets/images/" + item.platform.toLowerCase() + ".svg" %}
+                    <li class="bp-social-item">
+                        <a href="{{item.url}}" class="bp-social-link" ref="noreferrer" target="_blank">
+                            <span class="bp-accessible-text">{{item.platform}}: </span>
+                            <span class="bp-social-icon" aria-hidden="true">
+                                {{ iconPath | svgContents | safe }}
+                            </span>
+                            <span class="bp-social-text">{{item.handle}}</span>
+                        </a>
+                    </li>
+                {%- endfor %}
+            </ul>
+        </footer>
     {%- endif %}
 
 {% endblock %}

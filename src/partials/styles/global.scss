@@ -15,7 +15,6 @@ body {
     line-height: 1.2;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 h1,
@@ -32,30 +31,40 @@ p {
     line-height: 1.5;
 }
 
-img {
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+        color: var(--link-color-hover);
+    }
+}
+
+img,
+svg {
     display: block;
     max-width: 100%;
-    margin-bottom: 2rem;
-    margin-top: 3rem;
     width: 100%;
 }
 
-/* Added this min-height for now so that the footer sits at bottom
-   of screen on Support Page rather than in the middle of the screen.
-   This block of code can probably be removed once Support Page content
-   gets filled out a bit more.
-
-   Header component height + footer component height = 271px. */
+/* Added this min-height for now so that the footer ALWAYS sits at bottom of screen. */
 
 .bp-main {
-    min-height: calc(100vh - 16.938rem);
+    min-height: calc(100% - 7rem);
+}
+
+.bp-home {
+    height: calc(100% - 7rem);
+    margin: 0;
+    position: relative;
 }
 
 .bp-container {
     box-sizing: border-box;
     display: block;
     margin: 0 auto;
-    max-width: 48rem;
+    max-width: 90rem;
     padding: 2rem 2rem 5rem;
     width: 100%;
 }
@@ -85,6 +94,38 @@ input {
     overflow: hidden;
     padding: 0;
     position: absolute;
+}
+
+.bp-home-content {
+    display: block;
+    margin: 0;
+    padding: 2rem 1rem;
+}
+
+.bp-home-detail {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    width: 100vw;
+}
+
+@media #{$small-bp} {
+    .bp-home-content {
+        height: calc(100vh - 7rem);
+        padding: 3rem 2rem;
+        width: 40vw;
+    }
+
+    .bp-home-detail {
+        bottom: 0;
+        height: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 60vw;
+        z-index: -1;
+    }
 }
 
 @import '../components/header/header';

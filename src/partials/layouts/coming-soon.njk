@@ -21,29 +21,12 @@
     <meta property="og:site_name" content="Bright Path Brewing">
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="stylesheet" type="text/css" href="/assets/styles/bp.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/bp-coming.css">
 </head>
 <body class="bp">
-    {% from "components/header/header.njk" import header as header %}
-    {% from "components/footer/footer.njk" import footer as footer %}
-
-    {% set info = collections.info[0].data %}
-    {% set headerInfo = info.header %}
-    {% set logoAlt = image.name + ' logo' %}
-    {# logo image, logo alt, site title, nav_home, nav_pages, section #}
-    {{ header(
-        headerInfo.logo,
-        logoAlt,
-        info.name,
-        headerInfo.showHome,
-        headerInfo.nav
-    ) }}
-
-    {% block template %}
-    {% endblock %}
-
-    {% set footerInfo = info.footer %}
-    {% set social = info.social %}
-    {{ footer(footerInfo, social) }}
+    <main class="bp-main bp-container">
+        {% block content %}
+        {% endblock %}
+    </main>
 </body>
 </html>
