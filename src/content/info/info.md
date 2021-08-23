@@ -5,8 +5,6 @@ header:
   nav:
     - link_text: Our Beers
       url: beer
-    - link_text: Visit Us
-      url: contact
     - link_text: About Us
       url: about
   showHome: true
@@ -23,4 +21,3 @@ social:
     url: 'https://www.facebook.com/Bright-Path-Brewing-104399674368859'
 tags: info
 ---
-
