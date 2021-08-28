@@ -1,0 +1,36 @@
+{% macro table(beers) %}
+    <div class="bp-table" role="table">
+        <div class="bp-table-headergroup" role="rowgroup">
+            <div class="bp-table-row bp-table-header" role="row">
+                <div class="bp-table-cell bp-table-heading bp-table-logo" role="columnheader" aria-sort="none" aria-hidden="true">
+                    <span class="bp-accessible-text">Logo</span>
+                </div>
+                <div class="bp-table-cell bp-table-heading bp-table-beer-name" role="columnheader" aria-sort="none">Beer Name</div>
+                <div class="bp-table-cell bp-table-heading" role="columnheader" aria-sort="none">ABV</div>
+                <div class="bp-table-cell bp-table-heading bp-accessible-text" role="columnheader" aria-sort="none">
+                    Description
+                </div>
+            </div>
+        </div>
+        {% for beer in beers -%}
+            <div class="bp-table-rowgroup" role="rowgroup">
+                <div class="bp-table-row" role="row">
+                    <div class="bp-table-cell bp-table-logo" role="cell" aria-hidden="true">
+                        <img src="{{ beer.data.logo }}" alt="" />
+                    </div>
+                    <div class="bp-table-content">
+                        <div class="bp-table-cell bp-table-beer-name" role="cell">
+                            <a class="bp-table-beer-link" href="{{ beer.data.name | cleanSlug }}">{{ beer.data.name }}</a>
+                        </div>
+                        <div class="bp-table-cell" role="cell">
+                            {{ beer.data.abv }}
+                        </div>
+                        <div class="bp-table-cell bp-table-beer-description" role="cell">
+                            {{ beer.data.description }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {%- endfor %}
+    </div>
+{% endmacro %}

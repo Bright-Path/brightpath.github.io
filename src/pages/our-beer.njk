@@ -5,6 +5,7 @@ permalink: "/beer/"
 ---
 
 {% extends "layouts/content.njk" %}
+{% from "components/table/table.njk" import table as table %}
 
 {% block content %}
     {% set content = collections.page[1].data %}
@@ -12,7 +13,7 @@ permalink: "/beer/"
 
     {% if content.hero -%}
         <div class="bp-page-detail" style="background-image: url({{ content.hero }})"></div>
-        
+
         <section class="bp-page-content">
             <h2>{{ content.title }}</h2>
 
@@ -27,10 +28,25 @@ permalink: "/beer/"
     {%- endif %}
 
     {% if beers.length -%}
-    <ul>
-        {% for beer in beers -%}
-        <li><a href="{{ beer.data.name | cleanSlug }}">{{ beer.data.name }}</a></li>
-        {%- endfor %}
-    </ul>
+        {% set on_tap = beers | filterBeers(beer.data.tap) %}
+        {% set in_cans = beers | filterBeers(beer.data.canned) %}
+
+        {% if on_tap.length -%}
+            <h3>Beers Available On Tap</h3>
+
+            {{ table(on_tap) }}
+        {%- endif %}
+
+        {% if in_cans.length -%}
+            <h3>Beers Available In Cans</h3>
+
+            {{ table(in_cans) }}
+        {%- endif %}
+
+        {% if on_tap.length === 0 and in_cans.length === 0 -%}
+            <h3>What's Brewing:</h3>
+
+            {{ table(beers) }}
+        {%- endif %}
     {%- endif %}
 {% endblock %}
