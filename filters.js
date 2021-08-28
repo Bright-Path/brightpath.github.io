@@ -1,6 +1,7 @@
 const Moment = require('moment');
 const git = require('git-rev-sync');
 const fs = require('fs-extra');
+const slugify = require('slugify');
 
 const date = (unformmatedDate) => new Moment(unformmatedDate).format('MM/DD/YYYY');
 
@@ -70,6 +71,11 @@ const sectionPosts = (posts, section) => posts.filter((post) => post.data.sectio
 
 const sliceData = (data, count) => data.slice(0, count);
 
+const cleanSlug = (slug) => slugify(slug, {
+    lower: true,
+    remove: /[*+~.()'"!:@]/g
+});
+
 const sortByDate = (data) => data.sort((item1, item2) => {
     const returnSecond = -1;
 
@@ -107,6 +113,7 @@ module.exports = [
     mergeData,
     sectionPosts,
     sliceData,
+    cleanSlug,
     sortByDate,
     svgContents,
     version
