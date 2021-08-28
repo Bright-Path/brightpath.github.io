@@ -1,6 +1,6 @@
 ---
 name: Helles Lager
-abv: "3.11"
+abv: 3.11%
 description: "You've killed me! Oh, you've killed me! Oh, how I wish I could
   believe or understand that! There's only one reasonable course of action now:
   kill Flexo! Do a flip! Look, everyone wants to be like Germany, but do we
