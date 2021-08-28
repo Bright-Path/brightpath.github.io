@@ -44,24 +44,7 @@ collections:
         name: "description"
         widget: "markdown"
         required: false
-      - label: "Featured Action"
-        name: "action"
-        widget: "string"
-        required: false
-      - label: "Featured Links"
-        name: "links"
-        widget: "list"
-        required: false
-        fields:
-          - label: "Link Image"
-            name: "image"
-            widget: "image"
-            required: false
-          - label: "Link Content"
-            name: "link_content"
-            widget: "markdown"
-            required: false
-      - label: "Body"
+      - label: "Additional Content"
         name: "content"
         widget: "markdown"
         required: false
@@ -69,6 +52,34 @@ collections:
         name: "tags"
         widget: "hidden"
         default: "home"
+  - name: "page"
+    label: "Pages"
+    create: true
+    folder: "src/content/page"
+    fields:
+      - name: "name"
+        widget: "string"
+        required: true
+      - label: "Featured Image"
+        name: "hero"
+        widget: "image"
+        required: false
+      - label: "Featured Title"
+        name: "title"
+        widget: "string"
+        required: false
+      - label: "Feature Description"
+        name: "description"
+        widget: "markdown"
+        required: false
+      - label: "Additional Content"
+        name: "content"
+        widget: "markdown"
+        required: false
+      - label: "Tags"
+        name: "tags"
+        widget: "hidden"
+        default: "page"
   - name: "beers"
     label: "Beers"
     folder: "src/content/beer"
@@ -95,7 +106,7 @@ collections:
         widget: "boolean"
         default: false
       - label: "Long Description"
-        name: "description"
+        name: "page_description"
         widget: "markdown"
         required: false
       - label: "Logo"
@@ -111,7 +122,7 @@ collections:
           label: "Image"
           widget: "image"
           required: true
-        - name: "description"
+        - name: "alt"
           label: "Description"
           widget: "markdown"
           required: false
@@ -157,7 +168,7 @@ collections:
         widget: "hidden"
         default: "locations"
   - name: "info"
-    label: "Brewery Information and Website COnfiguration"
+    label: "Brewery Information and Website Configuration"
     folder: "src/content/info"
     identifier_field: name
     fields:
@@ -201,7 +212,7 @@ collections:
         widget: "string"
         description: "123 Fake St"
         required: true
-      - label: "City, State, Zip"
+      - label: "City, State Zip"
         name: "address2"
         widget: "string"
         description: "Jim Thorpe, PA 18229"

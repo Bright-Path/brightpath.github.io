@@ -7,13 +7,19 @@
     scroll-behavior: smooth;
 }
 
-body {
+.bp {
+    align-items: stretch;
     background-color: var(--body-bg);
     color: var(--body-color);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     font-family: var(--primary-font);
     font-weight: var(--default-weight);
     line-height: 1.2;
+    justify-content: flex-start;
     margin: 0;
+    min-height: 100vh;
     padding: 0;
 }
 
@@ -48,16 +54,9 @@ svg {
     width: 100%;
 }
 
-/* Added this min-height for now so that the footer ALWAYS sits at bottom of screen. */
-
 .bp-main {
-    min-height: calc(100% - 7rem);
-}
-
-.bp-home {
-    height: calc(100% - 7rem);
+    flex-grow: 1;
     margin: 0;
-    position: relative;
 }
 
 .bp-container {

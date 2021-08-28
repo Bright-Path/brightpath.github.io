@@ -1,0 +1,15 @@
+---
+renderData:
+  section: "beer"
+pagination:
+    data: collections.beer
+    alias: beer
+    size: 1
+permalink: "/beer/{{ beer.data.name | cleanSlug }}/"
+---
+
+{% extends "layouts/content.njk" %}
+
+{% block content %}
+    BEER
+{% endblock %}
