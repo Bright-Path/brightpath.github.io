@@ -47,6 +47,7 @@
 .bp-navigation-link-active {
     background-color: var(--navigation-link-active-bg-color);
     color: var(--navigation-link-active-color);
+    text-decoration: underline;
 
     &:before {
         opacity: 1;

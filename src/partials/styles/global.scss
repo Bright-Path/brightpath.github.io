@@ -64,7 +64,9 @@ svg {
     display: block;
     margin: 0 auto;
     max-width: 90rem;
-    padding: 2rem 2rem 5rem;
+    overflow-x: hidden;
+    padding: 2rem 1rem;
+    position: relative;
     width: 100%;
 }
 
@@ -109,6 +111,24 @@ input {
     width: 100vw;
 }
 
+.bp-page-content {
+    margin-top: 40vh;
+    width: 100vw;
+}
+
+.bp-page-detail {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+}
+
 @media #{$small-bp} {
     .bp-home-content {
         height: calc(100vh - 7rem);
@@ -130,9 +150,4 @@ input {
 @import '../components/header/header';
 @import '../components/navigation/navigation';
 @import '../components/logo/logo';
-@import '../components/hero/hero';
-@import '../components/related-links/related-links';
-@import '../components/content/content';
-@import '../components/post-list-item/post-list-item';
-@import '../components/alert/alert';
 @import '../components/footer/footer';

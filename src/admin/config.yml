@@ -25,36 +25,10 @@ collections:
         name: "tags"
         widget: "hidden"
         default: "coming"
-  - name: "home"
-    label: "Home"
-    folder: "src/content/home"
-    fields:
-      - name: "name"
-        widget: "string"
-        required: true
-      - label: "Featured Image"
-        name: "hero"
-        widget: "image"
-        required: false
-      - label: "Featured Title"
-        name: "title"
-        widget: "string"
-        required: false
-      - label: "Feature Description"
-        name: "description"
-        widget: "markdown"
-        required: false
-      - label: "Additional Content"
-        name: "content"
-        widget: "markdown"
-        required: false
-      - label: "Tags"
-        name: "tags"
-        widget: "hidden"
-        default: "home"
   - name: "page"
     label: "Pages"
-    create: true
+    create: false
+    identifier_field: name
     folder: "src/content/page"
     fields:
       - name: "name"

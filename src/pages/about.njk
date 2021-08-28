@@ -7,5 +7,21 @@ permalink: "/about/"
 {% extends "layouts/content.njk" %}
 
 {% block content %}
-    ABOUT US
+    {% set content = collections.page[0].data %}
+
+    {% if content.hero -%}
+        <div class="bp-page-detail" style="background-image: url({{ content.hero }})"></div>
+
+        <section class="bp-page-content">
+            <h2>{{ content.title }}</h2>
+
+            {% if content.description -%}
+                {{ content.description | markdown | safe }}
+            {%- endif %}
+        </section>
+    {%- endif %}
+
+    {% if content.content -%}
+        {{ content.content | markdown | safe }}
+    {%- endif %}
 {% endblock %}

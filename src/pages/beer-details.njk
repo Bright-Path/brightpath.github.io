@@ -11,5 +11,5 @@ permalink: "/beer/{{ beer.data.name | cleanSlug }}/"
 {% extends "layouts/content.njk" %}
 
 {% block content %}
-    BEER
+    <h2>{{ beer.data.name }}</h2>
 {% endblock %}

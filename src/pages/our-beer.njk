@@ -5,8 +5,32 @@ permalink: "/beer/"
 ---
 
 {% extends "layouts/content.njk" %}
-{% from "components/hero/hero.njk" import hero as hero %}
 
 {% block content %}
-    OUR BEER
+    {% set content = collections.page[1].data %}
+    {% set beers = collections.beer %}
+
+    {% if content.hero -%}
+        <div class="bp-page-detail" style="background-image: url({{ content.hero }})"></div>
+        
+        <section class="bp-page-content">
+            <h2>{{ content.title }}</h2>
+
+            {% if content.description -%}
+                {{ content.description | markdown | safe }}
+            {%- endif %}
+        </section>
+    {%- endif %}
+
+    {% if content.content -%}
+        {{ content.content | markdown | safe }}
+    {%- endif %}
+
+    {% if beers.length -%}
+    <ul>
+        {% for beer in beers -%}
+        <li><a href="{{ beer.data.name | cleanSlug }}">{{ beer.data.name }}</a></li>
+        {%- endfor %}
+    </ul>
+    {%- endif %}
 {% endblock %}

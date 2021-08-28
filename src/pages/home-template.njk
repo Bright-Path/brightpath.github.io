@@ -1,29 +1,27 @@
 ---
 renderData:
   section: "home"
-pagination:
-    data: collections.home
-    alias: home
-    size: 1
 permalink: "/home/"
 ---
 
 {% extends "layouts/home.njk" %}
 
 {% block content %}
-    {% if home.data.hero -%}
-        <section class="bp-home-content">
-            <h2>{{ home.data.title }}</h2>
+    {% set content = collections.page[2].data %}
 
-            {% if home.data.description -%}
-                {{ home.data.description | markdown | safe }}
+    {% if content.hero -%}
+        <section class="bp-home-content">
+            <h2>{{ content.title }}</h2>
+
+            {% if content.description -%}
+                {{ content.description | markdown | safe }}
             {%- endif %}
         </section>
 
-        <div class="bp-home-detail" style="background-image: url({{ home.data.hero }})"></div>
+        <div class="bp-home-detail" style="background-image: url({{ content.hero }})"></div>
     {%- endif %}
 
-    {% if home.data.content -%}
-        {{ home.data.content | markdown | safe }}
+    {% if content.content -%}
+        {{ content.content | markdown | safe }}
     {%- endif %}
 {% endblock %}
