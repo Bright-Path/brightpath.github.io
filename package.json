@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@11ty/eleventy": "0.10.0",
+    "@11ty/eleventy": "1.0.0-canary.41",
     "clamp-js": "0.7.0",
     "core-js": "3.6.4",
     "css-vars-ponyfill": "2.2.1",
-    "netlify-cms": "2.10.16"
+    "netlify-cms": "2.10.159"
   },
   "devDependencies": {
     "@babel/core": "7.8.7",
@@ -16,7 +16,7 @@
     "@rollup/plugin-commonjs": "11.0.2",
     "@rollup/plugin-multi-entry": "3.0.0",
     "@rollup/plugin-node-resolve": "7.1.1",
-    "concurrently": "^5.1.0",
+    "concurrently": "5.1.0",
     "cssnano": "4.1.10",
     "debug": "4.1.1",
     "eslint": "6.8.0",
@@ -24,8 +24,8 @@
     "git-rev-sync": "2.0.0",
     "markdown-it": "10.0.0",
     "moment": "2.24.0",
-    "node-sass": "4.13.1",
-    "nunjucks": "3.2.0",
+    "node-sass": "6.0.1",
+    "nunjucks": "3.2.3",
     "nunjucks-markdown": "2.0.1",
     "onchange": "6.1.0",
     "postcss-cli": "7.1.0",
@@ -35,8 +35,11 @@
     "rollup-plugin-filesize": "6.2.1",
     "rollup-plugin-terser": "5.2.0",
     "rollup-plugin-uglify": "6.0.4",
-    "stylelint": "13.0.0",
-    "terser": "4.6.6"
+    "serialize-javascript": "6.0.0",
+    "slugify": "1.6.0",
+    "stylelint": "13.13.1",
+    "terser": "4.6.6",
+    "trim": "1.0.1"
   },
   "scripts": {
     "build": "npm run clean && npm run build:eleventy && npm run build:sass && npm run build:sass:temp && npm run build:rollup && rimraf dist/content",
