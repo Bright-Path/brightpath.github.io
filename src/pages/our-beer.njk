@@ -28,8 +28,8 @@ permalink: "/beer/"
     {%- endif %}
 
     {% if beers.length -%}
-        {% set on_tap = beers | filterBeers(beer.data.tap) %}
-        {% set in_cans = beers | filterBeers(beer.data.canned) %}
+        {% set on_tap = beers | filterBeers('tap') %}
+        {% set in_cans = beers | filterBeers('canned') %}
 
         {% if on_tap.length -%}
             <h3>Beers Available On Tap</h3>
