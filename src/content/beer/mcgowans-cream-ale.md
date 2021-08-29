@@ -25,6 +25,6 @@ page_description: >-
   2. I've got to find a way to escape the horrible ravages of youth. Suddenly, I'm going to the bathroom like clockwork, every three hours. And those jerks at Social Security stopped sending me checks. Now 'I'' have to pay ''them'!
 
   3. Too much work. Let's burn it and say we dumped it in the sewer.
-logo: /upload/brightpath-logo-square.png
+logo: /upload/mcgowans.svg
 tags: beer
 ---
