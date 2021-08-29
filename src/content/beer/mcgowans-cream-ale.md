@@ -5,8 +5,8 @@ description: "You've killed me! Oh, you've killed me! Oh, how I wish I could
   believe or understand that! There's only one reasonable course of action now:
   kill Flexo! Do a flip! Look, everyone wants to be like Germany, but do we
   really have the pure strength of 'will'?"
-tap: false
-canned: false
+tap: true
+canned: true
 page_description: >-
   You've killed me! Oh, you've killed me! Oh, how I wish I could believe or
   understand that! There's only one reasonable course of action now: kill Flexo!
