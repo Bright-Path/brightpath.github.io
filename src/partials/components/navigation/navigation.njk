@@ -18,7 +18,7 @@
                         {% if page.external -%}
                         {% set navLink = url %}
                         {%- endif %}
-                        <a href="{{ url }}" class="bp-navigation-link {%if current_page === url %}bp-navigation-link-active{% endif %}">
+                        <a href="{{ navLink }}" {% if page.external %}target="_blank" rel="noopener" {% endif %}class="bp-navigation-link {%if current_page === url %}bp-navigation-link-active{% endif %}">
                             {{ page.link_text }}
                         </a>
                     </li>
