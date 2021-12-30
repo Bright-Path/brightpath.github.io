@@ -14,7 +14,11 @@
                 {% for page in pages -%}
                     {% set url = page.url %}
                     <li class="bp-navigation-list-item">
-                        <a href="/{{ url }}" class="bp-navigation-link {%if current_page === url %}bp-navigation-link-active{% endif %}">
+                        {% set navLink = "/" + url %}
+                        {% if page.external -%}
+                        {% set navLink = url %}
+                        {%- endif %}
+                        <a href="{{ url }}" class="bp-navigation-link {%if current_page === url %}bp-navigation-link-active{% endif %}">
                             {{ page.link_text }}
                         </a>
                     </li>
