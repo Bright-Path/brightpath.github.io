@@ -1,33 +1,14 @@
 backend:
   name: github
-  branch: develop # Branch where CMS changes will be committed
+  branch: age-verification # Branch where CMS changes will be committed
   repo: Bright-Path/brightpath.github.io # Path to your GitLab repository
 media_folder: "src/upload" # Media files will be stored in the repo under images/uploads
 public_folder: "/upload"
 
 collections:
-  - name: "coming"
-    label: "Coming Soon"
-    folder: "src/content/coming"
-    fields:
-      - name: "name"
-        widget: "string"
-        required: true
-      - label: "Title"
-        name: "title"
-        widget: "string"
-        required: false
-      - label: "Body"
-        name: "content"
-        widget: "markdown"
-        required: false
-      - label: "Tags"
-        name: "tags"
-        widget: "hidden"
-        default: "coming"
   - name: "page"
     label: "Pages"
-    create: false
+    create: true
     identifier_field: name
     folder: "src/content/page"
     fields:
