@@ -176,6 +176,10 @@ collections:
               name: "url"
               widget: "string"
               required: true
+            - label: "External Link"
+              name: "external"
+              widget: "boolean"
+              default: false
       - label: "Main Logo"
         name: "logo"
         widget: "image"
