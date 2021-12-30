@@ -8,7 +8,7 @@ permalink: "/beer/"
 {% from "components/table/table.njk" import table as table %}
 
 {% block content %}
-    {% set content = collections.page[1].data %}
+    {% set content = collections.page[2].data %}
     {% set beers = collections.beer %}
 
     {% if content.hero -%}
