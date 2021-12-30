@@ -1,12 +1,13 @@
 ---
 name: Home
 hero: /upload/brewery-interior.jpg
-title: We're Getting There
-description: We have been making progress on the building and are planning to
-  open in late fall of this year. Our tanks are in and we are on to fitting the
-  pipes. Follow the progress on our [Instagram
-  (@brightpathbrewing)](https://www.instagram.com/brightpathbrewing) and [Facebook
-  (Bright Path
-  Brewing)](https://www.facebook.com/Bright-Path-Brewing-104399674368859) pages.
+title: Welcome
+description: >-
+  Bright Path Brewing is the first locally owned and operated small craft
+  brewery in rural Jim Thorpe, Pennsylvania. We focus on ​​lager and low-ABV
+  session beers.
+
+
+  The name Bright Path was inspired by the translation of Jim Thorpe’s Native American name, Wa-Tho-Huk. The brewery is home to our taproom where we serve our latest releases and crowd favorites with the occasional food truck days. Packaged to-go beer, kegs, and merchandise are available in the taproom as well.
 tags: page
 ---
