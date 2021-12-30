@@ -7,6 +7,8 @@ header:
       url: beer
     - link_text: About Us
       url: about
+    - link_text: Store
+      url: https://brightpathbrewing.square.site/
   showHome: true
 logo: /upload/bright_path_logo.jpg
 address: 1215 North St
