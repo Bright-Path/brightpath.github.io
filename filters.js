@@ -18,6 +18,8 @@ const validDate = () => {
     return date(valid);
 };
 
+const availableBeers = (beers) => beers.filter((beer) => beer.data.tap || beer.data.canned);
+
 const filterBeers = (beers, availability) => beers.filter((beer) => beer.data[availability]);
 
 const sliceData = (data, count) => data.slice(0, count);
@@ -39,6 +41,7 @@ const svgContents = (file) => {
 const version = () => git.short();
 
 module.exports = [
+    availableBeers,
     cleanSlug,
     date,
     filterBeers,

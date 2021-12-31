@@ -6,6 +6,7 @@
                     <span class="bp-accessible-text">Logo</span>
                 </div>
                 <div class="bp-table-cell bp-table-heading bp-table-beer-name" role="columnheader" aria-sort="none">Beer Name</div>
+                <div class="bp-table-cell bp-table-heading" role="columnheader" aria-sort="none">Availability</div>
                 <div class="bp-table-cell bp-table-heading" role="columnheader" aria-sort="none">ABV</div>
                 <div class="bp-table-cell bp-table-heading bp-accessible-text" role="columnheader" aria-sort="none">
                     Description
@@ -21,6 +22,15 @@
                     <div class="bp-table-content">
                         <div class="bp-table-cell bp-table-beer-name" role="cell">
                             <a class="bp-table-beer-link" href="{{ beer.data.name | cleanSlug }}">{{ beer.data.name }}</a>
+                        </div>
+                        <div class="bp-table-cell" role="cell">
+                            {% if (beer.data.canned) and (beer.data.tap) -%}
+                            In cans and on tap<span class="bp-accessible-text">.</span>
+                            {% elif beer.data.tap -%}
+                            On tap<span class="bp-accessible-text">.</span>
+                            {% elif beer.data.canned -%}
+                            In cans<span class="bp-accessible-text">.</span>
+                            {%- endif %}
                         </div>
                         <div class="bp-table-cell" role="cell">
                             {{ beer.data.abv }}
