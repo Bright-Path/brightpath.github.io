@@ -1,6 +1,6 @@
 ---
 name: Our Beer
-hero: /upload/beer.jpeg
+hero: /upload/brewhouse.jpg
 title: Our Beer
 description: >-
   Hey, tell me something. You've got all this money. How come you always dress
