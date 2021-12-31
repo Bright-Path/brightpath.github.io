@@ -6,6 +6,6 @@ tap: true
 canned: true
 page_description: A classic American ale brewed with cascade hops and fermented
   cooler to create a crisp refreshing beer.
-logo: /upload/mcgowans.svg
+logo: /upload/icon_mcgowans-cream-ale.svg
 tags: beer
 ---
