@@ -205,3 +205,24 @@ collections:
         name: "tags"
         widget: "hidden"
         default: "info"
+  - name: "privacy"
+    label: "Privacy Policy"
+    folder: "src/content/privacy"
+    identifier_field: name
+    fields:
+      - name: "name"
+        label: "Page Name"
+        widget: "string"
+        required: true
+      - label: "Page Content"
+        name: "content"
+        widget: "markdown"
+        required: false
+      - label: "Featured Image"
+        name: "hero"
+        widget: "image"
+        required: false
+      - label: "Tags"
+        name: "tags"
+        widget: "hidden"
+        default: "privacy"
