@@ -30,22 +30,29 @@ permalink: "/age-verification/"
 </head>
 <body class="bp">
     {% set content = collections.page[3].data %}
-    {% set validDate = 'last valid birthday' | validDate %}
+    <main class="bp-age-verification-content">
+        {% set validDate = 'last valid birthday' | validDate %}
+        <h1 class="bp-accessible-text">Bright Path Brewing</h1>
 
-    <section class="bp-age-verification-content">
-        <form>
-            <h2>{{ content.title }}</h2>
+        <section>
+            <form class="bp-age-verification-form">
+                <h2>{{ content.title }}</h2>
 
-            {% if content.description -%}
-                {{ content.description | markdown | safe }}
-            {%- endif %}
+                {% if content.description -%}
+                    {{ content.description | markdown | safe }}
+                {%- endif %}
 
-            <p>Were you born on or before {{ validDate }}?</p>
+                <p>Were you born on or before {{ validDate }}?</p>
 
-            <button>Yes</button>
-            <a href="https://www.google.com/search?q=fun+things+to+do+outside+Jim+Thorpe+PA">No</a>
-        </form>
-    </section>
+                <div class="bp-button-row">
+                    <button class="bp-button bp-button-primary">Let me in!</button>
+                    <a href="https://www.google.com/search?q=hiking+Jim+Thorpe+PA" class="bp-button bp-button-secondary">Take a hike</a>
+                </div>
+
+                <p class="bp-fine-print">Entering this site agrees to our <a href="/privacy">privacy policy</a>.</p>
+            </form>
+        </section>
+    </main>
 
     <div class="bp-age-verification-bg" style="background-image: url({{ content.hero }})"></div>
 </body>
