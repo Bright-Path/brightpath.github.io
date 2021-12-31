@@ -4,6 +4,6 @@ abv: 4.5%
 description: Hoppy | Citrus | Smooth
 tap: false
 canned: false
-logo: /upload/bright-path-logo.svg
+logo: /upload/icon_american-standard-pale-ale.svg
 tags: beer
 ---
