@@ -1,7 +1,7 @@
 ---
 name: Switchback Session Hazy IPA
 abv: TBD
-tap: false
+tap: true
 canned: false
 logo: /upload/icon_switchback-session-ipa.svg
 tags: beer
