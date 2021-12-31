@@ -3,6 +3,6 @@ name: Chunker
 abv: TBD
 tap: false
 canned: false
-logo: /upload/bright-path-logo.svg
+logo: /upload/icon_chunker.svg
 tags: beer
 ---
