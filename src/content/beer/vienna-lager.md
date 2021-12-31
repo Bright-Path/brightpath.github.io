@@ -4,6 +4,6 @@ abv: 4.5%
 description: Malty | Toasty | Amber Color
 tap: true
 canned: false
-logo: /upload/bright-path-logo.svg
+logo: /upload/icon_vienna-lager.svg
 tags: beer
 ---
