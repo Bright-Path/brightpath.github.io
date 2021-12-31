@@ -11,7 +11,7 @@
             {% for item in social -%}
                 {% set iconPath = "/assets/images/" + item.platform.toLowerCase() + ".svg" %}
                 <li class="bp-social-item">
-                    <a href="{{item.url}}" class="bp-social-link" ref="noreferrer" target="_blank">
+                    <a href="{{item.url}}" class="bp-social-link" rel="noreferrer" target="_blank">
                         <span class="bp-accessible-text">{{item.platform}}: </span>
                         <span class="bp-social-icon" aria-hidden="true">
                             {{ iconPath | svgContents | safe }}
