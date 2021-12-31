@@ -1,6 +1,6 @@
 ---
 name: Home
-hero: /upload/brewery-interior.jpg
+hero: /upload/brew-retouch_1639589762.jpeg
 title: Now Open
 description: >-
   Bright Path Brewing is the first locally owned and operated small craft
