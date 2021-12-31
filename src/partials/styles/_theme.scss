@@ -6,6 +6,32 @@
 
     --body-link-hover: #{$bp-light};
 
+    // Button colors
+
+    --primary-button-background: #{$bp-dark};
+
+    --primary-button-background-hover: #{$bp-gold};
+
+    --primary-button-border: #{$bp-dark};
+
+    --primary-button-border-hover: #{$bp-gold};
+
+    --primary-button-text: #{$bp-gold};
+
+    --primary-button-text-hover: #{$bp-dark};
+
+    --secondary-button-background: #{$white};
+
+    --secondary-button-background-hover: #{$bp-gold};
+
+    --secondary-button-border: #{$bp-dark};
+
+    --secondary-button-border-hover: #{$bp-gold};
+
+    --secondary-button-text: #{$bp-dark};
+
+    --secondary-button-text-hover: #{$bp-dark};
+
     // @group-end
 
     // --------------------------------------------------

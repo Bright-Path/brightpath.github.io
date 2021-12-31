@@ -33,6 +33,7 @@ h5,
 h6 {
     font-family: var(--heading-font-stack);
     font-weight: var(--heading-font-weight);
+    margin-top: 0;
 }
 
 p {
@@ -88,6 +89,13 @@ input {
     box-sizing: border-box;
 }
 
+.bp-fine-print {
+    font-size: 0.75rem;
+    font-style: italic;
+    margin: 1.5rem 0 0.5rem;
+    text-align: center;
+}
+
 .bp-accessible-text {
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
@@ -97,6 +105,60 @@ input {
     overflow: hidden;
     padding: 0;
     position: absolute;
+}
+
+.bp-button {
+    border: 1px solid;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    outline: none;
+    margin: 0 0 1rem 1rem;
+    padding: 0.25rem 0.75rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &-primary {
+        background-color: var(--primary-button-background);
+        border-color: var(--primary-button-border);
+        color: var(--primary-button-text);
+
+        &:hover,
+        &:focus {
+            background-color: var(--primary-button-background-hover);
+            border-color: var(--primary-button-border-hover);
+            color: var(--primary-button-text-hover);
+        }
+    }
+
+    &-secondary {
+        background-color: var(--secondary-button-background);
+        border-color: var(--secondary-button-border);
+        color: var(--secondary-button-text);
+
+        &:hover,
+        &:focus {
+            background-color: var(--secondary-button-background-hover);
+            border-color: var(--secondary-button-border-hover);
+            color: var(--secondary-button-text-hover);
+        }
+    }
+}
+
+.bp-button-row {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .bp-button {
+        margin: 0 auto;
+    }
 }
 
 .bp-home-content {
@@ -133,18 +195,46 @@ input {
 
 .bp-age-verification-content {
     background-color: var(--body-bg);
+    border-radius: 3px;
     color: var(--body-color);
-    min-height: 50vh;
+    left: 0.5rem;
+    min-width: 20rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 5;
+}
+
+.bp-age-verification-form {
+    min-width: 18rem;
     padding: 1rem;
 }
 
 .bp-age-verification-bg {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 50vh;
+    background-repeat: no-repeat;
+    background-position: 10% 100%;
+    background-size: cover;
+    bottom: -0.5rem;
+    left: -0.5rem;
+    position: fixed;
+    right: -0.5rem;
+    top: -0.5rem;
     z-index: 1;
+}
+
+.bp-privacy {
+    background-color: var(--body-bg);
+    border-radius: 3px;
+    left: 50%;
+    height: 90vh;
+    max-width: 64rem;
+    overflow-y: auto;
+    padding: 2rem;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    z-index: 5;
 }
 
 @media #{$small-bp} {
@@ -163,34 +253,38 @@ input {
         width: 60vw;
         z-index: -1;
     }
-
-    .bp-age-verification-content {
-        border-radius: 1px;
-        left: calc(50% - 2.5rem);
-        position: fixed;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        width: 70vw;
-        z-index: 5;
-    }
-
-    .bp-age-verification-bg {
-        position: fixed;
-        top: 0;
-    }
 }
 
 @media #{$medium-bp} {
     .bp-age-verification-content {
-        left: calc(50% - 9rem);
-        width: 50vw;
+        left: auto;
+        min-height: 40vh;
+        position: fixed;
+        right: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40vw;
+    }
+
+    .bp-age-verification-form {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .bp-age-verification-bg {
+        background-position: 0 50%;
     }
 }
 
 @media #{$large-bp} {
     .bp-age-verification-content {
-        left: calc(50% - 19rem);
-        width: 35vw;
+        right: 4rem;
+        width: 30vw;
+    }
+
+    .bp-age-verification-bg {
+        background-position: 50%;
     }
 }
 
