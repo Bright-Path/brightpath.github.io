@@ -8,7 +8,7 @@ public_folder: "/upload"
 collections:
   - name: "page"
     label: "Pages"
-    create: true
+    create: false
     identifier_field: name
     folder: "src/content/page"
     fields:
