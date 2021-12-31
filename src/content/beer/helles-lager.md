@@ -5,6 +5,6 @@ description: Refreshing | Light | Clean
 tap: true
 canned: true
 page_description: A classic golden German Lager brewed with German malts and hops.
-logo: /upload/helles.svg
+logo: /upload/icon_helles-lager.svg
 tags: beer
 ---
