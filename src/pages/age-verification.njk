@@ -1,0 +1,52 @@
+---
+renderData:
+  section: "age-verification"
+permalink: "/age-verification/"
+---
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Bright Path Brewing</title>
+    <meta name="description" content="Craft brewery focusing on lager and session beer based in Jim Thorpe, Pennsylvania.">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+
+    <meta property="og:title" content="Bright Path Brewing">
+    <meta property="og:description" content="Craft brewery focusing on lager and session beer based in Jim Thorpe, Pennsylvania.">
+    <meta property="og:image" content="/assets/images/brightpath-logo-social.jpg">
+    <meta property="og:url" content="https://www.brightpathbrewing.com">
+    <meta property="og:site_name" content="Bright Path Brewing">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" type="text/css" href="/assets/styles/bp.css">
+</head>
+<body class="bp">
+    {% set content = collections.page[3].data %}
+    {% set validDate = 'last valid birthday' | validDate %}
+
+    <section class="bp-age-verification-content">
+        <form>
+            <h2>{{ content.title }}</h2>
+
+            {% if content.description -%}
+                {{ content.description | markdown | safe }}
+            {%- endif %}
+
+            <p>Were you born on or before {{ validDate }}?</p>
+
+            <button>Yes</button>
+            <a href="https://www.google.com/search?q=fun+things+to+do+outside+Jim+Thorpe+PA">No</a>
+        </form>
+    </section>
+
+    <div class="bp-age-verification-bg" style="background-image: url({{ content.hero }})"></div>
+</body>
+</html>

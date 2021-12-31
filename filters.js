@@ -10,6 +10,14 @@ const cleanSlug = (slug) => slugify(slug, {
 
 const date = (unformmatedDate) => new Moment(unformmatedDate).format('MM/DD/YYYY');
 
+const validDate = () => {
+    const today = new Date();
+    const legalAge = 21;
+    const valid = today.setFullYear(today.getFullYear() - legalAge);
+
+    return date(valid);
+};
+
 const filterBeers = (beers, availability) => beers.filter((beer) => beer.data[availability]);
 
 const sliceData = (data, count) => data.slice(0, count);
@@ -36,5 +44,6 @@ module.exports = [
     filterBeers,
     sliceData,
     svgContents,
+    validDate,
     version
 ];
