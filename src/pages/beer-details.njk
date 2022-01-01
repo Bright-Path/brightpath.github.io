@@ -17,9 +17,19 @@ permalink: "/beer/{{ beer.data.name | cleanSlug }}/"
 
         <h2>{{ content.name }}</h2>
 
+        {% if content.abv -%}
+            <p class="bp-fine-print">{{ content.abv }} alcohol by volume</p>
+        {%- endif %}
+
         {% if content.description -%}
             {{ content.description | markdown | safe }}
         {%- endif %}
+
+        <div class="bp-beer-additional-content">
+            {% if content.page_description -%}
+                {{ content.page_description | markdown | safe }}
+            {%- endif %}
+        </div>
     </section>
 
     {% if content.images -%}
