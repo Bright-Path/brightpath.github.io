@@ -36,7 +36,9 @@
                             {{ beer.data.abv }}
                         </div>
                         <div class="bp-table-cell bp-table-beer-description" role="cell">
-                            {{ beer.data.description }}
+                            {% if beer.data.description -%}
+                                {{ beer.data.description | markdown | safe }}
+                            {%- endif %}
                         </div>
                     </div>
                 </div>

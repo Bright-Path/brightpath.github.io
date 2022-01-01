@@ -52,6 +52,10 @@
 .bp-table-beer-description {
     display: block;
     flex-basis: 100%;
+
+    p {
+        margin: 0 0 0.5rem;
+    }
 }
 
 @media #{$small-bp} {

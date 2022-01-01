@@ -8,8 +8,21 @@ pagination:
 permalink: "/beer/{{ beer.data.name | cleanSlug }}/"
 ---
 
-{% extends "layouts/content.njk" %}
+{% extends "layouts/home.njk" %}
 
 {% block content %}
-    <h2>{{ beer.data.name }}</h2>
+    {% set content = beer.data %}
+    <section class="bp-beer-content">
+        <img src="{{ content.logo }}" alt="" class="bp-beer-logo" />
+
+        <h2>{{ content.name }}</h2>
+
+        {% if content.description -%}
+            {{ content.description | markdown | safe }}
+        {%- endif %}
+    </section>
+
+    {% if content.images -%}
+        <div class="bp-beer-detail" aria-aria-label="content.images[0].alt" style="background-image: url({{ content.images[0].image }})"></div>
+    {%- endif %}
 {% endblock %}
