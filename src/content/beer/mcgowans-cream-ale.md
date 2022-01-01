@@ -9,5 +9,8 @@ description: >-
 tap: true
 canned: true
 logo: /upload/icon_mcgowans-cream-ale.svg
+images:
+  - image: /upload/mcgowans-half-liter.jpg
+    alt: A half liter glass of McGowan's Cream Ale
 tags: beer
 ---
