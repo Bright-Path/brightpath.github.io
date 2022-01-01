@@ -8,7 +8,7 @@ const cleanSlug = (slug) => slugify(slug, {
     remove: /[*+~.()'"!:@]/g
 });
 
-const date = (unformmatedDate) => new Moment(unformmatedDate).format('MM/DD/YYYY');
+const date = (unformmatedDate) => new Moment(unformmatedDate).format('MMMM D, YYYY');
 
 const validDate = () => {
     const today = new Date();
