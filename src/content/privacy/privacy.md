@@ -4,11 +4,14 @@ content: >-
   ## To put it simply
 
 
-  We value your privacy, but also respect you may not want to read legal language. We use a single cookie to track your age verification response so you don't have to answer every time you return. Additionally, we use Google Analytics to see what pages people on our site. That's pretty much it. Our cookies are set to expire after 60 days, so you may need to re-verify your age if you don't come back often or if you clear your cookies.
+  We value your privacy, but also respect you may not want to read legal language. We use [a technology called localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to track your age verification response so you don't have to answer every time you return. Additionally, we use [Google Analytics](https://analytics.google.com/analytics/web/) to see what pages people on our site. That's pretty much it.
+
+  While localStorage doesn't expire, you may be asked to verify your age again if you come back from a different device or if you clear you stored site data in your browser.
 
 
   To accept our policy, all you have to do is [verify your age](/age-verification).
 
+  <br /><br /><br />
 
   ## Our Full Privacy Policy
 

@@ -26,10 +26,10 @@
 <body class="bp">
     {% from "components/header/header.njk" import header as header %}
     {% from "components/footer/footer.njk" import footer as footer %}
-    
+
     {% set info = collections.info[0].data %}
 
-    {% if section !== 'privacy' %}
+    {% if renderData.section !== 'privacy' %}
     {% set headerInfo = info.header %}
     {% set logoAlt = image.name + ' logo' %}
     {{ header(
@@ -45,7 +45,7 @@
     {% block template %}
     {% endblock %}
 
-    {% if section !== 'privacy' %}
+    {% if renderData.section !== 'privacy' %}
     {% set footerInfo = info.footer %}
     {% set social = info.social %}
     {{ footer(footerInfo, social) }}
