@@ -61,7 +61,7 @@
     "watch": "concurrently \"npm run watch:js\" \"npm run watch:markup\" \"npm run watch:sass\"",
     "watch:js": "onchange 'src/**/*.js' -- concurrently \"npm run lint:js\" \"npm run build:rollup:frontend\"",
     "watch:markup": "onchange 'src/**/*.njk' -- npm run build:eleventy",
-    "watch:sass": "onchange 'src/**/*.scss' -- concurrently \"npm run lint:scss\" \"npm run build:sass\" \"npm run build:sass:temp\""
+    "watch:sass": "onchange 'src/**/*.scss' -- concurrently \"npm run lint:scss\" \"npm run build:sass\""
   },
   "repository": {
     "type": "git",
