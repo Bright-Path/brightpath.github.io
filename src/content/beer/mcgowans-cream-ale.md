@@ -7,5 +7,8 @@ canned: true
 page_description: A classic American ale brewed with cascade hops and fermented
   cooler to create a crisp refreshing beer.
 logo: /upload/icon_mcgowans-cream-ale.svg
+images:
+  - image: /upload/mcgowans-half-liter.jpg
+    alt: A half liter glass of McGowan's Cream Ale
 tags: beer
 ---
