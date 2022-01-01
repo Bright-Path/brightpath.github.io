@@ -26,11 +26,12 @@
 <body class="bp">
     {% from "components/header/header.njk" import header as header %}
     {% from "components/footer/footer.njk" import footer as footer %}
-
+    
     {% set info = collections.info[0].data %}
+
+    {% if section !== 'privacy' %}
     {% set headerInfo = info.header %}
     {% set logoAlt = image.name + ' logo' %}
-    {# logo image, logo alt, site title, nav_home, nav_pages, section #}
     {{ header(
         headerInfo.logo,
         logoAlt,
@@ -39,12 +40,17 @@
         headerInfo.nav,
         renderData.section
     ) }}
+    {% endif %}
 
     {% block template %}
     {% endblock %}
 
+    {% if section !== 'privacy' %}
     {% set footerInfo = info.footer %}
     {% set social = info.social %}
     {{ footer(footerInfo, social) }}
+    {% endif %}
+
+    <script type="text/javascript" src="/assets/js/brightpath.js"></script>
 </body>
 </html>
