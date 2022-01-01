@@ -9,13 +9,15 @@ const fileSize = require('rollup-plugin-filesize');
 module.exports = [
     {
         input: {
-            include: ['src/partials/**/*.js'],
-            exclude: ['src/partials/**/*.spec.js']
+            include: [
+                'src/partials/**/*.js',
+                'src/scripts/**/*.js'
+            ]
         },
         output: {
-            file: 'dist/assets/js/bpbc-temp.js',
+            file: 'dist/assets/js/bpb-temp.js',
             format: 'umd',
-            name: 'bpbc'
+            name: 'bpb'
         },
         plugins: [
             resolve(),
@@ -27,11 +29,11 @@ module.exports = [
         ]
     },
     {
-        input: 'dist/assets/js/bpbc-temp.js',
+        input: 'dist/assets/js/bpb-temp.js',
         output: {
-            file: 'dist/assets/js/bpbc.js',
+            file: 'dist/assets/js/brightpath.js',
             format: 'umd',
-            name: 'bpbc'
+            name: 'bpb'
         },
         plugins: [
             resolve(),
