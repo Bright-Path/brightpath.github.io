@@ -4,32 +4,15 @@ const baseUrl = window.location.origin;
 const attemptedUrl = window.location.pathname;
 const localEnvironment = baseUrl.indexOf('localhost') >= 0;
 
-const validAge = document.cookie.indexOf('validAge=true') >= 0;
+const validAge = localStorage.length > 0 && localStorage.validAge === 'true';
 
 const enterButton = document.getElementById('bp-enter');
 const backButton = document.getElementById('bp-back');
 
-const defaultCookieLength = 60;
-
-const setCookie = (cookieName, cookieValue, expirationDays = defaultCookieLength) => {
-    const cookieDomain = localEnvironment ? '' : `domain=${baseUrl};`;
-    const date = new Date();
-    const hoursPerDay = 24;
-    const minutesPerHour = 60;
-    const secondsPerMinute = 60;
-    const milliPerSecond = 1000;
-    const expiration = expirationDays * hoursPerDay * minutesPerHour * secondsPerMinute * milliPerSecond;
-    date.setTime(date.getTime() + expiration);
-
-    const expires = `expires=${date.toUTCString()}`;
-
-    document.cookie = `${cookieName}=${cookieValue}; ${expires}; ${cookieDomain}`;
-};
-
 const acceptTerms = () => {
-    document.cookie = setCookie('validAge', true, defaultCookieLength);
+    localStorage.setItem('validAge', true);
 
-    const forwardDelay = 150;
+    const forwardDelay = 100;
 
     setTimeout(() => {
         const pathIndex = window.location.search.indexOf('=');
@@ -55,8 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
         '/age-verification/',
         '/privacy/'
     ];
-
-    console.log('local', localEnvironment, baseUrl);
 
     if (localEnvironment) {
         return;
