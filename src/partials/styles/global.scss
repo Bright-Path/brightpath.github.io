@@ -350,7 +350,7 @@ input {
     .bp-beer-content {
         height: calc(100vh - 7rem);
         padding: 3rem 2rem;
-        width: 35vw;
+        width: 40vw;
     }
 
     .bp-beer-detail {
@@ -359,7 +359,7 @@ input {
         position: absolute;
         right: 0;
         top: 0;
-        width: 65vw;
+        width: 60vw;
         z-index: -1;
     }
 
@@ -387,6 +387,14 @@ input {
 
     .bp-age-verification-bg {
         background-position: 0 50%;
+    }
+
+    .bp-beer-content {
+        width: 50vw;
+    }
+
+    .bp-beer-detail {
+        width: 50vw;
     }
 }
 
