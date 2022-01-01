@@ -148,6 +148,11 @@ input {
             color: var(--secondary-button-text-hover);
         }
     }
+
+    &-icon {
+        border-radius: 3rem;
+        border-width: 2px;
+    }
 }
 
 .bp-button-row {
@@ -208,6 +213,20 @@ input {
 .bp-age-verification-form {
     min-width: 18rem;
     padding: 1rem;
+
+    .bp-button-row {
+        margin: 0 auto;
+        max-width: 24rem;
+    }
+}
+
+.bp-age-verification-header {
+    background-color: var(--body-color);
+    border-radius: 3px 3px 0 0;
+    color: var(--body-bg);
+    margin: -1.25rem -1rem 1.5rem;
+    padding: 1rem;
+    text-align: center;
 }
 
 .bp-age-verification-bg {
@@ -228,13 +247,27 @@ input {
     left: 50%;
     height: 90vh;
     max-width: 64rem;
-    overflow-y: auto;
-    padding: 2rem;
+    overflow: visible;
     position: fixed;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
     z-index: 5;
+
+    &-content {
+        height: 90vh;
+        padding: 2rem;
+        overflow-y: auto;
+    }
+}
+
+.bp-privacy-back {
+    height: 3rem;
+    position: absolute;
+    right: -1.5rem;
+    top: -1.5rem;
+    width: 3rem;
+    z-index: 10;
 }
 
 @media #{$small-bp} {
