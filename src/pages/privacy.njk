@@ -3,37 +3,27 @@ renderData:
   section: "privacy"
 permalink: "/privacy/"
 ---
-<!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#" class="no-js">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
 
-    <title>Bright Path Brewing Privacy Policy</title>
-    <meta name="description" content="Craft brewery focusing on lager and session beer based in Jim Thorpe, Pennsylvania.">
+{% extends "layouts/privacy.njk" %}
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
-
-    <meta property="og:title" content="Bright Path Brewing">
-    <meta property="og:description" content="Craft brewery focusing on lager and session beer based in Jim Thorpe, Pennsylvania.">
-    <meta property="og:image" content="/assets/images/brightpath-logo-social.jpg">
-    <meta property="og:url" content="https://www.brightpathbrewing.com">
-    <meta property="og:site_name" content="Bright Path Brewing">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <link rel="stylesheet" type="text/css" href="/assets/styles/bp.css">
-</head>
-<body class="bp">
+{% block content %}
     {% set page = collections.privacy[0].data %}
     <main class="bp-privacy">
         <h1 class="bp-accessible-text">Bright Path Brewing {{ page.title }}</h1>
 
-        <section>
+        <button type="button" class="bp-button bp-button-secondary bp-button-icon bp-privacy-back" id="bp-back">
+            <span class="bp-accessible-text">Go back</span>
+            <span class="bp-icon" aria-hidden="true">
+                <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <line x1="17.5" x2="54.5" y1="17.5" y2="54.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+                        <line x1="54.5" x2="17.5" y1="17.5" y2="54.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+                    </g>
+                </svg>
+            </span>
+        </button>
+
+        <section class="bp-privacy-content">
             {% if page.content -%}
                 {{ page.content | markdown | safe }}
             {%- endif %}
@@ -41,5 +31,4 @@ permalink: "/privacy/"
     </main>
 
     <div class="bp-age-verification-bg" style="background-image: url({{ page.hero }})"></div>
-</body>
-</html>
+{% endblock %}

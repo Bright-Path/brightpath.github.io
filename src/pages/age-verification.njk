@@ -1,59 +1,34 @@
 ---
 renderData:
-  section: "age-verification"
+  section: "privacy"
 permalink: "/age-verification/"
 ---
-<!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#" class="no-js">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
 
-    <title>Bright Path Brewing</title>
-    <meta name="description" content="Craft brewery focusing on lager and session beer based in Jim Thorpe, Pennsylvania.">
+{% extends "layouts/privacy.njk" %}
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
-
-    <meta property="og:title" content="Bright Path Brewing">
-    <meta property="og:description" content="Craft brewery focusing on lager and session beer based in Jim Thorpe, Pennsylvania.">
-    <meta property="og:image" content="/assets/images/brightpath-logo-social.jpg">
-    <meta property="og:url" content="https://www.brightpathbrewing.com">
-    <meta property="og:site_name" content="Bright Path Brewing">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <link rel="stylesheet" type="text/css" href="/assets/styles/bp.css">
-</head>
-<body class="bp">
+{% block content %}
     {% set content = collections.page[3].data %}
     <main class="bp-age-verification-content">
         {% set validDate = 'last valid birthday' | validDate %}
         <h1 class="bp-accessible-text">Bright Path Brewing</h1>
 
-        <section>
-            <form class="bp-age-verification-form">
-                <h2>{{ content.title }}</h2>
+        <section class="bp-age-verification-form">
+            <h2 class="bp-age-verification-header">{{ content.title }}</h2>
 
-                {% if content.description -%}
-                    {{ content.description | markdown | safe }}
-                {%- endif %}
+            {% if content.description -%}
+                {{ content.description | markdown | safe }}
+            {%- endif %}
 
-                <p>Were you born on or before {{ validDate }}?</p>
+            <p>Were you born on or before {{ validDate }}?</p>
 
-                <div class="bp-button-row">
-                    <button class="bp-button bp-button-primary">Let me in!</button>
-                    <a href="https://www.google.com/search?q=hiking+Jim+Thorpe+PA" class="bp-button bp-button-secondary">Take a hike</a>
-                </div>
+            <div class="bp-button-row">
+                <button type="button" class="bp-button bp-button-primary" id="bp-enter">Let me in!</button>
+                <a href="https://www.google.com/search?q=hiking+Jim+Thorpe+PA" class="bp-button bp-button-secondary">Take a hike</a>
+            </div>
 
-                <p class="bp-fine-print">Entering this site agrees to our <a href="/privacy">privacy policy</a>.</p>
-            </form>
+            <p class="bp-fine-print">Entering this site agrees to our <a href="/privacy">privacy policy</a>.</p>
         </section>
     </main>
 
     <div class="bp-age-verification-bg" style="background-image: url({{ content.hero }})"></div>
-</body>
-</html>
+{% endblock %}
