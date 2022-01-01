@@ -2,7 +2,7 @@
 
 const baseUrl = window.location.origin;
 const attemptedUrl = window.location.pathname;
-const localEnvironment = baseUrl.indexOf('localhost');
+const localEnvironment = baseUrl.indexOf('localhost') >= 0;
 
 const validAge = document.cookie.indexOf('validAge=true') >= 0;
 
@@ -27,9 +27,7 @@ const setCookie = (cookieName, cookieValue, expirationDays = defaultCookieLength
 };
 
 const acceptTerms = () => {
-    if (!localEnvironment) {
-        document.cookie = setCookie('validAge', true, defaultCookieLength);
-    }
+    document.cookie = setCookie('validAge', true, defaultCookieLength);
 
     const forwardDelay = 150;
 
@@ -57,6 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
         '/age-verification/',
         '/privacy/'
     ];
+
+    console.log('local', localEnvironment, baseUrl);
 
     if (localEnvironment) {
         return;
