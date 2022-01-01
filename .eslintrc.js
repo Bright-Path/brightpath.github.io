@@ -7,7 +7,8 @@ module.exports = {
     },
     "ignorePatterns": [
         "/src/admin/**/*.js",
-        "/src/partials/utils/**.*.js"
+        "/src/partials/utils/**.*.js",
+        "/dist"
     ],
     "parserOptions": {
         "ecmaVersion": 2020
