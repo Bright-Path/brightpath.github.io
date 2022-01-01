@@ -4,7 +4,10 @@ content: >-
   ## To put it simply
 
 
-  We value your privacy, but also respect you may not want to read legal language. We use a single cookie to track your age verification response so you don't have to answer every time you return. Additionally, we use Google Analytics to see what pages people on our site. That's pretty much it.
+  We value your privacy, but also respect you may not want to read legal language. We use a single cookie to track your age verification response so you don't have to answer every time you return. Additionally, we use Google Analytics to see what pages people on our site. That's pretty much it. Our cookies are set to expire after 60 days, so you may need to re-verify your age if you don't come back often or if you clear your cookies.
+
+
+  To accept our policy, all you have to do is [verify your age](/age-verification).
 
 
   ## Our Full Privacy Policy
