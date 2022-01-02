@@ -13,6 +13,7 @@ header:
       url: https://brightpathbrewing.square.site/
       external: true
   showHome: true
+  logo_text: /upload/brightpath-brewing-text.svg
 alert:
   message: Oh shit wuddup?
   display: true
