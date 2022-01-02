@@ -1,0 +1,51 @@
+.bp-alert {
+    align-items: center;
+    background-color: $red-400;
+    color: $white;
+    display: flex;
+    flex-grow: 1;
+    height: 4rem;
+    justify-content: flex-start;
+    padding: 0 1rem;
+    position: relative;
+    transition: height 0.3s ease, opacity 0.5s ease;
+    width: 100%;
+}
+
+.bp-alert-hide .bp-alert {
+    height: 0;
+    opacity: 0;
+}
+
+.bp-alert-content {
+    max-width: $content-width;
+    width: calc(100% - 4rem);
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.bp-button-alert {
+    background-color: $red-500;
+    border-color: $red-500;
+    border-radius: 0;
+    bottom: 0;
+    color: $white;
+    height: 4rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4rem;
+
+    &:hover,
+    &:focus {
+        background-color: $bp-dark;
+        border-color: $bp-dark;
+        color: $bp-gold;
+    }
+}
