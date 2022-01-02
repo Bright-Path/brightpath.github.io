@@ -244,7 +244,7 @@ input {
     left: 0;
     position: absolute;
     right: 0;
-    top: 6.25rem;
+    top: 4rem;
     width: 100vw;
     z-index: -1;
 }
@@ -350,6 +350,10 @@ input {
         top: 6.25rem;
         width: 40vw;
         z-index: -1;
+    }
+
+    .bp-page-detail {
+        top: 6.25rem;
     }
 
     .bp-beer-content {
