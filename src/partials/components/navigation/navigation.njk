@@ -1,4 +1,6 @@
-{% macro nav(home, pages, current_page) %}
+{% from "components/socialLinks/socialLinks.njk" import socialLinks as socialLinks %}
+
+{% macro nav(home, pages, current_page, social) %}
     <nav class="bp-navigation">
         <ul class="bp-navigation-list">
             {% if home -%}
@@ -25,5 +27,9 @@
                 {%- endfor %}
             {%- endif %}
         </ul>
+
+        <div class="bp-mobile-social-links">
+            {{ socialLinks(social) }}
+        </div>
     </nav>
 {% endmacro %}

@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .bp {
     align-items: stretch;
     background-color: var(--body-bg);
@@ -19,7 +23,7 @@
     justify-content: flex-start;
     margin: 0;
     min-height: 100vh;
-    overflow-y: auto;
+    overflow-x: hidden;
     padding: 0;
     position: relative;
     z-index: 10;
