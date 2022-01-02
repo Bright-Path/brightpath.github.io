@@ -161,6 +161,19 @@ collections:
               name: "external"
               widget: "boolean"
               default: false
+      - label: "Site Announcement"
+        name: "alert"
+        widget: "object"
+        summary: "Announcement displayed in banner on every page"
+        fields:
+        - label: "Message"
+          name: "message"
+          widget: "markdown"
+          required: false
+        - label: "Show Message"
+          name: "display"
+          widget: "boolean"
+          default: false
       - label: "Main Logo"
         name: "logo"
         widget: "image"
