@@ -1,6 +1,6 @@
 {% macro alert(message) %}
     <section role="alert" class="bp-alert" id="bp-alert">
-        <div class="bp-alert-content">
+        <div class="bp-alert-content bp-container">
             {{ message | markdown | safe }}
         </div>
 

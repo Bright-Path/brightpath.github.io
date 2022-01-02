@@ -19,7 +19,8 @@
 
 .bp-alert-content {
     max-width: $content-width;
-    width: calc(100% - 4rem);
+    padding-right: 5rem;
+    width: 100%;
 
     p {
         font-size: 1.25rem;
