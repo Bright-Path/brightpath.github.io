@@ -91,7 +91,7 @@ svg {
     box-sizing: border-box;
     display: block;
     margin: 0 auto;
-    max-width: 90rem;
+    max-width: $content-width;
     overflow-x: hidden;
     padding: 2rem 1rem;
     position: relative;
@@ -240,7 +240,7 @@ input {
     left: 0;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 6.25rem;
     width: 100vw;
     z-index: -1;
 }
@@ -333,7 +333,7 @@ input {
 
 @media #{$small-bp} {
     .bp-home-content {
-        height: calc(100vh - 7rem);
+        height: calc(100vh - 10rem);
         padding: 3rem 2rem;
         width: 60vw;
     }
@@ -343,13 +343,13 @@ input {
         height: auto;
         position: absolute;
         right: 0;
-        top: 0;
+        top: 6.25rem;
         width: 40vw;
         z-index: -1;
     }
 
     .bp-beer-content {
-        height: calc(100vh - 7rem);
+        height: calc(100vh - 10rem);
         padding: 3rem 2rem;
         width: 40vw;
     }
@@ -359,7 +359,7 @@ input {
         height: auto;
         position: absolute;
         right: 0;
-        top: 0;
+        top: 6.25rem;
         width: 60vw;
         z-index: -1;
     }
@@ -415,4 +415,5 @@ input {
 @import '../components/header/header';
 @import '../components/logo/logo';
 @import '../components/navigation/navigation';
+@import '../components/socialLinks/socialLinks';
 @import '../components/table/table';

@@ -5,11 +5,11 @@
                 {{ image_src | svgContents | safe }}
             </span>
             <span class="bp-accessible-text">{{ image_alt_text }}</span>
+            <div class="bp-logo-text">
+                <span class="bp-logo-text-image" aria-hidden="true">
+                    {{ image_2 | svgContents | safe }}
+                </span>
+            </div>
         </a>
-        <div class="bp-logo-text">
-            <span class="bp-logo-text-image" aria-hidden="true">
-                {{ image_2 | svgContents | safe }}
-            </span>
-        </div>
     </div>
 {% endmacro %}

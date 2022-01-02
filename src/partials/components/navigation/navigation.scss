@@ -1,9 +1,14 @@
+.bp-navigation {
+    height: 6.25rem;
+    margin: 0 auto;
+}
+
 .bp-navigation-list {
     font-family: $heading-font-stack;
+    font-size: 0;
+    font-weight: bold;
     margin: 0;
     padding: 0;
-    font-size: 0;
-    height: 6.25rem;
 }
 
 .bp-navigation-list-item {
@@ -18,7 +23,6 @@
     color: var(--navigation-link-color);
     display: block;
     font-size: var(--font-size-base);
-    font-weight: var(--weight-medium);
     height: 6.25rem;
     line-height: 6.25rem;
     padding: 0 0.25rem;
@@ -67,5 +71,11 @@
         height: 6.25rem;
         line-height: 6.25rem;
         padding: 0 1.5rem;
+    }
+}
+
+@media #{$medium-bp} {
+    .bp-navigation-list {
+        margin: 0 auto;
     }
 }

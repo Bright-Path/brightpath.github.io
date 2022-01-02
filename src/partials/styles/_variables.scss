@@ -14,6 +14,8 @@ $bp-dark: #101E1F;
 $bp-gold: #D2B164;
 $bp-light: #FFF;
 
+$bp-green-400: #3A5253;
+
 $grey-300: #E8E8E8;
 $grey-400: #606060;
 $grey-500: #2E2E38;
@@ -29,7 +31,7 @@ $box-shadow-secondary: rgba($black, 0.24);
 
 // Layout
 $rhythm: 0.5rem !default; // The vertical rhythm and vertical spacing to align items consistently.
-$content-width: 71.75rem;
+$content-width: 74rem;
 
 // Media Queries
 $small-bp: 'screen and (min-width: 30rem)';

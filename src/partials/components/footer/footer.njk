@@ -1,26 +1,13 @@
+{% from "components/socialLinks/socialLinks.njk" import socialLinks as socialLinks %}
+
 {% macro footer(content, social) %}
-
-
 <footer class="bp-footer">
     <div class="bp-container">
         {% if content -%}
         <p class="bp-footer-text">{{ content | safe }}</p>
         {%- endif %}
         {% if social -%}
-        <ul class="bp-social-list">
-            {% for item in social -%}
-                {% set iconPath = "/assets/images/" + item.platform.toLowerCase() + ".svg" %}
-                <li class="bp-social-item">
-                    <a href="{{item.url}}" class="bp-social-link" rel="noreferrer" target="_blank">
-                        <span class="bp-accessible-text">{{item.platform}}: </span>
-                        <span class="bp-social-icon" aria-hidden="true">
-                            {{ iconPath | svgContents | safe }}
-                        </span>
-                        <span class="bp-social-text">{{item.handle}}</span>
-                    </a>
-                </li>
-            {%- endfor %}
-        </ul>
+        {{ socialLinks(social) }}
         {%- endif %}
     </div>
 </footer>

@@ -1,38 +1,44 @@
 .bp-logo {
+    display: block;
+    height: 7.5rem;
+    overflow: visible;
     position: relative;
-    display: block;
-    height: 7.5rem;
-    transition: height 0.3s ease, width 0.3s ease;
-}
-
-.bp-logo-link {
-    background-color: $bp-dark;
-    color: $bp-gold;
-    display: block;
-    height: 7.5rem;
-    transition: color 0.3s ease;
-    width: 6.875rem;
-
-    &:hover,
-    &:focus {
-        color: $white;
-    }
+    transition: all 0.3s ease;
 }
 
 .bp-logo-image {
-    display: block;
+    background-color: $bp-dark;
+    color: $bp-gold;
+    fill: $bp-gold;
+    display: inline-block;
     height: 7.5rem;
     width: 6.875rem;
 }
 
 .bp-has-alert {
-    .bp-logo-link {
-        height: 6.25rem;
-        width: 5.75rem;
-    }
-
     .bp-logo-image {
         height: 6.25rem;
         width: 5.75rem;
+    }
+}
+
+.bp-logo-text {
+    display: inline-block;
+    height: 3.125rem;
+    margin-left: 1rem;
+    padding-top: 1.5rem;
+    vertical-align: top;
+    width: 11.25rem;
+}
+
+.bp-logo-link {
+    display: block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover .bp-logo-image,
+    &:focus .bp-logo-image {
+        color: $white;
+        fill: $white;
     }
 }

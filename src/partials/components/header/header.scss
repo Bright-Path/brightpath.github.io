@@ -5,6 +5,7 @@
     overflow: visible;
 
     .bp-container {
+        overflow: hidden;
         padding: 0 0.75rem;
     }
 
@@ -13,12 +14,35 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .bp-social-list {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 6.125rem;
+        margin-right: 0;
+    }
+
+    .bp-social-link {
+        color: var(--navigation-link-color);
+        fill: var(--navigation-link-color);
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: $bp-green-400;
+            fill: $bp-green-400;
+        }
+    }
 }
 
 @media #{$medium-bp} {
     .bp-header {
         .bp-header-title-content {
+            align-items: stretch;
             flex-direction: row;
+            justify-content: space-between;
         }
     }
 }
