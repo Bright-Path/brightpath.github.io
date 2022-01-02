@@ -1,7 +1,7 @@
 ---
 name: Bright Path Brewing
 header:
-  logo: /upload/bright-path-logo.svg
+  logo: /upload/header-hop.svg
   nav:
     - link_text: Our Beers
       url: beer
