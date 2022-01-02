@@ -37,10 +37,11 @@
 
     {% if renderData.section !== 'privacy' %}
     {% set headerInfo = info.header %}
-    {% set logoAlt = image.name + ' logo' %}
+    {% set logoAlt = info.name %}
     {{ header(
         headerInfo.logo,
         logoAlt,
+        headerInfo.logo_text,
         info.name,
         headerInfo.showHome,
         headerInfo.nav,
