@@ -140,10 +140,10 @@ collections:
           name: "logo"
           widget: "image"
           required: true
-          - label: "Nav Secondary Logo"
-            name: "logo_text"
-            widget: "image"
-            required: true
+        - label: "Nav Secondary Logo"
+          name: "logo_text"
+          widget: "image"
+          required: true
         - label: "Show 'Home' in Navigation?"
           name: "showHome"
           widget: "boolean"
