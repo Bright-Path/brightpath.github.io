@@ -25,11 +25,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
 </head>
-<body class="bp">
+{% set info = collections.info[0].data %}
+{% set bodyClass = "bp" %}
+{% if info.alert.display %}
+    {% set bodyClass = "bp bp-has-alert" %}
+{% endif %}
+<body class="{{ bodyClass }}">
     {% from "components/header/header.njk" import header as header %}
+    {% from "components/alert/alert.njk" import alert as alert %}
     {% from "components/footer/footer.njk" import footer as footer %}
-
-    {% set info = collections.info[0].data %}
 
     {% if renderData.section !== 'privacy' %}
     {% set headerInfo = info.header %}
@@ -42,6 +46,8 @@
         headerInfo.nav,
         renderData.section
     ) }}
+
+    {{ alert(info.alert.message) }}
     {% endif %}
 
     {% block template %}
