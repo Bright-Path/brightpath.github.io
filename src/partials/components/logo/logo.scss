@@ -1,16 +1,32 @@
 .bp-logo {
     position: relative;
     display: block;
+    height: 7.5rem;
 }
 
 .bp-logo-link {
+    background-color: $bp-dark;
+    color: $bp-gold;
     display: block;
-    height: 3.125rem;
-    width: auto;
+    height: 7.5rem;
+    width: 6.875rem;
 }
 
 .bp-logo-image {
+    color: $bp-gold;
     display: block;
-    height: 100%;
-    width: auto;
+    height: 7.5rem;
+    width: 6.875rem;
+}
+
+.bp-has-alert {
+    .bp-logo-link {
+        height: 6.25rem;
+        width: 5.75rem;
+    }
+
+    .bp-logo-image {
+        height: 6.25rem;
+        width: 5.75rem;
+    }
 }

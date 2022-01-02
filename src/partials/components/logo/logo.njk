@@ -1,7 +1,9 @@
 {% macro logo(image_src, image_alt_text) %}
     <div class="bp-logo">
         <a class="bp-logo-link" href="/">
-            <img class="bp-logo-image" src="{{ image_src }}" alt="{{ image_alt_text }}">
+            <span class="bp-logo-image" role="img" aria-label="{{ image_alt_text }}">
+                {{ image_src | svgContents | safe }}
+            </span>
         </a>
     </div>
 {% endmacro %}

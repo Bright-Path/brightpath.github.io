@@ -3,12 +3,12 @@
     margin: 0;
     padding: 0;
     font-size: 0;
-    height: 2.5rem;
+    height: 6.25rem;
 }
 
 .bp-navigation-list-item {
     display: inline-block;
-    height: 2.5rem;
+    height: 6.25rem;
 }
 
 .bp-navigation-link {
@@ -17,8 +17,8 @@
     display: block;
     font-size: var(--font-size-base);
     font-weight: var(--weight-medium);
-    height: 2.5rem;
-    line-height: 2.5rem;
+    height: 6.25rem;
+    line-height: 6.25rem;
     padding: 0 0.25rem;
     position: relative;
     text-align: center;
@@ -58,12 +58,12 @@
 @media #{$small-bp} {
     .bp-navigation-list,
     .bp-navigation-item {
-        height: 4rem;
+        height: 6.25rem;
     }
 
     .bp-navigation-link {
-        height: 4rem;
-        line-height: 4rem;
-        padding: 0 0.5rem;
+        height: 6.25rem;
+        line-height: 6.25rem;
+        padding: 0 1.5rem;
     }
 }
