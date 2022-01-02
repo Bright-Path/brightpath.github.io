@@ -13,6 +13,9 @@ header:
       url: https://brightpathbrewing.square.site/
       external: true
   showHome: true
+alert:
+  message: Oh shit wuddup?
+  display: true
 logo: /upload/bright_path_logo.jpg
 address: 1215 North St
 address2: Jim Thorpe, PA 18229
