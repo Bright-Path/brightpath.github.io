@@ -375,6 +375,13 @@ input {
     .bp-privacy-title {
         font-size: 2rem;
     }
+    
+    .bp-has-alert {
+        .bp-home-detail,
+        .bp-beer-detail {
+            top: 10.25rem;
+        }
+    }
 }
 
 @media #{$medium-bp} {
