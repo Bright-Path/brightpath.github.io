@@ -27,7 +27,7 @@
 </head>
 {% set info = collections.info[0].data %}
 {% set bodyClass = "bp" %}
-{% if info.alert.display %}
+{% if if (info.alert.display) and (info.alert.message) %}
     {% set bodyClass = "bp bp-has-alert" %}
 {% endif %}
 <body class="{{ bodyClass }}">
@@ -51,7 +51,10 @@
         social
     ) }}
 
-    {{ alert(info.alert.message) }}
+    {% if (info.alert.display) and (info.alert.message) %}
+        {{ alert(info.alert.message) }}
+    {% endif %}
+    
     {% endif %}
 
     {% block template %}
