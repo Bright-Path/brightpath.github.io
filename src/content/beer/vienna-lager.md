@@ -9,5 +9,7 @@ description: >-
 tap: true
 canned: false
 logo: /upload/icon_vienna-lager.svg
+images:
+  - image: /upload/vienna-lager.jpg
 tags: beer
 ---
