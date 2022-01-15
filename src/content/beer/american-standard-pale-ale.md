@@ -9,5 +9,7 @@ description: >-
 tap: true
 canned: false
 logo: /upload/icon_american-standard-pale-ale.svg
+images:
+  - image: /upload/american-standard-pale-ale.jpg
 tags: beer
 ---
