@@ -255,7 +255,7 @@ input {
 
 .bp-age-verification-form {
     background-color: var(--body-bg);
-    max-height: 100vh;
+    max-height: 70vh;
     min-width: 18rem;
     overflow-x: hidden;
     padding: 1rem;
@@ -378,7 +378,6 @@ input {
     }
 
     .bp-age-verification-form {
-        max-height: 70vh;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
