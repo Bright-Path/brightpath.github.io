@@ -12,7 +12,7 @@ permalink: "/beer/{{ beer.data.name | cleanSlug }}/"
 
 {% block content %}
     {% set content = beer.data %}
-    <section class="bp-beer-content">
+    <section class="bp-home-content bp-beer-content">
         <img src="{{ content.logo }}" alt="" class="bp-beer-logo" />
 
         <h2>{{ content.name }}</h2>
@@ -33,6 +33,6 @@ permalink: "/beer/{{ beer.data.name | cleanSlug }}/"
     </section>
 
     {% if content.images -%}
-        <div class="bp-beer-detail" aria-aria-label="content.images[0].alt" style="background-image: url({{ content.images[0].image }})"></div>
+        <div class="bp-home-detail bp-beer-detail" aria-aria-label="content.images[0].alt" style="background-image: url({{ content.images[0].image }})"></div>
     {%- endif %}
 {% endblock %}

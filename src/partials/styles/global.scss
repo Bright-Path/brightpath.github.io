@@ -202,6 +202,10 @@ input {
     padding: 2rem 1rem;
 }
 
+.bp-beer-content {
+    text-align: center;
+}
+
 .bp-home-detail {
     background-position: center;
     background-repeat: no-repeat;
@@ -210,25 +214,14 @@ input {
     width: 100vw;
 }
 
-.bp-beer-content {
-    display: block;
-    margin: 0;
-    padding: 2rem 1rem;
-    text-align: center;
+.bp-beer-detail {
+    background-position: 50% 100%;
 }
 
 .bp-beer-logo {
     display: block;
     margin: 0 auto;
     max-width: 12.5rem;
-}
-
-.bp-beer-detail {
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 75vh;
-    width: 100vw;
 }
 
 .bp-page-content {
@@ -336,32 +329,15 @@ input {
 }
 
 @media #{$small-bp} {
-    .bp-home-content {
-        height: calc(100vh - 10rem);
-        padding: 3rem 2rem;
-        width: 60vw;
-    }
-
-    .bp-home-detail {
-        bottom: 0;
-        height: auto;
-        position: absolute;
-        right: 0;
-        top: 6.25rem;
-        width: 40vw;
-        z-index: -1;
-    }
-
-    .bp-page-detail {
-        top: 6.25rem;
-    }
-
+    .bp-home-content,
     .bp-beer-content {
         height: calc(100vh - 10rem);
+        overflow-x: hidden;
         padding: 3rem 2rem;
         width: 40vw;
     }
 
+    .bp-home-detail,
     .bp-beer-detail {
         bottom: 0;
         height: auto;
@@ -372,10 +348,14 @@ input {
         z-index: -1;
     }
 
+    .bp-page-detail {
+        top: 6.25rem;
+    }
+
     .bp-privacy-title {
         font-size: 2rem;
     }
-    
+
     .bp-has-alert {
         .bp-home-detail,
         .bp-beer-detail {
@@ -405,10 +385,15 @@ input {
         background-position: 0 50%;
     }
 
+    .bp-home-content,
     .bp-beer-content {
+        max-width: 37rem;
+        margin-left: auto;
+        margin-right: 50vw;
         width: 50vw;
     }
 
+    .bp-home-detail,
     .bp-beer-detail {
         width: 50vw;
     }
