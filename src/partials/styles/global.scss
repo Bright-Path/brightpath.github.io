@@ -144,7 +144,7 @@ input {
     line-height: 1.125rem;
     outline: none;
     margin: 0 0 1rem 1rem;
-    padding: 0.25rem 0.75rem;
+    padding: 0.75rem 1rem;
     text-decoration: none;
     transition: all 0.3s ease;
 
@@ -255,7 +255,9 @@ input {
 
 .bp-age-verification-form {
     background-color: var(--body-bg);
+    max-height: 100vh;
     min-width: 18rem;
+    overflow-x: hidden;
     padding: 1rem;
 
     .bp-button-row {
@@ -376,6 +378,7 @@ input {
     }
 
     .bp-age-verification-form {
+        max-height: 70vh;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
