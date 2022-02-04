@@ -1,6 +1,6 @@
 ---
 name: Schwarzbier
-abv: TBD
+abv: 3.8%
 description: |-
   Dark | Roast | Clean
 
