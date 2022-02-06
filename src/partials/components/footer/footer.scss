@@ -8,9 +8,7 @@
     background-color: var(--footer-bg-color);
     color: var(--footer-text);
     min-height: 3rem;
-    padding-bottom: 0.75rem;
-    padding-top: 0.75rem;
-    text-align: center;
+    padding: 2.75rem 1rem;
     width: 100%;
 
     .bp-container {
@@ -18,6 +16,19 @@
         display: flex;
         justify-content: space-between;
         padding: 0;
+    }
+
+    .bp-footer-heading {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .bp-footer-text {
+        margin: 0;
+    }
+
+    .bp-footer-hours {
+        text-align: center;
     }
 
     a {
@@ -32,6 +43,12 @@
 
     .bp-social-list {
         color: var(--footer-text);
+        text-align: right;
+    }
+
+    .bp-social-item {
+        display: block;
+        margin: 0 0 0.5rem;
     }
 
     .bp-social-icon {

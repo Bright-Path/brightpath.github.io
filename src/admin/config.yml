@@ -118,6 +118,19 @@ collections:
         widget: "string"
         description: "specific to this location"
         required: false
+      - label: "Hours"
+        name: "hours"
+        widget: "list"
+        required: false
+        fields:
+          - label: "Day"
+            name: "day"
+            widget: "string"
+            required: true
+          - label: "Hours"
+            name: "hours"
+            widget: "string"
+            required: true
       - label: "Tags"
         name: "tags"
         widget: "hidden"

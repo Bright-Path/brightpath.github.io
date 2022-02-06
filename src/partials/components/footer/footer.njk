@@ -1,13 +1,38 @@
 {% from "components/socialLinks/socialLinks.njk" import socialLinks as socialLinks %}
 
-{% macro footer(content, social) %}
+{% macro footer(content, location, social, logo) %}
 <footer class="bp-footer">
     <div class="bp-container">
-        {% if content -%}
-        <p class="bp-footer-text">{{ content | safe }}</p>
+        {% if location -%}
+        <div>
+            <h2 class="bp-footer-heading">Bright Path Brewing</h2>
+            <h3 class="bp-accessible-text">{{ location.name }} Address</h3>
+            <address class="bp-footer-text">
+                {{ location.address }}<br />
+                {{ location.address2 }}
+            </address>
+        </div>
         {%- endif %}
+
+        {% if location.hours.length -%}
+        <div>
+            <h3 class="bp-accessible-text">
+                <span>{{ location.name }} </span>
+                Hours
+            </h3>
+            <p class="bp-footer-text bp-footer-hours">
+                {% for day in location.hours -%}
+                {{ day.day }}: {{ day.hours }}<br />
+                {%- endfor %}
+            </p>
+        </div>
+        {%- endif %}
+
         {% if social -%}
-        {{ socialLinks(social) }}
+        <div>
+            <h3 class="bp-accessible-text">Follow us on social media</h3>
+            {{ socialLinks(social) }}
+        </div>
         {%- endif %}
     </div>
 </footer>

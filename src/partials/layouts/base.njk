@@ -26,6 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
 </head>
 {% set info = collections.info[0].data %}
+{% set location = collections.locations[0].data %}
 {% set bodyClass = "bp" %}
 {% if (info.alert.display === true) and (info.alert.message) %}
     {% set bodyClass = "bp bp-has-alert" %}
@@ -34,7 +35,7 @@
     {% from "components/header/header.njk" import header as header %}
     {% from "components/alert/alert.njk" import alert as alert %}
     {% from "components/footer/footer.njk" import footer as footer %}
-    
+
     {% set social = info.social %}
 
     {% if renderData.section !== 'privacy' %}
@@ -54,7 +55,7 @@
     {% if (info.alert.display === true) and (info.alert.message) %}
         {{ alert(info.alert.message) }}
     {% endif %}
-    
+
     {% endif %}
 
     {% block template %}
@@ -62,7 +63,7 @@
 
     {% if renderData.section !== 'privacy' %}
     {% set footerInfo = info.footer %}
-    {{ footer(footerInfo, social) }}
+    {{ footer(footerInfo, location, social) }}
     {% endif %}
 
     <script type="text/javascript" src="/assets/js/brightpath.js"></script>
