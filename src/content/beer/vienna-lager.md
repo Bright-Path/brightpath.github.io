@@ -1,6 +1,6 @@
 ---
 name: Vienna Lager
-abv: 4.5%
+abv: 4.3%
 description: >-
   Malty | Toasty | Amber Color
 
