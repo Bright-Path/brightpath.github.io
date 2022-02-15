@@ -1,6 +1,6 @@
 ---
 name: McGowan's Cream Ale
-abv: 4.5%
+abv: 4.3%
 description: >-
   Smooth | Crisp | Easy Drinking
 

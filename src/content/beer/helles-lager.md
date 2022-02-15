@@ -1,6 +1,6 @@
 ---
 name: Helles Lager
-abv: 4.2%
+abv: 4.3%
 description: |-
   Refreshing | Light | Clean
 

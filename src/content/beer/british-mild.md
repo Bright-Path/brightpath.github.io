@@ -1,6 +1,6 @@
 ---
 name: British Mild
-abv: 3.2%
+abv: 3.4%
 description: >-
   Malty | Caramel | Clean
 

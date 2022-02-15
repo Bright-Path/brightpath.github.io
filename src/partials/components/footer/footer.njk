@@ -4,7 +4,7 @@
 <footer class="bp-footer">
     <div class="bp-container">
         {% if location -%}
-        <div>
+        <div class="bp-footer-content">
             <h2 class="bp-footer-heading">Bright Path Brewing</h2>
             <h3 class="bp-accessible-text">{{ location.name }} Address</h3>
             <address class="bp-footer-text">
@@ -15,7 +15,7 @@
         {%- endif %}
 
         {% if location.hours.length -%}
-        <div>
+        <div class="bp-footer-content">
             <h3 class="bp-accessible-text">
                 <span>{{ location.name }} </span>
                 Hours
@@ -29,7 +29,7 @@
         {%- endif %}
 
         {% if social -%}
-        <div>
+        <div class="bp-footer-content">
             <h3 class="bp-accessible-text">Follow us on social media</h3>
             {{ socialLinks(social) }}
         </div>
