@@ -9,5 +9,7 @@ tap: true
 canned: false
 page_description: ""
 logo: /upload/icon_pisgah-mountain-brew.svg
+images:
+  - image: /upload/pisgah_mountain_brew.jpeg
 tags: beer
 ---
