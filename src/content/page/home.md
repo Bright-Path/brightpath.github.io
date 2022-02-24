@@ -3,8 +3,8 @@ name: Home
 hero: /upload/brew-retouch_1639589762.jpeg
 title: Now Open
 description: >-
-  Bright Path Brewing is the first locally owned and operated small craft
-  brewery in rural Jim Thorpe, Pennsylvania. We focus on ​​lager and low-ABV
+  Bright Path Brewing is a locally owned and operated small craft brewery in
+  rural Jim Thorpe, Pennsylvania. We focus on flavorful ​​lagers and low-ABV
   session beers.
 
 
