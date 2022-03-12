@@ -3,18 +3,14 @@ name: About Us
 hero: /upload/about.jpeg
 title: About Us
 description: >-
-  ### Our Story
+  Bright Path Brewing was founded with a simple mission: to create refreshing
+  flavorful ​​lagers and low-ABV session beers for everyone to enjoy. All in a
+  setting that exudes cozy small-town vibes.
 
 
-  Bright Path Brewing was founded with a simple mission, create refreshing ​​lagers and low-ABV session beers for everyone to enjoy. All in a setting that exudes cozy small-town vibes.
+  Bright Path is our community, the place Alex Franko and Dillon Smith grew up and have a connection to. Though Alex and Dillon left home to build their careers and hone their craft, ultimately their paths led them back here to their hometown of Jim Thorpe, Pennsylvania. A place they want to put down roots, raise their families, grow their business, and be a part of this community’s bright future. 
 
 
-  Alex Franko and Dillon Smith began dreaming up their vision for Bright Path Brewery after years in the industry. Their time at multiple breweries has driven home the community mindset and that breweries are a huge part of the communities that they operate in. Alex and Dillon have a vision for creating fresh, easy-drinking beer, hosting local food trucks and events for the community to connect with. After years of planning, the first locally owned and operated small craft brewery in Jim Thorpe, PA is ready to pour you a liter. 
-
-
-  ### Our Roots
-
-
-  Alex Franko and Dillon Smith grew up in Jim Thorpe, Pennsylvania and both have strong local pride. This drew them back to Jim Thorpe after years in the brewing industry to start Bright Path Brewing.
+  Alex and Dillon believe breweries are a huge part of the communities they operate in and have a vision for creating fresh, easy-drinking beer while hosting local food trucks and events for the community to connect with. After years of planning, our doors are open and we invite you to stop by our to let us pour you a liter.
 tags: page
 ---
