@@ -1,11 +1,11 @@
 ---
 name: Vienna Lager
-abv: 4.3%
+abv: 4.5%
 description: >-
   Malty | Toasty | Amber Color
 
 
-  A medium bodied amber colored lager. Brewed with floor malted german malts and lager for an extended period of time. 
+  A medium-bodied, amber-colored, Vienna-styled lager. Brewed with floor-malted German malts and lagered for an extended period of time.
 tap: true
 canned: false
 logo: /upload/icon_vienna-lager.svg
