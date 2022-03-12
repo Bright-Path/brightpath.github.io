@@ -2,28 +2,38 @@
     <div class="bp-table" role="table">
         <div class="bp-table-headergroup" role="rowgroup">
             <div class="bp-table-row bp-table-header" role="row">
-                <div class="bp-table-cell bp-table-heading bp-table-logo" role="columnheader" aria-sort="none" aria-hidden="true">
-                    <span class="bp-accessible-text">Logo</span>
+                <div class="bp-table-cell bp-table-heading bp-table-logo bp-accessible-text" role="columnheader" aria-sort="none" aria-hidden="true">
+                    Logo
                 </div>
-                <div class="bp-table-cell bp-table-heading bp-table-beer-name" role="columnheader" aria-sort="none">Beer Name</div>
-                <div class="bp-table-cell bp-table-heading" role="columnheader" aria-sort="none">Availability</div>
-                <div class="bp-table-cell bp-table-heading" role="columnheader" aria-sort="none">ABV</div>
+                <div class="bp-table-cell bp-table-heading bp-table-beer-name bp-accessible-text" role="columnheader" aria-sort="none">
+                    Beer Name
+                </div>
+                <div class="bp-table-cell bp-table-heading bp-accessible-text" role="columnheader" aria-sort="none">
+                    Availability
+                </div>
+                <div class="bp-table-cell bp-table-heading bp-accessible-text" role="columnheader" aria-sort="none">
+                    Alcohol By Volume
+                </div>
                 <div class="bp-table-cell bp-table-heading bp-accessible-text" role="columnheader" aria-sort="none">
                     Description
                 </div>
             </div>
         </div>
+
+        <div class="bp-table-rows">
         {% for beer in beers -%}
             <div class="bp-table-rowgroup" role="rowgroup">
                 <div class="bp-table-row" role="row">
                     <div class="bp-table-cell bp-table-logo" role="cell" aria-hidden="true">
-                        <img src="{{ beer.data.logo }}" alt="" />
+                        <img class="bp-table-logo-image" src="{{ beer.data.logo }}" alt="" />
                     </div>
                     <div class="bp-table-content">
-                        <div class="bp-table-cell bp-table-beer-name" role="cell">
-                            <a class="bp-table-beer-link" href="{{ beer.data.name | cleanSlug }}">{{ beer.data.name }}</a>
+                        <div class="bp-table-cell bp-table-beer-heading" role="cell">
+                            <h4 class="bp-table-beer-name">
+                                <a class="bp-table-beer-link" href="{{ beer.data.name | cleanSlug }}">{{ beer.data.name }}</a>
+                            </h4>
                         </div>
-                        <div class="bp-table-cell" role="cell">
+                        <div class="bp-table-cell bp-table-availability" role="cell">
                             {% if (beer.data.canned) and (beer.data.tap) -%}
                             In cans and on tap<span class="bp-accessible-text">.</span>
                             {% elif beer.data.tap -%}
@@ -32,7 +42,7 @@
                             In cans<span class="bp-accessible-text">.</span>
                             {%- endif %}
                         </div>
-                        <div class="bp-table-cell" role="cell">
+                        <div class="bp-table-cell bp-table-abv" role="cell">
                             {{ beer.data.abv }}
                         </div>
                         <div class="bp-table-cell bp-table-beer-description" role="cell">
@@ -44,5 +54,6 @@
                 </div>
             </div>
         {%- endfor %}
+        </div>
     </div>
 {% endmacro %}
