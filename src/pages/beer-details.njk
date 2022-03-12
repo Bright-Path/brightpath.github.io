@@ -33,6 +33,6 @@ permalink: "/beer/{{ beer.data.name | cleanSlug }}/"
     </section>
 
     {% if content.images -%}
-        <div class="bp-home-detail bp-beer-detail" aria-aria-label="content.images[0].alt" style="background-image: url({{ content.images[0].image }})"></div>
+        <div class="bp-home-detail bp-beer-detail" aria-label="content.images[0].alt" style="background-image: url({{ content.images[0].image }})"></div>
     {%- endif %}
 {% endblock %}
