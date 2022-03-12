@@ -15,7 +15,7 @@ header:
   showHome: true
   logo_text: /upload/brightpath-brewing-text.svg
 alert:
-  message: Oh shit wuddup?
+  message: ""
   display: false
 logo: /upload/bright_path_logo.jpg
 address: 1215 North St
