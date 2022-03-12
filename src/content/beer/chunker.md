@@ -8,7 +8,7 @@ description: >-
   A session IPA brewed with rye and oat malt. Dry-hopped with an aggressive amount of Centennial and Citra hops. 
 tap: true
 canned: false
-logo: /upload/icon_chunker.svg
+logo: /upload/chunker.svg
 images:
   - image: /upload/chunker-rye-ipa.jpg
 tags: beer
