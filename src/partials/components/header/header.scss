@@ -65,11 +65,19 @@
     .bp-close-menu {
         display: block;
     }
+    
+    .bp-menu-button {
+        position: fixed;
+        top: 0;
+    }
 }
 
 @media #{$small-bp} {
-    .bp-menu-button {
+    .bp-menu-button,
+    .bp-menu-visible .bp-menu-button {
         display: none;
+        position: static;
+        top: auto;
     }
 
     .bp-header {
