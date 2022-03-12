@@ -108,6 +108,10 @@ collections:
         widget: "string"
         description: "Jim Thorpe, PA 18229"
         required: true
+      - label: "Map link"
+        name: "mapLink"
+        widget: "string"
+        required: false
       - label: "Phone Number"
         name: "phone"
         widget: "string"

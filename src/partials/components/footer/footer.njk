@@ -8,8 +8,10 @@
             <h2 class="bp-footer-heading">Bright Path Brewing</h2>
             <h3 class="bp-accessible-text">{{ location.name }} Address</h3>
             <address class="bp-footer-text">
+                {% if location.mapLink %}<a href="{{ location.mapLink }}" target="_blank" rel="noopener noreferrer">{% endif %}
                 {{ location.address }}<br />
                 {{ location.address2 }}
+                {% if location.mapLink %}</a>{% endif %}
             </address>
         </div>
         {%- endif %}
