@@ -20,19 +20,18 @@ permalink: "/beer/"
             {% if content.description -%}
                 {{ content.description | markdown | safe }}
             {%- endif %}
+
+            {% if content.content -%}
+                {{ content.content | markdown | safe }}
+            {%- endif %}
+
+            {% if beers.length -%}
+                <h3>Available Beers</h3>
+                
+                {% set available = beers | availableBeers() %}
+
+                {{ table(available) }}
+            {%- endif %}
         </section>
-    {%- endif %}
-
-    {% if content.content -%}
-        {{ content.content | markdown | safe }}
-    {%- endif %}
-
-    {% if beers.length -%}
-        <div class="bp-table">
-            <h3>Available Beers</h3>
-        </div>
-        {% set available = beers | availableBeers() %}
-
-        {{ table(available) }}
     {%- endif %}
 {% endblock %}

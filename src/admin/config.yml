@@ -1,6 +1,6 @@
 backend:
   name: github
-  branch: develop # Branch where CMS changes will be committed
+  branch: master # Branch where CMS changes will be committed
   repo: Bright-Path/brightpath.github.io # Path to your GitLab repository
 media_folder: "src/upload" # Media files will be stored in the repo under images/uploads
 public_folder: "/upload"
@@ -108,6 +108,10 @@ collections:
         widget: "string"
         description: "Jim Thorpe, PA 18229"
         required: true
+      - label: "Map link"
+        name: "mapLink"
+        widget: "string"
+        required: false
       - label: "Phone Number"
         name: "phone"
         widget: "string"
