@@ -9,5 +9,7 @@ description: >-
 tap: true
 canned: false
 logo: /upload/draft-only.svg
+images:
+  - image: /upload/british-mild.jpg
 tags: beer
 ---
