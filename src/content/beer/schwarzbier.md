@@ -8,5 +8,7 @@ description: |-
 tap: true
 canned: false
 logo: /upload/draft-only.svg
+images:
+  - image: /upload/schwarzbier.jpg
 tags: beer
 ---
