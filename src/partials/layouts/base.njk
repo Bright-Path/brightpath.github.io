@@ -16,34 +16,56 @@
 
     <meta property="og:title" content="Bright Path Brewing">
     <meta property="og:description" content="Craft brewery focusing on lager and session beer based in Jim Thorpe, Pennsylvania.">
-    <meta property="og:image" content="/assets/images/brightpath-logo-social.jpg">
+    <meta property="og:image" content="/upload/bright_path_logo.jpg">
     <meta property="og:url" content="https://www.brightpathbrewing.com">
     <meta property="og:site_name" content="Bright Path Brewing">
     <meta name="twitter:card" content="summary_large_image">
 
     <link rel="stylesheet" type="text/css" href="/assets/styles/bp.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
 </head>
-<body class="bp">
+{% set info = collections.info[0].data %}
+{% set location = collections.locations[0].data %}
+{% set bodyClass = "bp" %}
+{% if (info.alert.display === true) and (info.alert.message) %}
+    {% set bodyClass = "bp bp-has-alert" %}
+{% endif %}
+<body class="{{ bodyClass }}">
     {% from "components/header/header.njk" import header as header %}
+    {% from "components/alert/alert.njk" import alert as alert %}
     {% from "components/footer/footer.njk" import footer as footer %}
 
-    {% set info = collections.info[0].data %}
+    {% set social = info.social %}
+
+    {% if renderData.section !== 'privacy' %}
     {% set headerInfo = info.header %}
-    {% set logoAlt = image.name + ' logo' %}
-    {# logo image, logo alt, site title, nav_home, nav_pages, section #}
+    {% set logoAlt = info.name %}
     {{ header(
         headerInfo.logo,
         logoAlt,
+        headerInfo.logo_text,
         info.name,
         headerInfo.showHome,
-        headerInfo.nav
+        headerInfo.nav,
+        renderData.section,
+        social
     ) }}
+
+    {% if (info.alert.display === true) and (info.alert.message) %}
+        {{ alert(info.alert.message) }}
+    {% endif %}
+
+    {% endif %}
 
     {% block template %}
     {% endblock %}
 
+    {% if renderData.section !== 'privacy' %}
     {% set footerInfo = info.footer %}
-    {% set social = info.social %}
-    {{ footer(footerInfo, social) }}
+    {{ footer(footerInfo, location, social) }}
+    {% endif %}
+
+    <script type="text/javascript" src="/assets/js/brightpath.js"></script>
 </body>
 </html>

@@ -1,7 +1,8 @@
 {% from "components/logo/logo.njk" import logo as logo %}
-{# {% from "components/navigation/navigation.njk" import nav as nav %} #}
+{% from "components/navigation/navigation.njk" import nav as nav %}
+{% from "components/socialLinks/socialLinks.njk" import socialLinks as socialLinks %}
 
-{% macro header(image, client, title, nav_home, nav_pages, current_section) %}
+{% macro header(image, client, image_2, title, nav_home, nav_pages, current_section, social) %}
     <header class="bp-header">
         <h1 class="bp-accessible-text">
             {{ title }}
@@ -11,14 +12,42 @@
             <div class="bp-header-title-content">
                 {{ logo(
                     image,
-                    client
+                    client,
+                    image_2
                 ) }}
 
-                {# {{ nav(
+                {{ nav(
                     nav_home,
                     nav_pages,
-                    current_section
-                ) }} #}
+                    current_section,
+                    social
+                ) }}
+
+                {{ socialLinks(social) }}
+
+                <button type="button" id="bp-menu-toggle" class="bp-menu-button">
+                    <span id="bp-menu-text" class="bp-accessible-text">Open site navigation</span>
+                    <span class="bp-menu-icon bp-open-menu" aria-hidden="true">
+                        <svg viewBox="0 0 384.97 384.97" xmlns="http://www.w3.org/2000/svg">
+                        	<g fill="currentColor">
+                        		<path d="M12.03,84.212h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
+                        		C5.39,60.152,0,65.541,0,72.182C0,78.823,5.39,84.212,12.03,84.212z"/>
+                        		<path d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
+                        		S379.58,180.455,372.939,180.455z"/>
+                        		<path d="M372.939,300.758H12.03c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h360.909
+                        		c6.641,0,12.03-5.39,12.03-12.03C384.97,306.147,379.58,300.758,372.939,300.758z"/>
+                        	</g>
+                        </svg>
+                    </span>
+                    <span class="bp-menu-icon bp-close-menu" aria-hidden="true">
+                        <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <line x1="17.5" x2="54.5" y1="17.5" y2="54.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+                                <line x1="54.5" x2="17.5" y1="17.5" y2="54.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+                            </g>
+                        </svg>
+                    </span>
+                </button>
             </div>
         </div>
     </header>

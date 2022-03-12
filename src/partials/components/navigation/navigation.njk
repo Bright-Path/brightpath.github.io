@@ -1,10 +1,12 @@
-{% macro nav(home, pages, current_page) %}
+{% from "components/socialLinks/socialLinks.njk" import socialLinks as socialLinks %}
+
+{% macro nav(home, pages, current_page, social) %}
     <nav class="bp-navigation">
         <ul class="bp-navigation-list">
             {% if home -%}
                 {% set pageName = 'home' %}
                 <li class="bp-navigation-list-item">
-                    <a href="/home" class="bp-navigation-link {%if current_page === pageName %}bp-navigation-link-active{% endif %}">
+                    <a href="/" class="bp-navigation-link {%if current_page === pageName %}bp-navigation-link-active{% endif %}">
                         Home
                     </a>
                 </li>
@@ -14,12 +16,20 @@
                 {% for page in pages -%}
                     {% set url = page.url %}
                     <li class="bp-navigation-list-item">
-                        <a href="/{{ url }}" class="bp-navigation-link {%if current_page === url %}bp-navigation-link-active{% endif %}">
+                        {% set navLink = "/" + url %}
+                        {% if page.external -%}
+                        {% set navLink = url %}
+                        {%- endif %}
+                        <a href="{{ navLink }}" {% if page.external %}target="_blank" rel="noopener" {% endif %}class="bp-navigation-link {%if current_page === url %}bp-navigation-link-active{% endif %}">
                             {{ page.link_text }}
                         </a>
                     </li>
                 {%- endfor %}
             {%- endif %}
         </ul>
+
+        <div class="bp-mobile-social-links">
+            {{ socialLinks(social) }}
+        </div>
     </nav>
 {% endmacro %}

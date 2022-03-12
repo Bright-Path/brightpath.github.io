@@ -1,0 +1,38 @@
+---
+renderData:
+  section: "beer"
+pagination:
+    data: collections.beer
+    alias: beer
+    size: 1
+permalink: "/beer/{{ beer.data.name | cleanSlug }}/"
+---
+
+{% extends "layouts/home.njk" %}
+
+{% block content %}
+    {% set content = beer.data %}
+    <section class="bp-home-content bp-beer-content">
+        <img src="{{ content.logo }}" alt="" class="bp-beer-logo" />
+
+        <h2>{{ content.name }}</h2>
+
+        {% if content.abv -%}
+            <p class="bp-fine-print">{{ content.abv }} alcohol by volume</p>
+        {%- endif %}
+
+        {% if content.description -%}
+            {{ content.description | markdown | safe }}
+        {%- endif %}
+
+        <div class="bp-beer-additional-content">
+            {% if content.page_description -%}
+                {{ content.page_description | markdown | safe }}
+            {%- endif %}
+        </div>
+    </section>
+
+    {% if content.images -%}
+        <div class="bp-home-detail bp-beer-detail" aria-aria-label="content.images[0].alt" style="background-image: url({{ content.images[0].image }})"></div>
+    {%- endif %}
+{% endblock %}

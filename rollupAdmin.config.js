@@ -4,9 +4,9 @@ const { terser } = require('rollup-plugin-terser');
 
 module.exports = [
     {
-        input: 'src/admin/netlifyCms.js',
+        input: 'src/admin/netlifyCms-build.js',
         output: {
-            file: 'dist/admin/netlifyCms.js',
+            file: 'src/admin/netlifyCms.js',
             format: 'umd',
             globals: {
                 'netlify-cms': 'CMS'

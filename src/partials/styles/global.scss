@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'fonts';
 @import 'theme';
 
 * {
@@ -7,14 +6,27 @@
     scroll-behavior: smooth;
 }
 
-body {
+html {
+    overflow-x: hidden;
+}
+
+.bp {
+    align-items: stretch;
     background-color: var(--body-bg);
     color: var(--body-color);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     font-family: var(--primary-font);
     font-weight: var(--default-weight);
     line-height: 1.2;
+    justify-content: flex-start;
     margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
     padding: 0;
+    position: relative;
+    z-index: 10;
 }
 
 h1,
@@ -25,10 +37,36 @@ h5,
 h6 {
     font-family: var(--heading-font-stack);
     font-weight: var(--heading-font-weight);
+    margin-top: 0;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+h4 {
+    font-size: var(--h4-font-size);
+}
+
+h5 {
+    font-size: var(--h5-font-size);
+}
+
+h6 {
+    font-size: var(--h6-font-size);
 }
 
 p {
     line-height: 1.5;
+    margin-top: 0;
 }
 
 a {
@@ -48,24 +86,23 @@ svg {
     width: 100%;
 }
 
-/* Added this min-height for now so that the footer ALWAYS sits at bottom of screen. */
-
-.bp-main {
-    min-height: calc(100% - 7rem);
+address {
+    font-style: normal;
 }
 
-.bp-home {
-    height: calc(100% - 7rem);
+.bp-main {
+    flex-grow: 1;
     margin: 0;
-    position: relative;
 }
 
 .bp-container {
     box-sizing: border-box;
     display: block;
     margin: 0 auto;
-    max-width: 90rem;
-    padding: 2rem 2rem 5rem;
+    max-width: $content-width;
+    overflow-x: hidden;
+    padding: 2rem 1rem;
+    position: relative;
     width: 100%;
 }
 
@@ -85,6 +122,13 @@ input {
     box-sizing: border-box;
 }
 
+.bp-fine-print {
+    font-size: 0.75rem;
+    font-style: italic;
+    margin: 1.5rem 0 0.5rem;
+    text-align: center;
+}
+
 .bp-accessible-text {
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
@@ -96,10 +140,74 @@ input {
     position: absolute;
 }
 
+.bp-button {
+    border: 1px solid;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    outline: none;
+    margin: 0 0 1rem 1rem;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &-primary {
+        background-color: var(--primary-button-background);
+        border-color: var(--primary-button-border);
+        color: var(--primary-button-text);
+
+        &:hover,
+        &:focus {
+            background-color: var(--primary-button-background-hover);
+            border-color: var(--primary-button-border-hover);
+            color: var(--primary-button-text-hover);
+        }
+    }
+
+    &-secondary {
+        background-color: var(--secondary-button-background);
+        border-color: var(--secondary-button-border);
+        color: var(--secondary-button-text);
+
+        &:hover,
+        &:focus {
+            background-color: var(--secondary-button-background-hover);
+            border-color: var(--secondary-button-border-hover);
+            color: var(--secondary-button-text-hover);
+        }
+    }
+
+    &-icon {
+        border-radius: 3rem;
+        border-width: 2px;
+        padding: 0.25rem;
+    }
+}
+
+.bp-button-row {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .bp-button {
+        margin: 0 auto;
+    }
+}
+
 .bp-home-content {
     display: block;
     margin: 0;
     padding: 2rem 1rem;
+}
+
+.bp-beer-content {
+    text-align: center;
 }
 
 .bp-home-detail {
@@ -110,30 +218,208 @@ input {
     width: 100vw;
 }
 
+.bp-beer-detail {
+    background-position: 50% 100%;
+}
+
+.bp-beer-logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 12.5rem;
+}
+
+.bp-page-content {
+    margin-top: 50vh;
+    width: 100%;
+}
+
+.bp-page-detail {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 4rem;
+    width: 100vw;
+    z-index: -1;
+}
+
+.bp-age-verification-content {
+    border-radius: 3px;
+    color: var(--body-color);
+    left: 0.5rem;
+    min-width: 20rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 5;
+}
+
+.bp-age-verification-form {
+    background-color: var(--body-bg);
+    max-height: 70vh;
+    min-width: 18rem;
+    overflow-x: hidden;
+    padding: 1rem;
+
+    .bp-button-row {
+        margin: 0 auto;
+        max-width: 24rem;
+    }
+}
+
+.bp-age-verification-header {
+    background-color: var(--body-color);
+    border-radius: 3px 3px 0 0;
+    color: var(--body-bg);
+    margin: -1.25rem -1rem 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.bp-age-verification-bg {
+    background-repeat: no-repeat;
+    background-position: 10% 100%;
+    background-size: cover;
+    bottom: -0.5rem;
+    left: -0.5rem;
+    position: fixed;
+    right: -0.5rem;
+    top: -0.5rem;
+    z-index: 1;
+}
+
+.bp-privacy {
+    align-items: stretch;
+    background-color: var(--body-bg);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    left: 50%;
+    height: 90vh;
+    justify-content: flex-start;
+    max-width: 64rem;
+    overflow: visible;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    z-index: 5;
+
+    &-content {
+        padding: 2rem;
+        overflow-y: auto;
+    }
+}
+
+.bp-privacy-title {
+    background-color: var(--body-color);
+    border-radius: 3px 3px 0 0;
+    color: var(--body-bg);
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.bp-privacy-back {
+    height: 3rem;
+    position: absolute;
+    right: -1.5rem;
+    top: -1.5rem;
+    width: 3rem;
+    z-index: 10;
+}
+
 @media #{$small-bp} {
-    .bp-home-content {
-        height: calc(100vh - 7rem);
+    .bp-home-content,
+    .bp-beer-content {
+        height: calc(100vh - 10rem);
+        overflow-x: hidden;
         padding: 3rem 2rem;
         width: 40vw;
     }
 
-    .bp-home-detail {
+    .bp-home-detail,
+    .bp-beer-detail {
         bottom: 0;
         height: auto;
         position: absolute;
         right: 0;
-        top: 0;
+        top: 6.25rem;
         width: 60vw;
         z-index: -1;
     }
+
+    .bp-page-detail {
+        top: 6.25rem;
+    }
+
+    .bp-privacy-title {
+        font-size: 2rem;
+    }
+
+    .bp-has-alert {
+        .bp-home-detail,
+        .bp-beer-detail {
+            top: 10.25rem;
+        }
+    }
 }
 
-@import '../components/header/header';
-@import '../components/navigation/navigation';
-@import '../components/logo/logo';
-@import '../components/hero/hero';
-@import '../components/related-links/related-links';
-@import '../components/content/content';
-@import '../components/post-list-item/post-list-item';
+@media #{$medium-bp} {
+    .bp-age-verification-content {
+        left: auto;
+        min-height: 40vh;
+        position: fixed;
+        right: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40vw;
+    }
+
+    .bp-age-verification-form {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .bp-age-verification-bg {
+        background-position: 0 50%;
+    }
+
+    .bp-home-content,
+    .bp-beer-content {
+        max-width: 37rem;
+        margin-left: auto;
+        margin-right: 50vw;
+        width: 50vw;
+    }
+
+    .bp-home-detail,
+    .bp-beer-detail {
+        width: 50vw;
+    }
+}
+
+@media #{$large-bp} {
+    .bp-age-verification-content {
+        right: 4rem;
+        width: 30vw;
+    }
+
+    .bp-age-verification-bg {
+        background-position: 50%;
+    }
+}
+
 @import '../components/alert/alert';
 @import '../components/footer/footer';
+@import '../components/header/header';
+@import '../components/logo/logo';
+@import '../components/navigation/navigation';
+@import '../components/socialLinks/socialLinks';
+@import '../components/table/table';

@@ -1,26 +1,38 @@
-{% macro footer(content, social) %}
+{% from "components/socialLinks/socialLinks.njk" import socialLinks as socialLinks %}
 
-
+{% macro footer(content, location, social, logo) %}
 <footer class="bp-footer">
     <div class="bp-container">
-        {% if content -%}
-        <p class="bp-footer-text">{{ content | safe }}</p>
+        {% if location -%}
+        <div class="bp-footer-content">
+            <h2 class="bp-footer-heading">Bright Path Brewing</h2>
+            <h3 class="bp-accessible-text">{{ location.name }} Address</h3>
+            <address class="bp-footer-text">
+                {{ location.address }}<br />
+                {{ location.address2 }}
+            </address>
+        </div>
         {%- endif %}
+
+        {% if location.hours.length -%}
+        <div class="bp-footer-content">
+            <h3 class="bp-accessible-text">
+                <span>{{ location.name }} </span>
+                Hours
+            </h3>
+            <p class="bp-footer-text bp-footer-hours">
+                {% for day in location.hours -%}
+                {{ day.day }}: {{ day.hours }}<br />
+                {%- endfor %}
+            </p>
+        </div>
+        {%- endif %}
+
         {% if social -%}
-        <ul class="bp-social-list">
-            {% for item in social -%}
-                {% set iconPath = "/assets/images/" + item.platform.toLowerCase() + ".svg" %}
-                <li class="bp-social-item">
-                    <a href="{{item.url}}" class="bp-social-link" ref="noreferrer" target="_blank">
-                        <span class="bp-accessible-text">{{item.platform}}: </span>
-                        <span class="bp-social-icon" aria-hidden="true">
-                            {{ iconPath | svgContents | safe }}
-                        </span>
-                        <span class="bp-social-text">{{item.handle}}</span>
-                    </a>
-                </li>
-            {%- endfor %}
-        </ul>
+        <div class="bp-footer-content">
+            <h3 class="bp-accessible-text">Follow us on social media</h3>
+            {{ socialLinks(social) }}
+        </div>
         {%- endif %}
     </div>
 </footer>

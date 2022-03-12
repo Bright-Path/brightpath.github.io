@@ -1,0 +1,38 @@
+---
+renderData:
+  section: "beer"
+permalink: "/beer/"
+---
+
+{% extends "layouts/content.njk" %}
+{% from "components/table/table.njk" import table as table %}
+
+{% block content %}
+    {% set content = collections.page[2].data %}
+    {% set beers = collections.beer %}
+
+    {% if content.hero -%}
+        <div class="bp-page-detail" style="background-image: url({{ content.hero }})"></div>
+
+        <section class="bp-page-content bp-container">
+            <h2>{{ content.title }}</h2>
+
+            {% if content.description -%}
+                {{ content.description | markdown | safe }}
+            {%- endif %}
+        </section>
+    {%- endif %}
+
+    {% if content.content -%}
+        {{ content.content | markdown | safe }}
+    {%- endif %}
+
+    {% if beers.length -%}
+        <div class="bp-table">
+            <h3>Available Beers</h3>
+        </div>
+        {% set available = beers | availableBeers() %}
+
+        {{ table(available) }}
+    {%- endif %}
+{% endblock %}

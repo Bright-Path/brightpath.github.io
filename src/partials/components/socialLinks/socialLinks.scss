@@ -1,0 +1,49 @@
+.bp-social-list {
+    color: var(--body-color);
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.bp-social-item {
+    display: inline-block;
+    font-size: 0;
+    margin: 0 0 0 1rem;
+    padding: 0;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.bp-social-icon {
+    display: inline-block;
+    height: 1.25rem;
+    fill: var(--body-color);
+    margin: 0 0.25rem 0 0;
+    padding: 0;
+    vertical-align: middle;
+    width: 1.25rem;
+}
+
+.bp-social-text {
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+
+.bp-social-link {
+    color: var(--body-link);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: var(--body-link-hover);
+
+        .bp-social-icon {
+            fill: var(--body-link-hover);
+        }
+    }
+}

@@ -6,28 +6,11 @@ media_folder: "src/upload" # Media files will be stored in the repo under images
 public_folder: "/upload"
 
 collections:
-  - name: "coming"
-    label: "Coming Soon"
-    folder: "src/content/coming"
-    fields:
-      - name: "name"
-        widget: "string"
-        required: true
-      - label: "Title"
-        name: "title"
-        widget: "string"
-        required: false
-      - label: "Body"
-        name: "content"
-        widget: "markdown"
-        required: false
-      - label: "Tags"
-        name: "tags"
-        widget: "hidden"
-        default: "coming"
-  - name: "home"
-    label: "Home"
-    folder: "src/content/home"
+  - name: "page"
+    label: "Pages"
+    create: false
+    identifier_field: name
+    folder: "src/content/page"
     fields:
       - name: "name"
         widget: "string"
@@ -44,31 +27,14 @@ collections:
         name: "description"
         widget: "markdown"
         required: false
-      - label: "Featured Action"
-        name: "action"
-        widget: "string"
-        required: false
-      - label: "Featured Links"
-        name: "links"
-        widget: "list"
-        required: false
-        fields:
-          - label: "Link Image"
-            name: "image"
-            widget: "image"
-            required: false
-          - label: "Link Content"
-            name: "link_content"
-            widget: "markdown"
-            required: false
-      - label: "Body"
+      - label: "Additional Content"
         name: "content"
         widget: "markdown"
         required: false
       - label: "Tags"
         name: "tags"
         widget: "hidden"
-        default: "home"
+        default: "page"
   - name: "beers"
     label: "Beers"
     folder: "src/content/beer"
@@ -95,7 +61,7 @@ collections:
         widget: "boolean"
         default: false
       - label: "Long Description"
-        name: "description"
+        name: "page_description"
         widget: "markdown"
         required: false
       - label: "Logo"
@@ -111,7 +77,7 @@ collections:
           label: "Image"
           widget: "image"
           required: true
-        - name: "description"
+        - name: "alt"
           label: "Description"
           widget: "markdown"
           required: false
@@ -152,12 +118,25 @@ collections:
         widget: "string"
         description: "specific to this location"
         required: false
+      - label: "Hours"
+        name: "hours"
+        widget: "list"
+        required: false
+        fields:
+          - label: "Day"
+            name: "day"
+            widget: "string"
+            required: true
+          - label: "Hours"
+            name: "hours"
+            widget: "string"
+            required: true
       - label: "Tags"
         name: "tags"
         widget: "hidden"
         default: "locations"
   - name: "info"
-    label: "Brewery Information and Website COnfiguration"
+    label: "Brewery Information and Website Configuration"
     folder: "src/content/info"
     identifier_field: name
     fields:
@@ -172,6 +151,10 @@ collections:
         fields:
         - label: "Nav Logo"
           name: "logo"
+          widget: "image"
+          required: true
+        - label: "Nav Secondary Logo"
+          name: "logo_text"
           widget: "image"
           required: true
         - label: "Show 'Home' in Navigation?"
@@ -191,6 +174,23 @@ collections:
               name: "url"
               widget: "string"
               required: true
+            - label: "External Link"
+              name: "external"
+              widget: "boolean"
+              default: false
+      - label: "Site Announcement"
+        name: "alert"
+        widget: "object"
+        summary: "Announcement displayed in banner on every page"
+        fields:
+        - label: "Message"
+          name: "message"
+          widget: "markdown"
+          required: false
+        - label: "Show Message"
+          name: "display"
+          widget: "boolean"
+          default: false
       - label: "Main Logo"
         name: "logo"
         widget: "image"
@@ -201,7 +201,7 @@ collections:
         widget: "string"
         description: "123 Fake St"
         required: true
-      - label: "City, State, Zip"
+      - label: "City, State Zip"
         name: "address2"
         widget: "string"
         description: "Jim Thorpe, PA 18229"
@@ -235,3 +235,24 @@ collections:
         name: "tags"
         widget: "hidden"
         default: "info"
+  - name: "privacy"
+    label: "Privacy Policy"
+    folder: "src/content/privacy"
+    identifier_field: name
+    fields:
+      - name: "name"
+        label: "Page Name"
+        widget: "string"
+        required: true
+      - label: "Page Content"
+        name: "content"
+        widget: "markdown"
+        required: false
+      - label: "Featured Image"
+        name: "hero"
+        widget: "image"
+        required: false
+      - label: "Tags"
+        name: "tags"
+        widget: "hidden"
+        default: "privacy"

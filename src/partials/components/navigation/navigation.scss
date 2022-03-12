@@ -1,26 +1,78 @@
+.bp-navigation {
+    display: none;
+
+    .bp-mobile-social-links {
+        display: none;
+    }
+
+    .bp-social-link {
+        color: var(--navigation-link-color);
+
+        &:hover,
+        &:focus {
+            color: var(--navigation-link-hover-color);
+        }
+    }
+
+    .bp-social-icon {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+
+.bp-menu-visible {
+    .bp-navigation {
+        background-color: var(--header-bg-color);
+        bottom: 0;
+        display: block;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 9;
+    }
+
+    .bp-mobile-social-links {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 6.125rem;
+        margin: 2rem auto;
+    }
+
+    .bp-social-list {
+        display: block;
+    }
+}
+
 .bp-navigation-list {
-    margin: 0;
-    padding: 0;
+    border-top: 1px solid $bp-dark;
+    font-family: $heading-font-stack;
     font-size: 0;
-    height: 2.5rem;
+    font-weight: bold;
+    margin: 4rem 0 0;
+    padding: 0;
 }
 
 .bp-navigation-list-item {
-    display: inline-block;
-    height: 2.5rem;
+    display: block;
+    height: 4rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .bp-navigation-link {
     background-color: var(--navigation-link-bg-color);
+    border-bottom: 1px solid $bp-dark;
     color: var(--navigation-link-color);
     display: block;
-    font-size: var(--font-size-base);
-    font-weight: var(--weight-medium);
-    height: 2.5rem;
-    line-height: 2.5rem;
-    padding: 0 0.25rem;
+    font-size: 1rem;
+    height: 4rem;
+    line-height: 4rem;
+    padding: 0 1.5rem;
     position: relative;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
     width: 100%;
@@ -30,38 +82,80 @@
         background-color: var(--navigation-link-hover-bg-color);
         color: var(--navigation-link-hover-color);
     }
-
-    &:before {
-        content: '';
-        position: absolute;
-        top: -3px;
-        left: 0;
-        width: 100%;
-        height: 3px;
-        background-color: var(--navigation-link-active-bg-color);
-        opacity: 0;
-        transition: opacity 500ms cubic-bezier(0.19, 1, 0.22, 1);
-    }
 }
 
 .bp-navigation-link-active {
     background-color: var(--navigation-link-active-bg-color);
     color: var(--navigation-link-active-color);
-
-    &:before {
-        opacity: 1;
-    }
+    text-decoration: underline;
 }
 
 @media #{$small-bp} {
-    .bp-navigation-list,
+    .bp-navigation {
+        bottom: auto;
+        background-color: transparent;
+        display: block;
+        height: 6.25rem;
+        left: auto;
+        margin: 0 0 0 auto;
+        position: relative;
+        right: auto;
+        top: auto;
+
+        .bp-mobile-social-links {
+            display: none;
+        }
+    }
+
+    .bp-menu-visible {
+        .bp-navigation {
+            background-color: transparent;
+            bottom: auto;
+            display: block;
+            left: auto;
+            position: static;
+            right: auto;
+            top: auto;
+            z-index: 1;
+        }
+
+        .bp-mobile-social-links {
+            display: none;
+        }
+    }
+
+    .bp-navigation-list {
+        border-top: none;
+        height: 6.25rem;
+        margin: 0;
+    }
+
+    .bp-navigation-list-item {
+        display: inline-block;
+        height: 6.25rem;
+    }
+
     .bp-navigation-item {
-        height: 4rem;
+        height: 6.25rem;
     }
 
     .bp-navigation-link {
-        height: 4rem;
-        line-height: 4rem;
-        padding: 0 0.5rem;
+        border-bottom: none;
+        font-size: 0.825rem;
+        height: 6.25rem;
+        line-height: 6.25rem;
+        padding: 0 0.75rem;
+        text-align: center;
+    }
+}
+
+@media #{$medium-bp} {
+    .bp-navigation {
+        margin: 0 auto;
+    }
+
+    .bp-navigation-link {
+        font-size: 1rem;
+        padding: 0 1.5rem;
     }
 }

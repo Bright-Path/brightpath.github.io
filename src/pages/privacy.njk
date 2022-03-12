@@ -1,0 +1,35 @@
+---
+renderData:
+  section: "privacy"
+permalink: "/privacy/"
+---
+
+{% extends "layouts/privacy.njk" %}
+
+{% block content %}
+    {% set page = collections.privacy[0].data %}
+    <main class="bp-privacy">
+        <h1 class="bp-privacy-title">Our Privacy Policy</h1>
+
+        <button type="button" class="bp-button bp-button-secondary bp-button-icon bp-privacy-back" id="bp-back">
+            <span class="bp-accessible-text">Go back</span>
+            <span class="bp-icon" aria-hidden="true">
+                <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <line x1="17.5" x2="54.5" y1="17.5" y2="54.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+                        <line x1="54.5" x2="17.5" y1="17.5" y2="54.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+                    </g>
+                </svg>
+            </span>
+        </button>
+
+        <section class="bp-privacy-content">
+
+            {% if page.content -%}
+                {{ page.content | markdown | safe }}
+            {%- endif %}
+        </section>
+    </main>
+
+    <div class="bp-age-verification-bg" style="background-image: url({{ page.hero }})"></div>
+{% endblock %}

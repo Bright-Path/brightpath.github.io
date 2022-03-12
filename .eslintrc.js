@@ -5,6 +5,11 @@ module.exports = {
         "es6": true,
         "node": true
     },
+    "ignorePatterns": [
+        "/src/admin/**/*.js",
+        "/src/partials/utils/**.*.js",
+        "/dist"
+    ],
     "parserOptions": {
         "ecmaVersion": 2020
     },

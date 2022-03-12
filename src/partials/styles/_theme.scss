@@ -6,6 +6,32 @@
 
     --body-link-hover: #{$bp-light};
 
+    // Button colors
+
+    --primary-button-background: #{$bp-dark};
+
+    --primary-button-background-hover: #{$bp-gold};
+
+    --primary-button-border: #{$bp-dark};
+
+    --primary-button-border-hover: #{$bp-gold};
+
+    --primary-button-text: #{$bp-gold};
+
+    --primary-button-text-hover: #{$bp-dark};
+
+    --secondary-button-background: #{$white};
+
+    --secondary-button-background-hover: #{$bp-gold};
+
+    --secondary-button-border: #{$bp-dark};
+
+    --secondary-button-border-hover: #{$bp-gold};
+
+    --secondary-button-text: #{$bp-dark};
+
+    --secondary-button-text-hover: #{$bp-dark};
+
     // @group-end
 
     // --------------------------------------------------
@@ -42,66 +68,35 @@
 
     // Headings
 
-    --heading-font-stack: #{$font-stack};
+    --heading-font-stack: #{$heading-font-stack};
 
     --heading-font-weight: #{$regular-font-weight};
 
     // Heading 1 font size.
 
-    --h1-font-size: 3rem;
+    --h1-font-size: 2.25rem;
 
     // Heading 2 font size.
 
-    --h2-font-size: 2.5rem;
+    --h2-font-size: 1.75rem;
 
     // Heading 3 font size.
 
-    --h3-font-size: 2rem;
+    --h3-font-size: 1.5rem;
 
     // Heading 4 font size.
 
-    --h4-font-size: 1.5rem;
+    --h4-font-size: 1.25rem;
 
     // Heading 5 font size.
 
-    --h5-font-size: 1.25rem;
+    --h5-font-size: 1.125rem;
 
     // Heading 6 font size.
 
     --h6-font-size: 1rem;
 
     // @group-end
-
-    // --------------------------------------------------
-    // @group Animations
-    // --------------------------------------------------
-
-    // Default transition.
-
-    --ease-in-out: 300ms ease-in-out;
-
-    // Fast transtition.
-
-    --ease-in-out-fast: 150ms ease-in-out;
-
-    // Exponential transition.
-
-    --ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
-
-    // @group-end
-
-
-    // --------------------------------------------------
-    // @group Coming Soon
-    // --------------------------------------------------
-
-    // Background color for the body tag.
-
-    --soon-bg: #{$bp-dark};
-
-    // Font color for the vody tag.
-
-    --soon-color: #{$bp-light};
 
 
     // --------------------------------------------------
@@ -123,39 +118,6 @@
     // Box shadow secondary.
 
     --box-shadow-secondary: #{$box-shadow-secondary};
-
-    // @group-end
-
-
-    // Button
-
-    // Button font size.
-
-    --btn-font-size: var(--font-size-base);
-
-    // Buton font weight.
-
-    --btn-font-weight: var(--weight-medium);
-
-    // Button background color.
-
-    --btn-bg-color: #{$red-400};
-
-    // Button font color.
-
-    --btn-color: #{$white};
-
-    // Button background color when hovered.
-
-    --btn-hover-bg-color: #{$red-500};
-
-    // Button font color when hovered.
-
-    --btn-hover-color: #{$white};
-
-    // Button border radius
-
-    --btn-round: 0;
 
 
     // Footer
@@ -188,25 +150,6 @@
     --header-text-color: #{$bp-dark};
 
 
-    // Hero
-
-    // Hero contact bg color.
-
-    --hero-contact-color: #{$white};
-
-    // Hero contact text color.
-
-    --hero-contact-link-color: #{$grey-400};
-
-    // Hero contact link color.
-
-    --hero-contact-color: #{$black};
-
-    // Hero contact link hover.
-
-    --hero-contact-link-color: #{$black};
-
-
     // Navigation
 
     // Navigation link background color.
@@ -232,61 +175,4 @@
     // Navigation link active color.
 
     --navigation-link-active-color: #{$black};
-
-
-    // Post List Item
-
-    // Post list item border color.
-
-    --post-list-item-border-color: #{$grey-300};
-
-    // Post list item hover border color.
-
-    --post-list-item-hover-border-color: #{$white};
-
-    // Post list item color.
-
-    --post-list-item-color: #{$black};
-
-    // Post list item color.
-
-    --post-list-item-hover: #{$teal-400};
-
-
-    // Related links
-
-    // Related links bg color.
-
-    --related-links-bg-color: #{$teal-200};
-
-    // Related links icon bg color.
-
-    --related-links-icon-bg-color: #{$white};
-
-    // Related links link color.
-
-    --related-links-link-color: #{$black};
-
-
-    // Alert
-
-    // Alert bg color.
-
-    --alert-bg: #{rgba($yellow-400, 0.4)};
-
-    // Alert icon bg color
-
-    --alert-icon-bg: #{$yellow-400};
-
-    // Alert text color
-
-    --alert-text: #{$black};
-
-    // Alert link color
-
-    --alert-link: #{$black};
-
-    // Alert link hover
-
-    --alert-link-color: #{$black};
 }

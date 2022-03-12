@@ -8,6 +8,10 @@ module.exports = (eleventyConfig) => {
 
     eleventyConfig.addPassthroughCopy('src/content');
 
+    eleventyConfig.addPassthroughCopy('netlify.toml');
+
+    eleventyConfig.addPassthroughCopy('src/admin/netlifyCms.js');
+
     eleventyConfig.addNunjucksFilter('markdown', (content) => {
         const markdown = new MarkdownIt({ html: true });
 

@@ -1,21 +1,19 @@
-{% macro alert(content, icons) %}
-    <div class="bp-alert">
-        <div class="bp-alert-icon-container">
-            {% if content.icon -%}
-                <img src="{{ content.icon }}" alt="" class="bp-alert-icon bp-alert-custom-icon" />
-            {% else %}
-                <img src="{{ icons.alert }}" alt="" class="bp-alert-icon bp-alert-standard-icon" />
-            {%- endif %}
+{% macro alert(message) %}
+    <section role="alert" class="bp-alert" id="bp-alert">
+        <div class="bp-alert-content bp-container">
+            {{ message | markdown | safe }}
         </div>
 
-        <div class="bp-alert-message">
-            {% if content.title -%}
-                <h2 class="bp-alert-title">{{ content.title }}</h2>
-            {%- endif %}
-
-            <div class="bp-alert-description">
-                {{ content.description | markdown | safe }}
-            </div>
-        </div>
-    </div>
+        <button type="button" class="bp-button bp-button-secondary bp-button-icon bp-button-alert" id="bp-alert-close">
+            <span class="bp-accessible-text">Close</span>
+            <span class="bp-icon" aria-hidden="true">
+                <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <line x1="17.5" x2="54.5" y1="17.5" y2="54.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+                        <line x1="54.5" x2="17.5" y1="17.5" y2="54.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+                    </g>
+                </svg>
+            </span>
+        </button>
+    </section>
 {% endmacro %}
