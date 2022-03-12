@@ -2,9 +2,9 @@
 name: Helles Lager
 abv: 4.2%
 description: |-
-  Refreshing | Light | Clean
+  Refreshing | Light (Golden) | Clean
 
-  A classic golden German Lager brewed with German malts and hops.
+  A classic golden German style Lager brewed with German malts and hops.
 tap: true
 canned: true
 logo: /upload/icon_helles-lager.svg
