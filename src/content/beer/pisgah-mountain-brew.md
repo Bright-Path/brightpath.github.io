@@ -6,7 +6,7 @@ description: |-
 
   A light refreshing lager made for drinkability.
 tap: true
-canned: false
+canned: true
 page_description: ""
 logo: /upload/icon_pisgah-mountain-brew.svg
 images:
