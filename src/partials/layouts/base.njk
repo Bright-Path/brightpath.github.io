@@ -5,17 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    
+    {% set titleContent = "Bright Path Brewing" %}
+    {% set descContent = "Craft brewery focusing on lager and session beer based in Jim Thorpe, Pennsylvania." %}
+    
+    {% if renderData.pageView %}
+        {% set titleContent = renderData.pageView %}
+    {% endif %}
+    
+    {% if renderData.pageDesc %}
+        {% set descContent = renderData.pageDesc %}
+    {% endif %}
+    
 
-    <title>Bright Path Brewing</title>
-    <meta name="description" content="Craft brewery focusing on lager and session beer based in Jim Thorpe, Pennsylvania.">
+    <title>{{ titleContent }}</title>
+    <meta name="description" content="{{ descContent }}">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
 
-    <meta property="og:title" content="Bright Path Brewing">
-    <meta property="og:description" content="Craft brewery focusing on lager and session beer based in Jim Thorpe, Pennsylvania.">
+    <meta property="og:title" content="{{ titleContent }}">
+    <meta property="og:description" content="{{ descContent }}">
     <meta property="og:image" content="/upload/bright_path_logo.jpg">
     <meta property="og:url" content="https://www.brightpathbrewing.com">
     <meta property="og:site_name" content="Bright Path Brewing">
