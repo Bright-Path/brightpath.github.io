@@ -8,7 +8,7 @@ hours:
   - day: Thursday
     hours: 3pm - 8pm
   - day: Friday
-    hours: 2pm - 8pm
+    hours: 2pm - 9pm
   - day: Saturday
     hours: 12pm - 9pm
   - day: Sunday
