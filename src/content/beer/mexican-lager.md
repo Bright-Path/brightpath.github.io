@@ -1,6 +1,6 @@
 ---
 name: Mexican Lager with Lime
-abv: 4.1%
+abv: 4%
 description: >-
   Light | Refreshing | Lime
 
