@@ -1,12 +1,15 @@
 ---
-name: Mexican Lager
+name: Mexican Lager with Lime
 abv: 4.1%
-description: |-
-  Crisp | Smooth | Lime
+description: >-
+  Light | Refreshing | Lime
 
-  A smooth, crisp lager with refreshing notes of lime zest.
+
+  A Mexican style lager brewed with fresh lime juice and zest. Crisp and refreshing. Perfect for the heat.
 tap: false
 canned: false
 logo: /upload/draft-only.svg
+images:
+  - image: /upload/mexican-lager.jpeg
 tags: beer
 ---
