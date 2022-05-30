@@ -28,5 +28,8 @@ social:
   - handle: Bright Path Brewing
     platform: Facebook
     url: https://www.facebook.com/Bright-Path-Brewing-104399674368859
+  - platform: Email
+    handle: brightpathbrewing@gmail.com
+    url: mailto:brightpathbrewing@gmail.com
 tags: info
 ---
