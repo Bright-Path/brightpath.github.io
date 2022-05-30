@@ -1,11 +1,13 @@
-{% macro socialLinks(links, ignoredPlatform) %}
+{% macro socialLinks(links, ignoredPlatform='') %}
 <ul class="bp-social-list">
     {% for item in links -%}
-        {% if item.platform.toLowerCase !== ignoredPlatform.toLowerCase() -%}
+        {% if item.platform.toLowerCase() !== ignoredPlatform.toLowerCase() -%}
             {% set iconPath = "/assets/images/" + item.platform.toLowerCase() + ".svg" %}
             <li class="bp-social-item">
                 <a href="{{item.url}}" class="bp-social-link" rel="noopener noreferrer" target="_blank">
-                    <span class="bp-accessible-text">{{item.platform}}: </span>
+                    {% if item.platform !== 'Email' %}
+                        <span class="bp-accessible-text">{{item.platform}}: </span>
+                    {% endif %}
                     <span class="bp-social-icon" aria-hidden="true">
                         {{ iconPath | svgContents | safe }}
                     </span>
