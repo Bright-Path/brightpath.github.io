@@ -6,7 +6,7 @@ description: >-
 
 
   A session IPA brewed with rye and oat malt. Dry-hopped with an aggressive amount of Centennial and Citra hops. 
-tap: true
+tap: false
 canned: false
 logo: /upload/chunker.svg
 images:
