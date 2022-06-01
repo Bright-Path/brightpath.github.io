@@ -9,5 +9,7 @@ description: >-
 tap: true
 canned: false
 logo: /upload/icon_switchback-session-ipa.svg
+images:
+  - image: /upload/switchback.jpg
 tags: beer
 ---
