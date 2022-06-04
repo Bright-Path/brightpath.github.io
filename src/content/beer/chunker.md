@@ -5,8 +5,9 @@ description: >-
   Hoppy | Hops | Dry Hopped
 
 
-  A session IPA brewed with rye and oat malt. Dry-hopped with an aggressive amount of Centennial and Citra hops. 
+  A session IPA brewed with rye and oat malt. Dry-hopped with an aggressive amount of Centennial and Citra hops.
 tap: false
+tap_loc: 9
 canned: false
 logo: /upload/chunker.svg
 images:
