@@ -59,7 +59,7 @@ collections:
       - label: "Tap location"
         name: "tap_loc"
         widget: "number"
-        default: false
+        default: 0
       - label: "Available in Cans"
         name: "canned"
         widget: "boolean"
