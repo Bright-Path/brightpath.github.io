@@ -28,10 +28,11 @@ permalink: "/beer/"
 
             {% if beers.length -%}
                 <h3>Available Beers</h3>
-                
-                {% set available = beers | availableBeers() %}
 
-                {{ table(available) }}
+                {% set available = beers | availableBeers() %}
+                {% set menuOrder = available | orderMenu() %}
+
+                {{ table(menuOrder) }}
             {%- endif %}
         </section>
     {%- endif %}
