@@ -20,6 +20,14 @@ const validDate = () => {
 
 const availableBeers = (beers) => beers.filter((beer) => beer.data.tap || beer.data.canned);
 
+const orderMenu = (beers) => beers.sort((beer1, beer2) => {
+    if (beer1.data.tap_loc > beer2.data.tap_loc) {
+        return 1;
+    }
+
+    return -1;
+});
+
 const filterBeers = (beers, availability) => beers.filter((beer) => beer.data[availability]);
 
 const sliceData = (data, count) => data.slice(0, count);
@@ -45,6 +53,7 @@ module.exports = [
     cleanSlug,
     date,
     filterBeers,
+    orderMenu,
     sliceData,
     svgContents,
     validDate,

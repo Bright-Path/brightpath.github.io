@@ -6,6 +6,7 @@ description: |-
 
   A classic golden German style Lager brewed with German malts and hops.
 tap: true
+tap_loc: 2
 canned: true
 logo: /upload/icon_helles-lager.svg
 images:
