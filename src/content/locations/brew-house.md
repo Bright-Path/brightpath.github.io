@@ -14,6 +14,6 @@ hours:
   - day: Saturday
     hours: 12pm - 9pm
   - day: Sunday
-    hours: 12pm - 7pm
+    hours: 12pm - 8pm
 tags: locations
 ---
