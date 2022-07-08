@@ -6,7 +6,7 @@ description: >-
 
 
   Small in ABV but strong in flavor. This English style ale is brewed with chocolate and roast malts to bring out notes of coffee and dark chocolate.
-tap: true
+tap: false
 tap_loc: 6
 canned: false
 logo: /upload/draft-only.svg
