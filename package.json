@@ -41,7 +41,7 @@
     "slugify": "1.6.0",
     "stylelint": "13.13.1",
     "tar": "6.1.11",
-    "terser": "4.6.6",
+    "terser": "4.8.1",
     "trim": "1.0.1",
     "trim-newlines": "4.0.2"
   },
