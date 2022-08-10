@@ -1,5 +1,5 @@
 ---
-name: Money Hollow - Hoppy Lager
+name: Money Hollow Hoppy Lager
 abv: 4.5%
 description: >-
   Smooth | Crisp | Hoppy
