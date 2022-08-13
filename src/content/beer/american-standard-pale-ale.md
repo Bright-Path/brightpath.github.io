@@ -1,6 +1,6 @@
 ---
 name: American Standard Pale Ale
-abv: 4%
+abv: 4.5%
 description: >-
   Hoppy | Citrus | Crushable
 
