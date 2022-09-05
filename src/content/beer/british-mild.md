@@ -6,7 +6,7 @@ description: >-
 
 
   A malty British Ale with notes of caramel and roast. Low ABV and easy to drink. 
-tap: false
+tap: true
 tap_loc: 10
 canned: false
 logo: /upload/draft-only.svg
