@@ -6,7 +6,7 @@ description: >-
 
 
   A classic Bavarian wheat beer. A refreshing ale with notes of banana and cloves and citrus finish. 
-tap: true
+tap: false
 tap_loc: 10
 canned: false
 logo: /upload/draft-only.svg
