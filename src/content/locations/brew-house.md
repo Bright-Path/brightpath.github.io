@@ -6,7 +6,7 @@ address2: Jim Thorpe, PA 18229
 mapLink: https://goo.gl/maps/5PvdtXqyLMGg7wcP8
 hours:
   - day: Monday
-    hours: 12pm - 7pm
+    hours: 2pm - 7pm
   - day: Thursday
     hours: 3pm - 8pm
   - day: Friday
