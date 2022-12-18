@@ -11,6 +11,6 @@ tap_loc: 8
 canned: false
 logo: /upload/draft-only.svg
 images:
-  - image: /upload/dunkel.jpg
+  - image: /upload/dunkel-lager.jpg
 tags: beer
 ---
