@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@11ty/eleventy": "0.12.1",
+    "@11ty/eleventy": "1.0.2",
     "clamp-js": "0.7.0",
     "core-js": "3.6.4",
     "css-vars-ponyfill": "2.2.1",
