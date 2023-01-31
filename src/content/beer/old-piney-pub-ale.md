@@ -1,6 +1,6 @@
 ---
 name: Old Piney Pub Ale
-abv: "4.3"
+abv: 4.3%
 description: >-
   Malty | Golden
 
