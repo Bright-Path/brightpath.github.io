@@ -2,7 +2,7 @@
 name: Jean’s Run - West Coast IPA
 abv: 5.3%
 description: >-
-  Hoppy| Tropical | Dry
+  Hoppy | Tropical | Dry
 
 
   A west coast style IPA that’s brewed with just two row and some carafoam then dry hopped with a lot of Mosaic and Citra. It’s tropical, dank and crushable.
