@@ -1,5 +1,5 @@
 ---
-name: East Side Lager - 10o Czech Pilsner
+name: East Side Lager - 10˚ Czech Pilsner
 abv: "4.0"
 description: >-
   Crisp | Clean | Refreshing
