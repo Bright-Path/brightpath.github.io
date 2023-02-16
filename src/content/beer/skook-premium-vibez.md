@@ -1,6 +1,6 @@
 ---
 name: Skook Premium Vibez
-abv: "4.7"
+abv: 4.7%
 description: >-
   Smooth | Crisp | Hoppy
 
