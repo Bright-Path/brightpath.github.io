@@ -1,5 +1,5 @@
 ---
-name: Skook Premium Vibez
+name: Skook Premium Vibez - IPL
 abv: 4.7%
 description: >-
   Smooth | Crisp | Hoppy
