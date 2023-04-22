@@ -3,7 +3,7 @@ name: Battler - Polish Smoked Beer
 abv: 3.5%
 description: "Crisp | Smokey | Refreshing "
 tap: true
-tap_loc: 0
+tap_loc: 7
 canned: false
 page_description: This Polish style beer is brewed with 100% oak smoked wheat
   malt. It is then split and fermented with our ale yeast and lager yeast. The
