@@ -14,7 +14,6 @@ page_description: This Polish style beer is brewed with 100% oak smoked wheat
   two batches are then blended back together and lagered for an extended period
   of time. The result is a light, refreshing, smoked beer.
 logo: /upload/draft-only.svg
-images:
-  - image: /upload/battler.jpg
+images: []
 tags: beer
 ---
