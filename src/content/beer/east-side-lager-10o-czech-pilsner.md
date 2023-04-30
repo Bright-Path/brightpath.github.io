@@ -11,5 +11,7 @@ tap_loc: 10
 canned: false
 page_description: ""
 logo: /upload/draft-only.svg
+images:
+  - image: /upload/east-side.jpg
 tags: beer
 ---
