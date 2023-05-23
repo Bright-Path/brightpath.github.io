@@ -1,11 +1,11 @@
 ---
 name: Hefeweizen
 abv: 4.3%
-description: >-
-  Banana | Clove | Refreshing
+description: >
+  Refreshing | Citrus | Golden
 
 
-  A classic Bavarian wheat beer. A refreshing ale with notes of banana and cloves and citrus finish. 
+  This is a classic Bavarian style wheat beer. Brewed with 50% wheat malt and double decocted. It's perfect for hot summer days with its refreshing taste and strong citrus notes. 
 tap: false
 tap_loc: 10
 canned: false
