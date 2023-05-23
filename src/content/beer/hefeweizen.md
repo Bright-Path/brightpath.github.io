@@ -5,7 +5,7 @@ description: >
   Refreshing | Citrus | Golden
 
 
-  This is a classic Bavarian style wheat beer. Brewed with 50% wheat malt and double decocted. It's perfect for hot summer days with its refreshing taste and strong citrus notes. 
+  This is a classic Bavarian style wheat beer, brewed with 50% wheat malt and decocted. It's perfect for hot summer days with its refreshing taste and citrus notes. 
 tap: false
 tap_loc: 10
 canned: false
