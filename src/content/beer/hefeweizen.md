@@ -9,7 +9,7 @@ description: >
 tap: false
 tap_loc: 10
 canned: false
-logo: /upload/draft-only.svg
+logo: /upload/icon_hefeweizen.svg
 images:
   - image: /upload/hefeweizen.jpg
 tags: beer
