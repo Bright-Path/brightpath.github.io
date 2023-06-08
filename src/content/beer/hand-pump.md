@@ -1,5 +1,5 @@
 ---
-name: Hand Pump
+name: "Hand Pump: McGowan's House of Smoke"
 abv: 4.5%
 description: ""
 tap: true
