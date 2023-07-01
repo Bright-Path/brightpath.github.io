@@ -1,15 +1,15 @@
 ---
-name: "Hand Pump: McGowan's House of Smoke"
-abv: 4.5%
+name: "Hand Pump: Chunker Session Rye Pale Ale (No Dry Hop)"
+abv: 5%
 description: ""
 tap: true
 tap_loc: 11
 canned: false
 page_description: >-
-  **McGowan's House of Smoke**
+  **Chunker Session Rye Pale Ale**
 
 
-  This is our McGowan's Cream Ale that is fermented with yeast from one of our smoke beers. The result is our classic cream ale with hint of smokiness!
+  This is our Chunker Session Rye IPA but cask conditioned before it gets dry hopped. The result is a nice rye pale that is super crushable.
 logo: /upload/icon-hand-pump.svg
 tags: beer
 ---
