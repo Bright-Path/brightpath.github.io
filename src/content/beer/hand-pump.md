@@ -2,7 +2,7 @@
 name: "Hand Pump: Chunker Session Rye Pale Ale (No Dry Hop)"
 abv: 5%
 description: ""
-tap: true
+tap: false
 tap_loc: 11
 canned: false
 page_description: >-
