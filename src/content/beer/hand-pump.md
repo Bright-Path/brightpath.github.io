@@ -2,7 +2,7 @@
 name: "Hand Pump: McGowan's Cream Ale"
 abv: 4.5%
 description: ""
-tap: true
+tap: false
 tap_loc: 11
 canned: false
 page_description: |-
