@@ -1,6 +1,6 @@
 ---
 name: "Hacklebernie Lager "
-abv: "4.4"
+abv: 4.4%
 tap: true
 tap_loc: 9
 canned: false
