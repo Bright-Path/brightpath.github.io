@@ -1,6 +1,6 @@
 ---
 name: Rt. 209 Berliner Weisse
-abv: "3.1"
+abv: 3.1%
 tap: true
 tap_loc: 10
 canned: false
