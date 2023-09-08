@@ -1,13 +1,13 @@
 ---
 name: Märzen
-abv: 4.6%
+abv: 5.0%
 description: >-
   Refreshing | Malty | Balanced
 
 
-  A traditional Oktoberfest beer brewed with floor malted German malts and double decocted.
-tap: false
-tap_loc: 8
+  A traditional Oktoberfest beer brewed with floor malted German malts and double decocted. Rich malty flavor balanced out by noble German hops. 
+tap: true
+tap_loc: 6
 canned: false
 logo: /upload/draft-only.svg
 images:
