@@ -1,5 +1,5 @@
 ---
-name: "Lock #1 - Hazy IPA w/ Vic Secret & Citra"
+name: "Lock #1 - Hazy IPA w/ Vic Secret and Citra"
 abv: 5.3%
 description: ""
 tap: true
