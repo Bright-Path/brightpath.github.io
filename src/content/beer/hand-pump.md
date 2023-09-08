@@ -2,7 +2,7 @@
 name: "Hand Pump: Wet Hopped Brown Ale"
 abv: 5.5%
 description: ""
-tap: false
+tap: true
 tap_loc: 11
 canned: false
 page_description: >-
