@@ -1,14 +1,17 @@
 ---
-name: "Hand Pump: McGowan's Cream Ale"
-abv: 4.5%
+name: "Hand Pump: Wet Hopped Brown Ale"
+abv: 5.5%
 description: ""
-tap: false
+tap: true
 tap_loc: 11
 canned: false
-page_description: |-
-  **McGowan's Cream Ale**
+page_description: >-
+  **Wet Hopped Brown Ale**
 
-  An easy drinking American Ale. It has a nice maltiness with a touch of hops.
+
+  An English style brown ale brewed with fresh hops from our friends at Murphy's Hop Yard in Effort, PA.
 logo: /upload/icon-hand-pump.svg
+images:
+  - image: /upload/wh-brown.jpg
 tags: beer
 ---
