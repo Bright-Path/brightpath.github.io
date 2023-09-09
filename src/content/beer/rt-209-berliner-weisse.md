@@ -10,6 +10,7 @@ tap: true
 tap_loc: 10
 canned: false
 page_description: ""
+logo: /upload/draft-only.svg
 images:
   - image: /upload/draft-only.svg
 tags: beer
