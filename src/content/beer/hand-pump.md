@@ -1,7 +1,10 @@
 ---
 name: "Hand Pump: Wet Hopped Brown Ale"
 abv: 5.5%
-description: ""
+description: >-
+  Wet Hopped Brown Ale
+
+  An English style brown ale brewed with fresh hops from our friends at Murphy's Hop Yard in Effort, PA.
 tap: true
 tap_loc: 11
 canned: false
