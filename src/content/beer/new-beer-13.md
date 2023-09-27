@@ -5,7 +5,7 @@ description: New Beer 13
 tap: true
 tap_loc: 13
 canned: false
-logo: ""
+logo: /upload/draft-only.svg
 images:
   - image: /upload/draft-only.svg
 tags: beer
