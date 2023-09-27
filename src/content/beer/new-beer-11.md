@@ -4,7 +4,7 @@ abv: 4.5%
 description: New Beer 11
 tap: true
 tap_loc: 11
-canned: true
+canned: false
 logo: ""
 images:
   - image: /upload/draft-only.svg
