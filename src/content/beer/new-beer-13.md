@@ -2,7 +2,7 @@
 name: New Beer 13
 abv: 4.5%
 description: New Beer 13
-tap: true
+tap: false
 tap_loc: 13
 canned: false
 logo: /upload/draft-only.svg
