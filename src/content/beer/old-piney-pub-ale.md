@@ -1,5 +1,5 @@
 ---
-name: Old Piney Pub Ale
+name: " Hand Pump: Old Piney Pub Ale Wet Hopped"
 abv: 4.3%
 description: >-
   Malty | Golden
