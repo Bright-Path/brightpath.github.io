@@ -7,7 +7,7 @@ description: >-
 
   A tart and slightly funky wheat ale. It’s brewed with 60% wheat malt, single decocted and kettle soured. The result is super refreshing and thirst quenching. 
 tap: true
-tap_loc: 10
+tap_loc: 12
 canned: false
 page_description: ""
 logo: /upload/draft-only.svg
