@@ -6,9 +6,9 @@ description: >-
 
 
   An English style medium strength pub ale brewed with over 65 lbs of fresh Cascade hops from Murphy’s Hop Yard in Effort, PA. 
-tap: false
+tap: true
 tap_loc: 10
 canned: false
-logo: /upload/draft-only.svg
+logo: /upload/icon-hand-pump.svg
 tags: beer
 ---
