@@ -17,7 +17,7 @@ description: >-
 tap: true
 tap_loc: 11
 canned: false
-logo: ""
+logo: /upload/draft-only.svg
 images:
   - image: /upload/draft-only.svg
 tags: beer
