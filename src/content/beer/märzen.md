@@ -6,7 +6,7 @@ description: >-
 
 
   A traditional Oktoberfest beer brewed with floor malted German malts and double decocted. Rich malty flavor balanced out by noble German hops. 
-tap: true
+tap: false
 tap_loc: 6
 canned: false
 logo: /upload/draft-only.svg
