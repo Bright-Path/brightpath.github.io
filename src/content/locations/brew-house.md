@@ -8,12 +8,12 @@ hours:
   - day: Monday
     hours: 2pm - 7pm
   - day: Thursday
-    hours: 3pm - 8pm
+    hours: 3pm - 7pm
   - day: Friday
     hours: 2pm - 9pm
   - day: Saturday
     hours: 12pm - 9pm
   - day: Sunday
-    hours: 12pm - 8pm
+    hours: 12pm - 7pm
 tags: locations
 ---
