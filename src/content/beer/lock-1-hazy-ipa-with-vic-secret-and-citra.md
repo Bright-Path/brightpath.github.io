@@ -1,11 +1,13 @@
 ---
-name: Lock 1 - Hazy IPA with Vic Secret and Citra
-abv: 5.3%
-description: This hazy IPA is brewed with Marris Otter, spelt malt and honey
-  malted oats and it is hopped with Citra and Vic Secret. It is also double dry
-  hopped with Citra and Vic Secret. It's tropical, dank and juicy. The Lock
-  series is one off beers brewed for experimentation and possible full
-  production.
+name: Lock 2 - Citra Pale Ale
+abv: 3.6%
+description: >-
+  A hazy pale ale brewed with 2-row malt, honey malt, wheat malt and malted
+  oats.
+
+  It is brewed and dry hopped exclusively with Citra hops. It’s citrus forward with a
+
+  pleasantly malty sweet finish.
 tap: true
 tap_loc: 8
 canned: false
