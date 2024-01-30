@@ -9,7 +9,7 @@ description: >-
 
   pleasantly malty sweet finish.
 tap: true
-tap_loc: 8
+tap_loc: 12
 canned: false
 page_description: ""
 logo: /upload/draft-only.svg
