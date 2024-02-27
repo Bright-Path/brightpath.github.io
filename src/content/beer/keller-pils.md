@@ -6,8 +6,8 @@ description: >-
 
 
   In German, keller means cellar. Keller beers are beers directly from the cellar. Our Keller pils is packaged right off our lagering tanks.
-tap: false
-tap_loc: 10
+tap: true
+tap_loc: 9
 canned: false
 logo: /upload/icon_keller-pils.svg
 images:
