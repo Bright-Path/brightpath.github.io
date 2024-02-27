@@ -14,7 +14,7 @@ description: >-
   The result is a robust brown ale with awesome piney and citrus notes from the
 
   fresh hops.
-tap: true
+tap: false
 tap_loc: 11
 canned: false
 logo: /upload/draft-only.svg
