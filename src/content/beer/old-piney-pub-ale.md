@@ -1,11 +1,11 @@
 ---
-name: " Hand Pump: Old Piney Pub Ale Wet Hopped"
-abv: 4.3%
+name: " Hand Pump: McGowan's Cream Ale"
+abv: 4.5%
 description: >-
-  Malty | Golden
+  Crisp | Crushable | Awesome
 
 
-  An English style medium strength pub ale brewed with over 65 lbs of fresh Rakau hops from Murphy’s Hop Yard in Effort, PA. 
+  Our cream served in a different fashion that enhances all the best qualities of this beer. 
 tap: true
 tap_loc: 13
 canned: false
