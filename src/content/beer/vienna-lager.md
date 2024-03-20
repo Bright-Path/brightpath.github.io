@@ -8,7 +8,7 @@ description: >-
   A medium-bodied, amber-colored, Vienna-styled lager. Brewed with floor-malted German malts and lagered for an extended period of time.
 tap: true
 tap_loc: 3
-canned: false
+canned: true
 logo: /upload/icon_vienna-lager.svg
 images:
   - image: /upload/vienna-lager.jpg
