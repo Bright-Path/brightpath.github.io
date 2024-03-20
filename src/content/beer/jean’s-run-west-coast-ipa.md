@@ -9,7 +9,7 @@ description: >-
 tap: true
 tap_loc: 11
 canned: true
-logo: /upload/jeans-run.jpg
+logo: /upload/jeansrun-logo.jpg
 images:
   - image: /upload/jeans-run.jpg
 tags: beer
