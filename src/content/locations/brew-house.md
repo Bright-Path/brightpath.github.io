@@ -10,9 +10,9 @@ hours:
   - day: Thursday
     hours: 3pm - 7pm
   - day: Friday
-    hours: 2pm - 9pm
+    hours: 2pm - 8pm
   - day: Saturday
-    hours: 12pm - 9pm
+    hours: 12pm - 8pm
   - day: Sunday
     hours: 12pm - 7pm
 tags: locations
