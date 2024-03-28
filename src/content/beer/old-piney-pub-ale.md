@@ -1,11 +1,10 @@
 ---
-name: " Hand Pump: McGowan's Cream Ale"
-abv: 4.5%
-description: >-
-  Crisp | Crushable | Awesome
+name: " Hand Pump: Old Piney Pub Ale"
+abv: 4.3%
+description: |-
+  Malty | Crushable | Smooth
 
-
-  Our cream served in a different fashion that enhances all the best qualities of this beer. 
+  A classic British pub ale brewed with fresh hops.  
 tap: true
 tap_loc: 13
 canned: false
