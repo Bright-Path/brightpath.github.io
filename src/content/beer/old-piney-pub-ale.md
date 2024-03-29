@@ -6,7 +6,7 @@ description: |-
 
   A classic British pub ale brewed with fresh hops.  
 tap: true
-tap_loc: 13
+tap_loc: 14
 canned: false
 logo: /upload/icon-hand-pump.svg
 tags: beer
