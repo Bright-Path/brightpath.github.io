@@ -1,6 +1,6 @@
 ---
 name: ESB
-abv: "4.4"
+abv: 4.4%
 description: >-
   Malty | Slight Bitterness | Bready
 
