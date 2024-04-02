@@ -6,7 +6,7 @@ description: >
 
 
   A classic dark German wheat beer. Brewed with Munich malts, dark wheat malt and a touch of roasted malts. Refreshing but hefty enough to be enjoyed throughout the winter. 
-tap: true
+tap: false
 tap_loc: 6
 canned: false
 logo: /upload/draft-only.svg
