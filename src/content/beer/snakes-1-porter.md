@@ -9,7 +9,7 @@ description: >-
 tap: true
 tap_loc: 6
 canned: false
-logo: /upload/draft-only.svg
+logo: /upload/beer-icons_skaes-1-porter.svg
 images:
   - image: /upload/porter.jpg
 tags: beer
