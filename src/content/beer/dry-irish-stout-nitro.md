@@ -7,7 +7,7 @@ description: >+
 
   A classic dry Irish stout brewed with classic British malts is rich, smooth and delicious. 
 
-tap: true
+tap: false
 tap_loc: 6
 canned: false
 logo: /upload/draft-only.svg
