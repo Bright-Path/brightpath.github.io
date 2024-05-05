@@ -1,5 +1,5 @@
 ---
-name: "Hand Pump: Wet Hopped Brown Ale"
+name: "Hand Pump: ESB"
 abv: 4.4%
 description: "This English style ale is brewed with Marris Otter and a blend of
   different roasted malts. It has notes of fresh baked bread and graham crackers
