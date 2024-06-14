@@ -8,7 +8,7 @@ description: >-
   It is brewed and dry hopped exclusively with Citra hops. It’s citrus forward with a
 
   pleasantly malty sweet finish.
-tap: true
+tap: false
 tap_loc: 12
 canned: false
 page_description: ""
