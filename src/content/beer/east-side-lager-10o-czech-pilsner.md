@@ -6,8 +6,8 @@ description: >-
 
 
   A triple decoction Czech Pilsner brewed with Kazbek hops. This beer is refreshing, crisp and clean. Has that classic Czech hop herbal notes along with bright notes of lemon citrus.
-tap: true
-tap_loc: 8
+tap: false
+tap_loc: 14
 canned: true
 page_description: ""
 logo: /upload/icon_eastside.svg
