@@ -9,7 +9,7 @@ description: >-
 tap: true
 tap_loc: 9
 canned: true
-logo: /upload/draft-only.svg
+logo: /upload/beer-icons_marzen-1-.svg
 images:
   - image: /upload/marzen.jpg
 tags: beer
