@@ -1,7 +1,7 @@
 ---
 name: " Hand Pump: American Standard"
-abv: 4.5%
-description: "Our American Standard Pale served up on cask. "
+abv: 3.0%
+description: "An English style ale brewed to be drank all day but not to lack flavor. "
 tap: true
 tap_loc: 14
 canned: false
