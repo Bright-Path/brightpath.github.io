@@ -1,5 +1,5 @@
 ---
-name: " Hand Pump: American Standard"
+name: " Hand Pump: Dark Mild"
 abv: 3.0%
 description: "An English style ale brewed to be drank all day but not to lack flavor. "
 tap: true
