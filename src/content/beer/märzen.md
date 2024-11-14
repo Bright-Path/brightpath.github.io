@@ -7,8 +7,8 @@ description: >-
 
   A traditional Oktoberfest beer brewed with floor malted German malts and double decocted. Rich malty flavor balanced out by noble German hops. 
 tap: true
-tap_loc: 9
-canned: true
+tap_loc: 6
+canned: false
 logo: /upload/beer-icons_marzen-1-.svg
 images:
   - image: /upload/marzen.jpg
