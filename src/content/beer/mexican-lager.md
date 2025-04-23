@@ -6,9 +6,9 @@ description: >-
 
 
   A Mexican style lager brewed with fresh lime juice and zest. Crisp and refreshing. Perfect for the heat.
-tap: false
-tap_loc: 7
-canned: false
+tap: true
+tap_loc: 8
+canned: true
 logo: /upload/draft-only.svg
 images:
   - image: /upload/mexican-lager.jpeg
