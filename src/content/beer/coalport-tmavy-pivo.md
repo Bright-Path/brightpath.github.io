@@ -8,7 +8,7 @@ description: >
   This dark Czech lager is double decocted and brewed with Pils and Munich malts and a touch of roasted malts. It tastes rich coco and has notes of dark fruits. It is delicious and beautiful.
 tap: false
 tap_loc: 9
-canned: true
+canned: false
 logo: /upload/icon_coalport.jpg
 tags: beer
 ---
