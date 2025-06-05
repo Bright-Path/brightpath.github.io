@@ -6,7 +6,7 @@ description: >-
 
 
   A classic dry Irish stout brewed with classic British malts. It is roasty with notes of cocoa and caramel with a coffee like finish. 
-tap: true
+tap: false
 tap_loc: 14
 canned: false
 logo: /upload/icon-hand-pump.svg
