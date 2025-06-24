@@ -1,14 +1,12 @@
 ---
-name: "Hand Pump: ESB"
-abv: 4.4%
-description: "This English style ale is brewed with Marris Otter and a blend of
-  different roasted malts. It has notes of fresh baked bread and graham crackers
-  with a nice balanced hop character. "
-tap: false
+name: "Hand Pump: McGowan's Cream Ale"
+abv: 4.5%
+description: "Our favorite ale cask conditioned and not dry hopped. It's malty
+  sweet and super crushable. "
+tap: true
 tap_loc: 14
 canned: false
-page_description: An English style brown ale brewed with fresh hops from our
-  friends at Murphy's Hop Yard in Effort, PA.
+page_description: ""
 logo: /upload/icon-hand-pump.svg
 images:
   - image: /upload/wh-brown.jpg
