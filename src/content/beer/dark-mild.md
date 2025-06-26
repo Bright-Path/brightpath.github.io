@@ -6,7 +6,7 @@ description: >-
 
 
   An English style ale brewed to be drank all day but not to lack flavor. Served on Nitro for a smooth rich mouthfeel. 
-tap: true
+tap: false
 tap_loc: 10
 canned: false
 logo: /upload/draft-only.svg
