@@ -1,6 +1,6 @@
 ---
 name: Cigar Beach - Smoked Maibock
-abv: 34.2%
+abv: 4.2%
 description: >
   Smooth | Malty | Smokey
 
