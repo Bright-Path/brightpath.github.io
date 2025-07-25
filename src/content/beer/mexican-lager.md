@@ -9,7 +9,7 @@ description: >-
 tap: true
 tap_loc: 8
 canned: true
-logo: /upload/draft-only.svg
+logo: /upload/beer-icons_mexican.svg
 images:
   - image: /upload/mexican-lager.jpeg
 tags: beer
