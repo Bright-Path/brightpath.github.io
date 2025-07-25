@@ -6,7 +6,7 @@ description: >-
 
 
   A hazy and juicy IPA without the high ABV. Designed for hop lovers and session drinkers alike.
-tap: true
+tap: false
 tap_loc: 13
 canned: false
 logo: /upload/switchback.svg
