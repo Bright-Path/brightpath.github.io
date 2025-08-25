@@ -1,11 +1,12 @@
 ---
-name: New Beer 12
-abv: 4.5%
-description: New Beer 12
-tap: false
-tap_loc: 12
+name: "Guest Tap: Berwick Brewing Hondo Keller Bier"
+abv: 5.4%
+description: "An outstanding German style lager from one of our favorite
+  breweries! 1/2L only! Not available for flights or crowler fills. "
+tap: true
+tap_loc: 15
 canned: false
-logo: /upload/draft-only.svg
+logo: /upload/beer-icons_guesttap.png
 images:
   - image: /upload/draft-only.svg
 tags: beer
