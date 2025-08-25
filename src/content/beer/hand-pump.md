@@ -1,8 +1,7 @@
 ---
-name: "Hand Pump: McGowan's Cream Ale"
+name: "Hand Pump: American Standard Pale Ale"
 abv: 4.5%
-description: "Our favorite ale cask conditioned and not dry hopped. It's malty
-  sweet and super crushable. "
+description: "Our fan favorite pale ale cask conditioned! Hoppy and even more crushable! "
 tap: true
 tap_loc: 14
 canned: false
