@@ -1,9 +1,7 @@
 ---
-name: "Guest Tap: Berwick Brewing Zwickel Pilsner"
-abv: 5.0%
-description: "A well hopped German style Pilsner. Crisp, clean, refreshing,
-  everything you want in Pilsner from one of our favorite breweries! 1/2L only!
-  Not available for flights or crowler fills. "
+name: "Guest Tap: Berwick Brewing - Berwick Lager"
+abv: 4.5%
+description: "Helles style lager that rules. "
 tap: true
 tap_loc: 16
 canned: false
