@@ -1,7 +1,8 @@
 ---
-name: "Hand Pump: American Standard Pale Ale"
-abv: 4.5%
-description: "Our fan favorite pale ale cask conditioned! Hoppy and even more crushable! "
+name: "Hand Pump: Old Piney Pub Ale (Wet Hopped)"
+abv: 4.2%
+description: Classic pub ale cask conditioned and wet hopped with a boat load of
+  Chinook hops from Murphy's Hop Yard!
 tap: true
 tap_loc: 15
 canned: false
