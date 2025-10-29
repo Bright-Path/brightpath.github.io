@@ -6,9 +6,9 @@ description: >-
 
 
   A west coast style IPA that’s brewed with just two row and some carafoam then dry hopped with a lot of Mosaic and Citra. It’s tropical, dank and crushable.
-tap: false
-tap_loc: 15
-canned: false
+tap: true
+tap_loc: 12
+canned: true
 logo: /upload/jeansrun-logo.jpg
 images:
   - image: /upload/jeans-run.jpg
