@@ -8,12 +8,12 @@ hours:
   - day: Monday
     hours: Closed
   - day: Thursday
-    hours: 3pm - 6pm
+    hours: 4pm - 8pm
   - day: Friday
-    hours: 2pm - 8pm
+    hours: 2pm - 9pm
   - day: Saturday
-    hours: 1pm - 7pm
+    hours: 1pm - 8pm
   - day: Sunday
-    hours: 1pm - 6pm
+    hours: 1pm - 5pm
 tags: locations
 ---
