@@ -6,7 +6,7 @@ description: >
 
 
   This classic spring time German beer is smooth and malty with a touch of smoke. Brewed with Pilsner and Smoked malts this beer smooth and a delight for the spring time. 
-tap: true
+tap: false
 tap_loc: 9
 canned: false
 page_description: ""
