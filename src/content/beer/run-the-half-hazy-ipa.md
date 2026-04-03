@@ -6,8 +6,8 @@ description: >-
 
 
   This hazy IPA was brewed with Golden Promise malt, honey oat malt and wheat malt and is hopped with Nelson Sauvin. The result is a hoppy beer that has notes of citrus fruit, white wine and oak. Very drinkable.
-tap: false
-tap_loc: 11
+tap: true
+tap_loc: 12
 canned: false
 page_description: ""
 logo: /upload/draft-only.svg
