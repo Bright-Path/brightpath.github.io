@@ -8,7 +8,7 @@ description: >-
   A classic American ale brewed with cascade hops and fermented cooler to create a crisp refreshing beer.
 tap: true
 tap_loc: 1
-canned: false
+canned: true
 logo: /upload/icon_mcgowans-cream-ale.svg
 images:
   - image: /upload/mcgowans-cream-ale.jpg
