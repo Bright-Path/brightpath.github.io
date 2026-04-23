@@ -6,7 +6,7 @@ description: >-
 
 
   A Mexican style lager brewed with fresh lime juice and zest. Crisp and refreshing. Perfect for the heat.
-tap: false
+tap: true
 tap_loc: 8
 canned: false
 logo: /upload/beer-icons_mexican.svg
