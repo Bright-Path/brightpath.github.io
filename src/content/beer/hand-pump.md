@@ -1,8 +1,8 @@
 ---
-name: "Hand Pump: Old Piney Pub Ale (Wet Hopped)"
-abv: 4.2%
-description: Classic pub ale cask conditioned and wet hopped with a boat load of
-  Chinook hops from Murphy's Hop Yard!
+name: "Hand Pump: McGowan's House of Smoke"
+abv: 4.5%
+description: "It's our cream ale recipe but we used some cherry wood smoked malt
+  for a subtle taste of smoke. "
 tap: true
 tap_loc: 14
 canned: false
