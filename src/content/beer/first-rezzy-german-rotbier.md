@@ -6,7 +6,7 @@ description: >
 
 
   Rotbier translates to red beer. This beer pours ruby red hue and has bready, malty, slightly nuttiness flavor. 
-tap: true
+tap: false
 tap_loc: 9
 canned: false
 logo: /upload/draft-only.svg
