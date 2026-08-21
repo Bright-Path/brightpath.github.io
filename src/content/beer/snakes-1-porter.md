@@ -6,9 +6,9 @@ description: >-
 
 
   Small in ABV but strong in flavor. This English-style ale is brewed with chocolate and roast malts to bring out notes of coffee and dark chocolate.
-tap: true
+tap: false
 tap_loc: 13
-canned: true
+canned: false
 logo: /upload/beer-icons_skaes-1-porter.svg
 images:
   - image: /upload/porter.jpg
