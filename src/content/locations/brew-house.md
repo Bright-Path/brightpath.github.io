@@ -5,7 +5,7 @@ address: 1215 North St
 address2: Jim Thorpe, PA 18229
 mapLink: https://goo.gl/maps/5PvdtXqyLMGg7wcP8
 hours:
-  - day: Monday
+  - day: Monday - Wednesday
     hours: Closed
   - day: Thursday
     hours: 4pm - 8pm
