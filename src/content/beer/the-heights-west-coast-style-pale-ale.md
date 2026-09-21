@@ -9,7 +9,7 @@ description: >-
 tap: true
 tap_loc: 13
 canned: false
-logo: /upload/icon_american-standard-pale-ale.svg
+logo: /upload/draft-only.svg
 images:
   - image: /upload/american-standard-pale-ale.jpg
 tags: beer
