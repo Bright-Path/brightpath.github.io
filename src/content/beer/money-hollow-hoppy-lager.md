@@ -7,7 +7,7 @@ description: >-
 
   A single decoction American lager, brewed with wheat and Pilsner malt, then given a massive whirlpool addition of Citra hops. The result is a crisp, refreshing pale American lager with a pleasant hoppy aroma.
 tap: false
-tap_loc: 6
+tap_loc: 9
 canned: false
 logo: /upload/beer-icons_money.svg
 tags: beer
